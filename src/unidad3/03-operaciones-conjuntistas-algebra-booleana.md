@@ -8,14 +8,14 @@ A partir de conjuntos dados dentro de un universo \\(\mathcal{U}\\) se pueden de
 
 Sean \\(A, B \subseteq \mathcal{U}\\):
 
-### A. Unión (\\(A \cup B\\))
+### A. Unión (A ∪ B)
 Reúne todos los elementos que pertenecen a \\(A\\), a \\(B\\) o a ambos:
 
 \\[
 A \cup B \;=\; \{x \in \mathcal{U} \mid x \in A \lor x \in B\}
 \\]
 
-### B. Intersección (\\(A \cap B\\))
+### B. Intersección (A ∩ B)
 Reúne los elementos comunes que pertenecen simultáneamente a \\(A\\) y a \\(B\\):
 
 \\[
@@ -28,14 +28,14 @@ A \cap B \;=\; \{x \in \mathcal{U} \mid x \in A \land x \in B\}
 > A \cap B \;=\; \emptyset
 > \\]
 
-### C. Diferencia Relativa (\\(A \setminus B\\) o \\(A - B\\))
+### C. Diferencia Relativa (A ∖ B o A - B)
 Reúne los elementos de \\(A\\) que **no** pertenecen a \\(B\\):
 
 \\[
 A \setminus B \;=\; \{x \in \mathcal{U} \mid x \in A \land x \notin B\}
 \\]
 
-### D. Complemento Absoluto (\\(A^c\\) o \\(\overline{A}\\) o \\(A'\\))
+### D. Complemento Absoluto (Aᶜ o A')
 Reúne todos los elementos del universo \\(\mathcal{U}\\) que no pertenecen a \\(A\\):
 
 \\[
@@ -44,7 +44,7 @@ A^c \;=\; \mathcal{U} \setminus A \;=\; \{x \in \mathcal{U} \mid x \notin A\}
 
 *Propiedad inmediata:* \\(A \setminus B = A \cap B^c\\).
 
-### E. Diferencia Simétrica (\\(A \Delta B\\))
+### E. Diferencia Simétrica (A △ B)
 Reúne los elementos que pertenecen a \\(A\\) o a \\(B\\), pero **no a ambos** simultáneamente:
 
 \\[

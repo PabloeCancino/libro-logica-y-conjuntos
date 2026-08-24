@@ -100,7 +100,7 @@ n^2 \;=\; 2j + 1
 
 ---
 
-## 3. Demostración de Equivalencias (\\(P \iff Q\\))
+## 3. Demostración de Equivalencias (P ⟺ Q)
 
 Para demostrar un teorema de doble implicación o equivalencia ("\\(P\\) si y sólo si \\(Q\\)"):
 

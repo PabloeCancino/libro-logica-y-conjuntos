@@ -4,7 +4,7 @@ Las relaciones de inclusión e igualdad entre conjuntos, junto con la construcci
 
 ---
 
-## 1. La Relación de Inclusión o Contención (\\(\subseteq\\))
+## 1. La Relación de Inclusión o Contención (⊆)
 
 > **Definición 3.2 (Subconjunto):**  
 > Sean \\(A\\) y \\(B\\) dos conjuntos en un universo \\(\mathcal{U}\\). Decimos que \\(A\\) es un **subconjunto** de \\(B\\) (o que \\(A\\) está **contenido** en \\(B\\)), y se denota \\(A \subseteq B\\), si y sólo si todo elemento que pertenece a \\(A\\) pertenece también a \\(B\\):
@@ -12,7 +12,7 @@ Las relaciones de inclusión e igualdad entre conjuntos, junto con la construcci
 > A \subseteq B \;\iff\; (\forall x) [x \in A \implies x \in B]
 > \\]
 
-### Subconjunto Propio (Inclusión Estricta, \\(\subset\\) o \\(\subsetneq\\))
+### Subconjunto Propio (Inclusión Estricta, ⊂ o ⊊)
 Decimos que \\(A\\) es un **subconjunto propio** de \\(B\\) si \\(A \subseteq B\\) y además existe al menos un elemento \\(b \in B\\) tal que \\(b \notin A\\) (es decir, \\(A \subseteq B\\) y \\(A \neq B\\)):
 
 \\[
@@ -44,7 +44,7 @@ Para demostrar rigurosamente que dos conjuntos \\(A\\) y \\(B\\) son iguales en 
 
 ## 3. Conjuntos Notables: El Conjunto Vacío y el Conjunto Universal
 
-### A. El Conjunto Vacío (\\(\emptyset\\) o \\(\{\}\\))
+### A. El Conjunto Vacío (∅ o {})
 Es el único conjunto que **no contiene ningún elemento**:
 
 \\[
@@ -65,7 +65,7 @@ Es el único conjunto que **no contiene ningún elemento**:
 > **Advertencia de Notación:**  
 > Distíngase estrictamente entre \\(\emptyset\\) (conjunto vacío, sin elementos, \\(|\emptyset| = 0\\)) y \\(\{\emptyset\}\\) (conjunto unitario cuyo único elemento es el conjunto vacío, \\(|\{\emptyset\}| = 1\\)).
 
-### B. El Conjunto Universal (\\(\mathcal{U}\\))
+### B. El Conjunto Universal (U)
 Es el conjunto que contiene la totalidad de los objetos bajo estudio en un contexto matemático determinado. Para todo subconjunto \\(A\\) de dicho contexto se cumple:
 
 \\[
@@ -74,7 +74,7 @@ Es el conjunto que contiene la totalidad de los objetos bajo estudio en un conte
 
 ---
 
-## 4. El Conjunto Potencia (o Conjunto de Partes, \\(\mathcal{P}(A)\\))
+## 4. El Conjunto Potencia (o Conjunto de Partes, 𝒫(A))
 
 > **Definición 3.3 (Conjunto Potencia):**  
 > Dado un conjunto \\(A\\), su **conjunto potencia** (o conjunto de partes), denotado por \\(\mathcal{P}(A)\\) o \\(2^A\\), es el conjunto formado por **todos los posibles subconjuntos** de \\(A\\):

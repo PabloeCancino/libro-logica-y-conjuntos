@@ -22,7 +22,7 @@ Dada una fórmula proposicional \\(A\\):
 
 ---
 
-## 2. Equivalencia Lógica (\\(\equiv\\) o \\(\Longleftrightarrow\\))
+## 2. Equivalencia Lógica (≡ o ⇔)
 
 > **Definición 1.2 (Equivalencia Lógica):**  
 > Dos fórmulas proposicionales \\(A\\) y \\(B\\) son **lógicamente equivalentes** (denotado \\(A \equiv B\\)) si y sólo si tienen exactamente la misma tabla de verdad bajo cualquier asignación de valores de sus variables atómicas.  
@@ -62,7 +62,7 @@ p \land (q \lor r) \;\equiv\; (p \land q) \lor (p \land r)
 p \lor (q \land r) \;\equiv\; (p \lor q) \land (p \lor r)
 \\]
 
-### E. Leyes de Identidad y Dominación (con \\(\top\\) y \\(\bot\\))
+### E. Leyes de Identidad y Dominación (con ⊤ y ⊥)
 
 \\[
 p \land \top \;\equiv\; p, \qquad p \lor \bot \;\equiv\; p \quad \text{(Identidad)}
@@ -109,18 +109,12 @@ Nombradas en honor al lógico británico Augustus De Morgan (1806–1871), estab
 
 Demostremos la Primera Ley \\(\neg(p \land q) \equiv \neg p \lor \neg q\\):
 
-\\[
-\begin{array}{|c|c|c|c|c|c|c|}
-\hline
-p & q & p \land q & \neg(p \land q) & \neg p & \neg q & \neg p \lor \neg q \\
-\hline
-V & V & V & \mathbf{F} & F & F & \mathbf{F} \\
-V & F & F & \mathbf{V} & F & V & \mathbf{V} \\
-F & V & F & \mathbf{V} & V & F & \mathbf{V} \\
-F & F & F & \mathbf{V} & V & V & \mathbf{V} \\
-\hline
-\end{array}
-\\]
+| \\(p\\) | \\(q\\) | \\(p \land q\\) | \\(\neg(p \land q)\\) | \\(\neg p\\) | \\(\neg q\\) | \\(\neg p \lor \neg q\\) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| \\(V\\) | \\(V\\) | \\(V\\) | **\\(F\\)** | \\(F\\) | \\(F\\) | **\\(F\\)** |
+| \\(V\\) | \\(F\\) | \\(F\\) | **\\(V\\)** | \\(F\\) | \\(V\\) | **\\(V\\)** |
+| \\(F\\) | \\(V\\) | \\(F\\) | **\\(V\\)** | \\(V\\) | \\(F\\) | **\\(V\\)** |
+| \\(F\\) | \\(F\\) | \\(F\\) | **\\(V\\)** | \\(V\\) | \\(V\\) | **\\(V\\)** |
 
 Las columnas de \\(\neg(p \land q)\\) y \\(\neg p \lor \neg q\\) son idénticas en todas sus filas. Por lo tanto, \\(\neg(p \land q) \equiv \neg p \lor \neg q\\). \\(\blacksquare\\)
 
@@ -163,15 +157,9 @@ Dada la proposición condicional directa \\(p \to q\\):
 * **Recíproca (o conversa):** \\(q \to p\\) $\implies$ **NO es equivalente a la directa.**
 * **Inversa:** \\(\neg p \to \neg q\\) $\implies$ **NO es equivalente a la directa** (pero sí es equivalente a la recíproca).
 
-\\[
-\begin{array}{|c|c|c|c|c|c|}
-\hline
-p & q & \text{Directa: } p \to q & \text{Contrapositiva: } \neg q \to \neg p & \text{Recíproca: } q \to p & \text{Inversa: } \neg p \to \neg q \\
-\hline
-V & V & \mathbf{V} & \mathbf{V} & V & V \\
-V & F & \mathbf{F} & \mathbf{F} & V & V \\
-F & V & \mathbf{V} & \mathbf{V} & F & F \\
-F & F & \mathbf{V} & \mathbf{V} & V & V \\
-\hline
-\end{array}
-\\]
+| \\(p\\) | \\(q\\) | Directa: \\(p \to q\\) | Contrapositiva: \\(\neg q \to \neg p\\) | Recíproca: \\(q \to p\\) | Inversa: \\(\neg p \to \neg q\\) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| \\(V\\) | \\(V\\) | **\\(V\\)** | **\\(V\\)** | \\(V\\) | \\(V\\) |
+| \\(V\\) | \\(F\\) | **\\(F\\)** | **\\(F\\)** | \\(V\\) | \\(V\\) |
+| \\(F\\) | \\(V\\) | **\\(V\\)** | **\\(V\\)** | \\(F\\) | \\(F\\) |
+| \\(F\\) | \\(F\\) | **\\(V\\)** | **\\(V\\)** | \\(V\\) | \\(V\\) |

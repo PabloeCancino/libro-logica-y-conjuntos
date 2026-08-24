@@ -48,7 +48,7 @@
    - a) \\(f: \mathbb{R} \to \mathbb{R}\\), \\(f(x) = 3x - 5\\)
    - b) \\(g: \mathbb{R} \to \mathbb{R}\\), \\(g(x) = x^2 - 1\\)
    - c) \\(h: [0, \infty) \to [0, \infty)\\), \\(h(x) = x^2\\)
-   - d) \\(k: \mathbb{Z} \to \mathbb{N}\\), \\(k(n) = \begin{cases} 2n & \text{si } n > 0 \\ 2(-n) + 1 & \text{si } n \le 0 \end{cases}\\)
+   - d) \\(k: \mathbb{Z} \to \mathbb{N}\\), dada por \\(k(n) = 2n\\) si \\(n > 0\\), y \\(k(n) = 2(-n) + 1\\) si \\(n \le 0\\).
 
 9. Demuestre el **Teorema de Cantor**: Para todo conjunto \\(A\\), no existe ninguna función sobreyectiva \\(f: A \to \mathcal{P}(A)\\).  
 *(Sugerencia: Considere el conjunto diagonal \\(D = \{x \in A \mid x \notin f(x)\} \in \mathcal{P}(A)\\) y suponga que existe \\(d \in A\\) tal que \\(f(d) = D\\))*.

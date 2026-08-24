@@ -54,7 +54,7 @@ Una función \\(f: A \to B\\) es **biyectiva** si y sólo si es **simultáneamen
 
 ## 3. Composición de Funciones y Función Inversa
 
-### A. Composición de Funciones (\\(g \circ f\\))
+### A. Composición de Funciones (g ∘ f)
 Dadas \\(f: A \to B\\) y \\(g: B \to C\\), la **función compuesta** \\(g \circ f: A \to C\\) se define por:
 
 \\[
@@ -68,7 +68,7 @@ Dadas \\(f: A \to B\\) y \\(g: B \to C\\), la **función compuesta** \\(g \circ 
   * Si \\(f\\) y \\(g\\) son sobreyectivas, \\(g \circ f\\) es sobreyectiva.
   * Si \\(f\\) y \\(g\\) son biyectivas, \\(g \circ f\\) es biyectiva.
 
-### B. La Función Inversa (\\(f^{-1}\\))
+### B. La Función Inversa (f⁻¹)
 > **Teorema 4.10 (Existencia de la Función Inversa):**  
 > Una función \\(f: A \to B\\) admite función inversa \\(f^{-1}: B \to A\\) si y sólo si \\(f\\) es **Biyectiva**.  
 > En tal caso, \\(f^{-1}\\) satisface:
@@ -86,7 +86,7 @@ El concepto de biyección permitió a **Georg Cantor (1874)** extender el concep
 > **Definición 4.5 (Equinumerosidad o Coordinabilidad):**  
 > Dos conjuntos \\(A\\) y \\(B\\) tienen la **misma cardinalidad** (denotado \\(|A| = |B|\\) o \\(A \approx B\\)) si y sólo si **existe una función biyectiva \\(f: A \to B\\)**.
 
-### A. Conjuntos Numerables (\\(\aleph\_0\\), Álef Cero)
+### A. Conjuntos Numerables (ℵ₀, Álef Cero)
 Un conjunto \\(A\\) es **infinito numerable** si tiene la misma cardinalidad que el conjunto de los números naturales: \\(|A| = |\mathbb{N}| = \aleph\_0\\).
 * \\(\mathbb{N}\\) es numerable.
 * El conjunto de los enteros pares \\(2\mathbb{N}\\) es numerable (biyección \\(f(n) = 2n\\), Paradoja del Hotel de Hilbert).

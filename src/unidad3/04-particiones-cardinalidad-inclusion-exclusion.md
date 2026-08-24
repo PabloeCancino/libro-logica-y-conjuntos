@@ -86,7 +86,7 @@ Restando \\(|A \cap B|\\) en ambos miembros se obtiene la fórmula. \\(\blacksqu
 > |A \cup B \cup C| \;=\; |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
 > \\]
 
-### C. Forma General para \\(n\\) Conjuntos:
+### C. Forma General para n Conjuntos
 > **Teorema 3.5 (P.I.E. General):**  
 > Para una familia finita \\(A\_1, A\_2, \dots, A\_n\\):
 > \\[

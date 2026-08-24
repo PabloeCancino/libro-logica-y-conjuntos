@@ -56,18 +56,12 @@ Para verificar si un argumento es válido mediante tablas de verdad:
 ### Ejemplo A: Argumento Válido (Modus Ponens)
 Premisas: \\(p \to q\\), \\(p\\). Conclusión: \\(q\\).
 
-\\[
-\begin{array}{|c|c|c|c|c|c|}
-\hline
-\text{Fila} & p & q & \text{Premisa 1: } p \to q & \text{Premisa 2: } p & \text{Conclusión: } q \\
-\hline
-\mathbf{1} & \mathbf{V} & \mathbf{V} & \mathbf{V} & \mathbf{V} & \mathbf{V} \quad \text{(Fila crítica: conclusión V)} \\
-2 & V & F & F & V & F \\
-3 & F & V & V & F & V \\
-4 & F & F & V & F & F \\
-\hline
-\end{array}
-\\]
+| Fila | \\(p\\) | \\(q\\) | Premisa 1: \\(p \to q\\) | Premisa 2: \\(p\\) | Conclusión: \\(q\\) | Estado |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| **1** | **\\(V\\)** | **\\(V\\)** | **\\(V\\)** | **\\(V\\)** | **\\(V\\)** | **Fila crítica: Conclusión V (Válido)** |
+| 2 | \\(V\\) | \\(F\\) | \\(F\\) | \\(V\\) | \\(F\\) | No crítica (Premisa 1 es F) |
+| 3 | \\(F\\) | \\(V\\) | \\(V\\) | \\(F\\) | \\(V\\) | No crítica (Premisa 2 es F) |
+| 4 | \\(F\\) | \\(F\\) | \\(V\\) | \\(F\\) | \\(F\\) | No crítica (Premisa 2 es F) |
 
 La única fila crítica es la Fila 1 (ambas premisas son \\(V\\)), y allí la conclusión \\(q\\) es \\(V\\). Por lo tanto, el argumento es **válido**.
 
@@ -86,16 +80,12 @@ Consiste en intentar deducir la hipótesis a partir de la conclusión:
 
 *Tabla de verdad:*
 
-\\[
-\begin{array}{|c|c|c|c|c|}
-\hline
-p & q & \text{Premisa 1: } p \to q & \text{Premisa 2: } q & \text{Conclusión: } p \\
-\hline
-V & V & V & V & V \\
-\mathbf{F} & \mathbf{V} & \mathbf{V} & \mathbf{V} & \mathbf{F} \quad \text{(¡Premisas V con Conclusión F!)} \\
-\hline
-\end{array}
-\\]
+| \\(p\\) | \\(q\\) | Premisa 1: \\(p \to q\\) | Premisa 2: \\(q\\) | Conclusión: \\(p\\) | Estado |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| \\(V\\) | \\(V\\) | \\(V\\) | \\(V\\) | \\(V\\) | Fila crítica (Conclusión V) |
+| **\\(F\\)** | **\\(V\\)** | **\\(V\\)** | **\\(V\\)** | **\\(F\\)** | **¡Fila crítica con Conclusión F! (Inválido)** |
+| \\(V\\) | \\(F\\) | \\(F\\) | \\(F\\) | \\(V\\) | No crítica |
+| \\(F\\) | \\(F\\) | \\(V\\) | \\(F\\) | \\(F\\) | No crítica |
 
 La fila con \\(p=F, q=V\\) invalida el argumento.  
 *Ejemplo en lenguaje natural:* "Si llueve, la calle se moja. La calle está mojada. Por lo tanto, llovió." (Pudo haberse mojado con una manguera).

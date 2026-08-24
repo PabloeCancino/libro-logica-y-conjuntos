@@ -58,7 +58,7 @@ A \times (B \cap C) \;=\; (A \times B) \cap (A \times C)
 
 ---
 
-## 3. Generalización a \\(n\\)-Tuplas Ordenadas
+## 3. Generalización a n-Tuplas Ordenadas
 
 El producto cartesiano se extiende a cualquier número finito \\(n\\) de conjuntos \\(A\_1, A\_2, \dots, A\_n\\):
 
@@ -81,14 +81,14 @@ Frecuentemente en matemáticas avanzadas (análisis, topología) se trabaja no c
 \mathcal{A} \;=\; \{A\_i\}\_{i \in I}
 \\]
 
-### A. Unión Generalizada (\\(\bigcup\_{i \in I} A\_i\\))
+### A. Unión Generalizada
 Reúne los elementos que pertenecen a **al menos uno** de los conjuntos de la familia:
 
 \\[
 \bigcup\_{i \in I} A\_i \;=\; \{x \mid (\exists i \in I) (x \in A\_i)\}
 \\]
 
-### B. Intersección Generalizada (\\(\bigcap\_{i \in I} A\_i\\))
+### B. Intersección Generalizada
 Reúne los elementos que pertenecen **simultáneamente a todos** los conjuntos de la familia:
 
 \\[

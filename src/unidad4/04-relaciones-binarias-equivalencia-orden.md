@@ -23,7 +23,7 @@ Las **relaciones** constituyen la formalización conjuntista de los vínculos, a
 
 ---
 
-## 2. Propiedades de una Relación sobre un Conjunto \\(A\\)
+## 2. Propiedades de una Relación sobre un Conjunto A
 
 Dada una relación \\(R \subseteq A \times A\\):
 
@@ -67,7 +67,7 @@ Dada una relación de equivalencia \\(\sim\\) sobre \\(A\\) y un elemento \\(a \
 
 El elemento \\(a\\) se denomina un **representante** de la clase \\([a]\\).
 
-### B. El Conjunto Cociente (\\(A/\sim\\))
+### B. El Conjunto Cociente (A/∼)
 Es el conjunto cuyos elementos son todas las clases de equivalencia inducidas sobre \\(A\\):
 
 \\[
@@ -83,7 +83,7 @@ A/\sim \;=\; \{[a] \mid a \in A\}
 > 
 > *Recíprocamente*, toda partición \\(\mathcal{P}\\) de \\(A\\) define de manera única una relación de equivalencia sobre \\(A\\) mediante: \\(x \sim y \iff x \text{ e } y \text{ pertenecen al mismo bloque de } \mathcal{P}\\).
 
-### Ejemplo Clásico: Congruencia Módulo \\(n\\) en \\(\mathbb{Z}\\)
+### Ejemplo Clásico: Congruencia Módulo n en ℤ
 Para un entero fijo \\(n \ge 2\\), definimos sobre \\(\mathbb{Z}\\):
 
 \\[

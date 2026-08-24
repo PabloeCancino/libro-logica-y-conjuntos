@@ -129,7 +129,7 @@ A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C)
 
 ## 4. Demostraciones de la Unidad 4: Métodos de Demostración e Inducción
 
-### Demostración 9: Irracionalidad de \\(\sqrt{2}\\)
+### Demostración 9: Irracionalidad de √2
 
 \\[
 \sqrt{2} \;\notin\; \mathbb{Q}
@@ -161,7 +161,7 @@ A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C)
 
 ---
 
-### Demostración 11: Suma de los Primeros \\(n\\) Naturales
+### Demostración 11: Suma de los Primeros n Naturales
 
 \\[
 \sum\_{i=1}^n i \;=\; \frac{n(n+1)}{2}

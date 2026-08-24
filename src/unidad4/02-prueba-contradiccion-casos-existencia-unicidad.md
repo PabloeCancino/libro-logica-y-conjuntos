@@ -23,7 +23,7 @@ donde \\(\bot\\) representa una contradicción lógica explícita (una afirmaci�
 > 3. A partir de estas premisas de trabajo se deduce lógicamente una **contradicción flagrante \\(\bot\\)** (por ejemplo, que un número es simultáneamente par e impar, que \\(0 = 1\\), o que contradice una hipótesis inicial o axioma).
 > 4. Dado que en la lógica clásica las contradicciones son imposibles, la suposición de que \\(\neg P\\) era verdadera resulta insostenible. Se concluye que \\(P\\) es **Verdadera**. \\(\blacksquare\\)
 
-### Ejemplo Clásico 1: La Irracionalidad de \\(\sqrt{2}\\) (Demostración de Euclides)
+### Ejemplo Clásico 1: La Irracionalidad de √2 (Demostración de Euclides)
 
 > **Teorema 4.3:**  
 > El número \\(\sqrt{2}\\) es irracional (\\(\sqrt{2} \notin \mathbb{Q}\\)).
@@ -83,11 +83,11 @@ Por el algoritmo de la división, todo entero \\(n\\) es par o impar (casos exha
 
 ## 3. Demostraciones de Existencia y Unicidad
 
-### A. Pruebas de Existencia (\\(\exists x \, P(x)\\))
+### A. Pruebas de Existencia (∃x P(x))
 1. **Prueba Constructiva:** Se exhibe explícitamente un elemento testigo \\(x\_0\\) y se verifica algebraicamente que satisface \\(P(x\_0)\\).
 2. **Prueba No Constructiva:** Se demuestra la existencia mediante contradicción o mediante teoremas de existencia global (como el Teorema del Valor Intermedio), sin calcular explícitamente el valor del testigo.
 
-### B. Pruebas de Unicidad (\\(\exists! x \, P(x)\\))
+### B. Pruebas de Unicidad (∃!x P(x))
 Para probar que existe un **único** elemento que cumple \\(P(x)\\):
 1. **Paso 1 (Existencia):** Se prueba que existe al menos un elemento \\(x\\) con \\(P(x)\\).
 2. **Paso 2 (Unicidad):** Se asume que existen dos elementos \\(x\_1\\) y \\(x\_2\\) que cumplen la propiedad (\\(P(x\_1) \land P(x\_2)\\)), y mediante deducciones formales se demuestra rigurosamente que:
