@@ -8,6 +8,7 @@ Las relaciones de inclusión e igualdad entre conjuntos, junto con la construcci
 
 > **Definición 3.2 (Subconjunto):**  
 > Sean \\(A\\) y \\(B\\) dos conjuntos en un universo \\(\mathcal{U}\\). Decimos que \\(A\\) es un **subconjunto** de \\(B\\) (o que \\(A\\) está **contenido** en \\(B\\)), y se denota \\(A \subseteq B\\), si y sólo si todo elemento que pertenece a \\(A\\) pertenece también a \\(B\\):
+>
 > \\[
 > A \subseteq B \;\iff\; (\forall x) [x \in A \implies x \in B]
 > \\]
@@ -30,6 +31,7 @@ A \subsetneq B \;\iff\; (A \subseteq B \;\land\; A \neq B)
 
 > **Axioma 3.1 (Axioma de Extensionalidad):**  
 > Dos conjuntos \\(A\\) y \\(B\\) son **iguales** (denotado \\(A = B\\)) si y sólo si tienen exactamente los mismos elementos.
+>
 > \\[
 > A = B \;\iff\; (\forall x) [x \in A \iff x \in B]
 > \\]
@@ -53,10 +55,11 @@ Es el único conjunto que **no contiene ningún elemento**:
 
 > **Teorema 3.1 (Inclusión Vacua del Conjunto Vacío):**  
 > Para **cualquier** conjunto \\(A\\), se cumple que el conjunto vacío es subconjunto de \\(A\\):
+>
 > \\[
 > \emptyset \subseteq A
 > \\]
-> 
+>
 > *Demostración Formal:*  
 > Por definición de subconjunto, \\(\emptyset \subseteq A \iff (\forall x)[x \in \emptyset \implies x \in A]\\).  
 > Para cualquier elemento \\(x\\), la proposición \\(x \in \emptyset\\) es **Falsa (\\(F\\))**.  
@@ -78,11 +81,13 @@ Es el conjunto que contiene la totalidad de los objetos bajo estudio en un conte
 
 > **Definición 3.3 (Conjunto Potencia):**  
 > Dado un conjunto \\(A\\), su **conjunto potencia** (o conjunto de partes), denotado por \\(\mathcal{P}(A)\\) o \\(2^A\\), es el conjunto formado por **todos los posibles subconjuntos** de \\(A\\):
+>
 > \\[
 > \mathcal{P}(A) \;=\; \{X \mid X \subseteq A\}
 > \\]
-> 
+>
 > Por lo tanto, para cualquier conjunto \\(X\\):
+>
 > \\[
 > X \in \mathcal{P}(A) \;\iff\; X \subseteq A
 > \\]

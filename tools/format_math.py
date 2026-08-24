@@ -29,49 +29,37 @@ def process_file(filepath):
 
         text = re.sub(r'\\\\\((.*?)\\\\\)', fix_inline, text, flags=re.DOTALL)
 
-        # Step 3: Ensure all display math blocks \\[ ... \\] are properly isolated
+        # Step 3: Ensure all display math blocks \\[ ... \\] (including inside blockquotes >) have escaped underscores
         lines = text.splitlines()
         new_lines = []
         i = 0
         while i < len(lines):
             line = lines[i]
 
-            # Case A: Entire display math on single line: \\[ ... \\]
-            single_match = re.match(r'^(\s*)\\+(\[)(.+?)\\+(\])\s*$', line)
+            # Case A: Entire display math on single line: \\[ ... \\] or > \\[ ... \\]
+            single_match = re.match(r'^(\s*(?:>\s*)?)\\+(\[)(.+?)\\+(\])\s*$', line)
             if single_match:
-                indent = single_match.group(1)
+                prefix = single_match.group(1)
                 math_body = single_match.group(3).strip()
                 math_body = escape_math_underscores(math_body)
 
-                if new_lines and new_lines[-1].strip() != '' and not new_lines[-1].strip().startswith('---'):
-                    new_lines.append('')
-
-                new_lines.append(f'{indent}\\\\[')
-                new_lines.append(f'{indent}{math_body}')
-                new_lines.append(f'{indent}\\\\]')
-
-                if i + 1 < len(lines) and lines[i+1].strip() != '' and not lines[i+1].strip().startswith('---') and not lines[i+1].strip().startswith('#'):
-                    new_lines.append('')
-
+                new_lines.append(f'{prefix}\\\\[')
+                new_lines.append(f'{prefix}{math_body}')
+                new_lines.append(f'{prefix}\\\\]')
                 i += 1
                 continue
 
-            # Case B: Opening of multiline display math: \\[
-            open_match = re.match(r'^(\s*)\\+(\[)\s*$', line)
+            # Case B: Opening of multiline display math: \\[ or > \\[
+            open_match = re.match(r'^(\s*(?:>\s*)?)\\+(\[)\s*$', line)
             if open_match:
-                indent = open_match.group(1)
-                if new_lines and new_lines[-1].strip() != '' and not new_lines[-1].strip().startswith('---'):
-                    new_lines.append('')
-
-                new_lines.append(f'{indent}\\\\[')
+                prefix = open_match.group(1)
+                new_lines.append(f'{prefix}\\\\[')
                 i += 1
                 while i < len(lines):
                     cur_line = lines[i]
-                    close_match = re.match(r'^(\s*)\\+(\])\s*$', cur_line)
+                    close_match = re.match(r'^(\s*(?:>\s*)?)\\+(\])\s*$', cur_line)
                     if close_match:
-                        new_lines.append(f'{indent}\\\\]')
-                        if i + 1 < len(lines) and lines[i+1].strip() != '' and not lines[i+1].strip().startswith('---') and not lines[i+1].strip().startswith('#'):
-                            new_lines.append('')
+                        new_lines.append(f'{prefix}\\\\]')
                         i += 1
                         break
                     else:
@@ -86,7 +74,8 @@ def process_file(filepath):
         parts[idx] = '\n'.join(new_lines)
 
     result = ''.join(parts)
-    # Fix excess consecutive blank lines
+    # Fix excess consecutive blank lines or quote lines
+    result = re.sub(r'(\n\s*>\s*){2,}\n', '\n>\n', result)
     result = re.sub(r'\n{3,}', '\n\n', result)
 
     if result != content:

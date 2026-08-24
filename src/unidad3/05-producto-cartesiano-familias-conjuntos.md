@@ -16,6 +16,7 @@ En la teoría axiomática de conjuntos de Zermelo-Fraenkel, para no introducir "
 
 > **Definición 3.6 (Par Ordenado de Kuratowski):**  
 > Dados dos objetos \\(a\\) y \\(b\\), el **par ordenado** \\((a, b)\\) se define como el conjunto:
+>
 > \\[
 > (a, b) \;:=\; \{\{a\}, \{a, b\}\}
 > \\]
@@ -28,6 +29,7 @@ Esta ingeniosa definición distingue inequívocamente al primer componente \\(a\
 
 > **Definición 3.7 (Producto Cartesiano):**  
 > Dados dos conjuntos \\(A\\) y \\(B\\), su **producto cartesiano** \\(A \times B\\) es el conjunto de todos los pares ordenados cuyo primer componente pertenece a \\(A\\) y cuyo segundo componente pertenece a \\(B\\):
+>
 > \\[
 > A \times B \;=\; \{(a, b) \mid a \in A \land b \in B\}
 > \\]
@@ -98,9 +100,11 @@ Reúne los elementos que pertenecen **simultáneamente a todos** los conjuntos d
 ### C. Leyes de De Morgan para Familias Arbitrarias:
 > **Teorema 3.6 (De Morgan Generalizado):**  
 > Para cualquier conjunto de índices \\(I\\) (finito o infinito):
+>
 > \\[
-> \left( \bigcup_{i \in I} A_i \right)^c \;=\; \bigcap_{i \in I} A_i^c
+> \left( \bigcup\_{i \in I} A\_i \right)^c \;=\; \bigcap\_{i \in I} A\_i^c
 > \\]
+>
 > \\[
-> \left( \bigcap_{i \in I} A_i \right)^c \;=\; \bigcup_{i \in I} A_i^c
+> \left( \bigcap\_{i \in I} A\_i \right)^c \;=\; \bigcup\_{i \in I} A\_i^c
 > \\]

@@ -19,9 +19,11 @@ El método de **demostración directa** es la técnica más intuitiva y natural.
 > **Estructura de la Demostración Directa:**  
 > 1. **Paso 1 (Hipótesis):** Se asume explícitamente que la hipótesis \\(P\\) es **Verdadera**.
 > 2. **Paso 2 (Cadena Deductiva):** Utilizando definiciones axiomáticas, identidades algebraicas y teoremas previos, se deduce una cadena finita de implicaciones válidas:
+>
 > \\[
-> P \implies P_1 \implies P_2 \implies \dots \implies P_k \implies Q
+> P \implies P\_1 \implies P\_2 \implies \dots \implies P\_k \implies Q
 > \\]
+>
 > 3. **Paso 3 (Conclusión):** Se arriba formalmente a la verdad de \\(Q\\).  
 > Por el Teorema de la Deducción, queda demostrado que \\(P \implies Q\\). \\(\blacksquare\\)
 

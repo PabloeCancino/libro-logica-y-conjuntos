@@ -9,16 +9,21 @@ El análisis cuantitativo de conjuntos finitos y la descomposición estructural 
 > **Definición 3.4 (Partición):**  
 > Sea \\(A\\) un conjunto no vacío. Una **partición** de \\(A\\) es una colección \\(\mathcal{P} = \{A\_i\}\_{i \in I}\\) de subconjuntos de \\(A\\) (llamados *bloques*, *clases* o *celdas*) que satisfacen simultáneamente tres condiciones axiomáticas:
 > 1. **No vacuidad:** Ningún bloque es vacío:
+>
 > \\[
-> (\forall i \in I) \, [A_i \neq \emptyset]
+> (\forall i \in I) \, [A\_i \neq \emptyset]
 > \\]
+>
 > 2. **Disjunción dos a dos (Mutuamente Excluyentes):** Cualesquiera dos bloques distintos no comparten elementos:
+>
 > \\[
-> (\forall i, j \in I) \, [i \neq j \implies A_i \cap A_j = \emptyset]
+> (\forall i, j \in I) \, [i \neq j \implies A\_i \cap A\_j = \emptyset]
 > \\]
+>
 > 3. **Cobertura Total (Exhaustividad):** La unión de todos los bloques reconstruye exactamente el conjunto original \\(A\\):
+>
 > \\[
-> \bigcup_{i \in I} A_i \;=\; A
+> \bigcup\_{i \in I} A\_i \;=\; A
 > \\]
 
 ### Ejemplo en un Conjunto Finito:
@@ -58,6 +63,7 @@ Cuando dos o más conjuntos no son disjuntos, sumar sus cardinalidades individua
 ### A. Para Dos Conjuntos:
 > **Teorema 3.3 (P.I.E. para 2 Conjuntos):**  
 > Para cualesquiera conjuntos finitos \\(A\\) y \\(B\\):
+>
 > \\[
 > |A \cup B| \;=\; |A| + |B| - |A \cap B|
 > \\]
@@ -82,6 +88,7 @@ Restando \\(|A \cap B|\\) en ambos miembros se obtiene la fórmula. \\(\blacksqu
 ### B. Para Tres Conjuntos:
 > **Teorema 3.4 (P.I.E. para 3 Conjuntos):**  
 > Para cualesquiera conjuntos finitos \\(A, B, C\\):
+>
 > \\[
 > |A \cup B \cup C| \;=\; |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
 > \\]
@@ -89,8 +96,9 @@ Restando \\(|A \cap B|\\) en ambos miembros se obtiene la fórmula. \\(\blacksqu
 ### C. Forma General para n Conjuntos
 > **Teorema 3.5 (P.I.E. General):**  
 > Para una familia finita \\(A\_1, A\_2, \dots, A\_n\\):
+>
 > \\[
-> \left|\bigcup_{i=1}^n A_i\right| \;=\; \sum_{i=1}^n |A_i| - \sum_{1 \le i < j \le n} |A_i \cap A_j| + \sum_{1 \le i < j < k \le n} |A_i \cap A_j \cap A_k| - \dots + (-1)^{n-1} |A_1 \cap \dots \cap A_n|
+> \left|\bigcup\_{i=1}^n A\_i\right| \;=\; \sum\_{i=1}^n |A\_i| - \sum\_{1 \le i < j \le n} |A\_i \cap A\_j| + \sum\_{1 \le i < j < k \le n} |A\_i \cap A\_j \cap A\_k| - \dots + (-1)^{n-1} |A\_1 \cap \dots \cap A\_n|
 > \\]
 
 ---

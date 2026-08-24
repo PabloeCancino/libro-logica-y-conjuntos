@@ -97,10 +97,13 @@ Nombradas en honor al lógico británico Augustus De Morgan (1806–1871), estab
 > **Teorema 1.1 (Leyes de De Morgan):**  
 > Para cualesquiera proposiciones \\(p\\) y \\(q\\):
 > 1. **Primera Ley:** La negación de una conjunción es equivalente a la disyunción de las negaciones:
+>
 > \\[
 > \neg(p \land q) \;\equiv\; \neg p \lor \neg q
 > \\]
+>
 > 2. **Segunda Ley:** La negación de una disyunción es equivalente a la conjunción de las negaciones:
+>
 > \\[
 > \neg(p \lor q) \;\equiv\; \neg p \land \neg q
 > \\]

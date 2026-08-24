@@ -60,13 +60,17 @@
 > **Solución al Ejercicio 3 (Irracionalidad de \\(\log\_2(3)\\)):**  
 > Supongamos por contradicción que \\(\log\_2(3) \in \mathbb{Q}\\).  
 > Como \\(3 > 1\\) y \\(2 > 1\\), \\(\log\_2(3) > 0\\). Por tanto existen enteros positivos \\(p, q \in \mathbb{N}\\) tales que:  
+>
 > \\[
-> \log_2(3) \;=\; \frac{p}{q}
-> \\]  
+> \log\_2(3) \;=\; \frac{p}{q}
+> \\]
+>
 > Por la definición de logaritmo:  
+>
 > \\[
 > 2^{p/q} = 3 \implies 2^p = 3^q
-> \\]  
+> \\]
+>
 > Como \\(p \ge 1\\), el miembro izquierdo \\(2^p\\) es un número entero **par**.  
 > Como \\(q \ge 1\\), el miembro derecho \\(3^q\\) es producto de impares y por ende es un número **impar**.  
 > Esto genera la contradicción lógica \\(\text{par} = \text{impar}\\) (\\(\bot\\)).  

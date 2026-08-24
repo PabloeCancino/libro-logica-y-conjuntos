@@ -11,10 +11,13 @@ En la formulación matemática moderna (teoría intuitiva y axiomática), los t�
 > **Definición 3.1 (Conjunto y Pertenencia):**  
 > Un **conjunto** es una colección bien definida de objetos distintos. A los objetos que forman parte de la colección se les denomina **elementos** o **miembros** del conjunto.
 > * Si un objeto \\(a\\) forma parte del conjunto \\(A\\), se escribe:
+>
 > \\[
 > a \in A \quad \text{("a pertenece a A")}
 > \\]
+>
 > * Si un objeto \\(b\\) no forma parte del conjunto \\(A\\), se escribe:
+>
 > \\[
 > b \notin A \quad \text{("b no pertenece a A")}
 > \\]
@@ -89,14 +92,17 @@ En 1901, el filósofo y matemático británico **Bertrand Russell** descubrió u
 
 > **La Paradoja de Russell:**  
 > Definamos la colección \\(R\\) formada por todos aquellos conjuntos que **no se pertenecen a sí mismos**:
+>
 > \\[
 > R \;=\; \{x \mid x \notin x\}
 > \\]
+>
 > Ahora preguntémonos si \\(R\\) pertenece a sí mismo (\\(R \in R\\)):
 > * Si \\(R \in R\\), entonces por la definición de \\(R\\), debe cumplir la propiedad de sus elementos: \\(R \notin R\\) (Contradicción).
 > * Si \\(R \notin R\\), entonces \\(R\\) satisface la condición para pertenecer a \\(R\\), luego \\(R \in R\\) (Contradicción).
 > 
 > En cualquier caso se deduce la contradicción formal:
+>
 > \\[
 > R \in R \;\iff\; R \notin R
 > \\]

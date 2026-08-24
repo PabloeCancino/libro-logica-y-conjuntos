@@ -17,9 +17,11 @@ donde \\(\bot\\) representa una contradicción lógica explícita (una afirmaci�
 > **Estructura de la Prueba por Contradicción:**  
 > 1. Para demostrar que una proposición \\(P\\) es verdadera, se formula la **suposición por contradicción** de que \\(P\\) es **Falsa** (es decir, que \\(\neg P\\) es verdadera).
 > 2. Si el teorema a demostrar es una implicación \\(P \implies Q\\), negar la implicación equivale a asumir que:
+>
 > \\[
 > P \quad \text{es Verdadera} \qquad \text{y} \qquad Q \quad \text{es Falsa (\neg Q es Verdadera)}
 > \\]
+>
 > 3. A partir de estas premisas de trabajo se deduce lógicamente una **contradicción flagrante \\(\bot\\)** (por ejemplo, que un número es simultáneamente par e impar, que \\(0 = 1\\), o que contradice una hipótesis inicial o axioma).
 > 4. Dado que en la lógica clásica las contradicciones son imposibles, la suposición de que \\(\neg P\\) era verdadera resulta insostenible. Se concluye que \\(P\\) es **Verdadera**. \\(\blacksquare\\)
 

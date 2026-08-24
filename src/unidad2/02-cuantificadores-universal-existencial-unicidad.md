@@ -11,11 +11,11 @@ El símbolo **\\(\forall\\)** (del inglés *for All*) representa la generalizaci
 
 > **Definición 2.3 (Cuantificación Universal):**  
 > Sea \\(P(x)\\) un predicado con dominio \\(U\\). La proposición:
-> 
+>
 > \\[
 > (\forall x \in U) \, P(x) \quad \text{o simplemente} \quad \forall x \, P(x)
 > \\]
-> 
+>
 > se lee *"Para todo \\(x\\) en \\(U\\), se cumple \\(P(x)\\)"* o *"Para cada \\(x\\) en \\(U\\), \\(P(x)\\) es verdadero"*.
 > 
 > * **Condición de Verdad:** Es **Verdadera** si y sólo si el conjunto de verdad abarca la totalidad del universo de discurso: \\(T\_P = U\\).
@@ -28,11 +28,11 @@ El símbolo **\\(\exists\\)** (del inglés *there Exists*) expresa la existencia
 
 > **Definición 2.4 (Cuantificación Existencial):**  
 > Sea \\(P(x)\\) un predicado con dominio \\(U\\). La proposición:
-> 
+>
 > \\[
 > (\exists x \in U) \, P(x) \quad \text{o simplemente} \quad \exists x \, P(x)
 > \\]
-> 
+>
 > se lee *"Existe al menos un \\(x\\) en \\(U\\) tal que se cumple \\(P(x)\\)"*.
 > 
 > * **Condición de Verdad:** Es **Verdadera** si el conjunto de verdad no es vacío: \\(T\_P \neq \emptyset\\). Para probarla basta exhibir un único elemento testigo \\(x\_0 \in U\\) tal que \\(P(x\_0)\\) sea verdadero.
@@ -45,9 +45,9 @@ En matemáticas frecuentemente se requiere afirmar no sólo que existe una soluc
 
 > **Definición 2.5 (Cuantificación de Existencia Única):**  
 > La proposición \\((\exists! x \in U) \, P(x)\\) se lee *"Existe un único \\(x\\) en \\(U\\) tal que \\(P(x)\\)"*, y se descompone formalmente en dos partes independientes:
-> 
+>
 > \\[
-> (\exists! x) P(x) \;\equiv\; \underbrace{(\exists x) P(x)}_{\text{Existencia}} \;\land\; \underbrace{(\forall y)(\forall z) [P(y) \land P(z) \to y = z]}_{\text{Unicidad}}
+> (\exists! x) P(x) \;\equiv\; \underbrace{(\exists x) P(x)}\_{\text{Existencia}} \;\land\; \underbrace{(\forall y)(\forall z) [P(y) \land P(z) \to y = z]}\_{\text{Unicidad}}
 > \\]
 
 ---
@@ -59,19 +59,19 @@ La negación de un enunciado cuantificado transforma el tipo de cuantificador e 
 > **Teorema 2.1 (Dualidad de Cuantificadores):**  
 > Para cualquier predicado \\(P(x)\\) sobre un universo \\(U\\):
 > 1. **Negación del Universal:**
-> 
+>
 > \\[
 > \neg [(\forall x) P(x)] \;\equiv\; (\exists x) \neg P(x)
 > \\]
-> 
+>
 > *"Negar que todos los elementos cumplen \\(P\\) equivale a afirmar que existe al menos uno que NO lo cumple."*
 > 
 > 2. **Negación del Existencial:**
-> 
+>
 > \\[
 > \neg [(\exists x) P(x)] \;\equiv\; (\forall x) \neg P(x)
 > \\]
-> 
+>
 > *"Negar que existe algún elemento que cumple \\(P\\) equivale a afirmar que absolutamente todos los elementos NO lo cumplen."*
 
 ---

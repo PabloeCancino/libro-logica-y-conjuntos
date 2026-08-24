@@ -8,8 +8,9 @@ El objetivo central de la lógica deductiva es formalizar y analizar los **argum
 
 > **Definición 1.3 (Argumento Lógico):**  
 > Un **argumento deductivo** es una estructura lógica compuesta por un conjunto finito de proposiciones \\(p\_1, p\_2, \dots, p\_k\\) llamadas **premisas** (o hipótesis), y una proposición \\(c\\) llamada **conclusión** (o tesis), denotado formalmente por:
+>
 > \\[
-> p_1, \; p_2, \; \dots, \; p_k \; \vdash \; c \qquad \text{o bien} \qquad \frac{p_1, \; p_2, \; \dots, \; p_k}{\therefore c}
+> p\_1, \; p\_2, \; \dots, \; p\_k \; \vdash \; c \qquad \text{o bien} \qquad \frac{p\_1, \; p\_2, \; \dots, \; p\_k}{\therefore c}
 > \\]
 
 ---
@@ -19,9 +20,11 @@ El objetivo central de la lógica deductiva es formalizar y analizar los **argum
 > **Definición 1.4 (Validez de un Argumento):**  
 > Un argumento \\(p\_1, p\_2, \dots, p\_k \vdash c\\) es **válido** si y sólo si es **lógicamente imposible** que todas sus premisas sean simultáneamente verdaderas y su conclusión sea falsa.  
 > Formalmente, el argumento es válido si la implicación conjuntiva:
+>
 > \\[
-> (p_1 \land p_2 \land \dots \land p_k) \;\to\; c
+> (p\_1 \land p\_2 \land \dots \land p\_k) \;\to\; c
 > \\]
+>
 > es una **Tautología**.
 
 ### Verdad Material vs. Validez Formal

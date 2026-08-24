@@ -8,9 +8,11 @@ Las **relaciones** constituyen la formalización conjuntista de los vínculos, a
 
 > **Definición 4.1 (Relación Binaria):**  
 > Sean \\(A\\) y \\(B\\) dos conjuntos. Una **relación binaria** \\(R\\) de \\(A\\) en \\(B\\) es cualquier subconjunto del producto cartesiano:
+>
 > \\[
 > R \;\subseteq\; A \times B
 > \\]
+>
 > Si \\(A = B\\), decimos que \\(R\\) es una **relación binaria sobre el conjunto \\(A\\)** (\\(R \subseteq A \times A\\)).
 > 
 > * Notación: Si \\((a, b) \in R\\), se escribe \\(a \, R \, b\\) ("\\(a\\) está relacionado con \\(b\\)").

@@ -84,6 +84,7 @@ El proceso de formalización consiste en traducir afirmaciones expresadas en len
 >   * \\(p\\): "La función \\(f\\) es diferenciable en \\(x\_0\\)."
 >   * \\(q\\): "La función \\(f\\) es continua en \\(x\_0\\)."
 > * La estructura lógica formal es:
+>
 > \\[
 > (p \to q) \land \neg(q \to p)
 > \\]

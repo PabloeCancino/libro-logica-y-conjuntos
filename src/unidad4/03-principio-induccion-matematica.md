@@ -10,6 +10,7 @@ La validez de la inducción matemática descansa sobre la estructura intrínseca
 
 > **Axioma 4.1 (Principio del Buen Orden de \\(\mathbb{N}\\)):**  
 > Todo subconjunto no vacío \\(S \subseteq \mathbb{N}\\) contiene un **elemento mínimo** (o primer elemento), es decir:
+>
 > \\[
 > (\exists m \in S)(\forall s \in S) [m \le s]
 > \\]
@@ -22,10 +23,11 @@ La validez de la inducción matemática descansa sobre la estructura intrínseca
 > Sea \\(P(n)\\) una función proposicional definida para cada número natural \\(n \ge n\_0\\) (donde usualmente \\(n\_0 = 1\\)). Si se satisfacen las dos condiciones siguientes:
 > 1. **Paso Base (Caso Base):** \\(P(n\_0)\\) es verdadero.
 > 2. **Paso Inductivo:** Para cualquier entero \\(k \ge n\_0\\), si asumimos que \\(P(k)\\) es verdadero (**Hipótesis Inductiva**), se demuestra que \\(P(k+1)\\) es también verdadero:
+>
 > \\[
-> (\forall k \ge n_0) [P(k) \implies P(k+1)]
+> (\forall k \ge n\_0) [P(k) \implies P(k+1)]
 > \\]
-> 
+>
 > Entonces, la proposición \\(P(n)\\) es verdadera para **todo** número natural \\(n \ge n\_0\\).
 
 ### Analogía del Efecto Dominó:
@@ -39,8 +41,9 @@ La validez de la inducción matemática descansa sobre la estructura intrínseca
 
 > **Teorema 4.6:**  
 > Para todo número natural \\(n \ge 1\\), la suma de los primeros \\(n\\) enteros positivos es:
+>
 > \\[
-> \sum_{i=1}^n i \;=\; 1 + 2 + 3 + \dots + n \;=\; \frac{n(n+1)}{2}
+> \sum\_{i=1}^n i \;=\; 1 + 2 + 3 + \dots + n \;=\; \frac{n(n+1)}{2}
 > \\]
 
 *Demostración por Inducción Matemática:*
@@ -86,6 +89,7 @@ La validez de la inducción matemática descansa sobre la estructura intrínseca
 
 > **Teorema 4.7 (Desigualdad de Bernoulli):**  
 > Para todo número real \\(x > -1\\) con \\(x \neq 0\\) y para todo entero \\(n \ge 2\\):
+>
 > \\[
 > (1 + x)^n \;>\; 1 + nx
 > \\]

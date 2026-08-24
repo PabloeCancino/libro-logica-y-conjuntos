@@ -39,8 +39,9 @@ El concepto se generaliza de forma natural a funciones proposicionales de varias
 
 > **Definición 2.2 (Conjunto de Verdad):**  
 > Dado un universo de discurso \\(U\\) y una función proposicional \\(P(x)\\), el **conjunto de verdad** de \\(P(x)\\), denotado por \\(T\_P\\) (o \\(V\_P\\)), es el subconjunto de \\(U\\) formado por todos aquellos elementos que hacen verdadera la proposición \\(P(x)\\):
+>
 > \\[
-> T_P \;=\; \{x \in U \mid P(x) \text{ es verdadero}\}
+> T\_P \;=\; \{x \in U \mid P(x) \text{ es verdadero}\}
 > \\]
 
 ### Conexión Directa entre Lógica y Teoría de Conjuntos

@@ -24,6 +24,7 @@ A \cap B \;=\; \{x \in \mathcal{U} \mid x \in A \land x \in B\}
 
 > **Definición (Conjuntos Disjuntos):**  
 > Dos conjuntos \\(A\\) y \\(B\\) son **disjuntos** (o ajenos) si no comparten ningún elemento:
+>
 > \\[
 > A \cap B \;=\; \emptyset
 > \\]
