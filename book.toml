@@ -1,0 +1,29 @@
+[book]
+title = "Lógica y Conjuntos"
+authors = ["Dr. Pablo Eduardo Cancino Marentes", "Dr. Sergio Enrique Yarza Acuña"]
+description = "Texto y laboratorio de Lógica y Conjuntos para la Licenciatura en Matemáticas, basado en el programa oficial (PALMAT CBIMAT-215) de la Universidad Autónoma de Nayarit."
+language = "es"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+mathjax-support = true
+git-repository-url = "https://github.com/PabloeCancino/libro-logica-y-conjuntos"
+site-url = "/libro-logica-y-conjuntos/"
+
+[output.html.search]
+enable = true
+limit-results = 20
+use-boolean-and = true
+
+[output.html.fold]
+enable = true
+level = 1
+
+[output.html.print]
+enable = true
