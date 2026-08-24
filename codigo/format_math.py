@@ -24,6 +24,7 @@ def process_file(filepath):
             continue
 
         text = parts[idx]
+        trailing_newline = '\n' if text.endswith('\n') else ''
 
         # Paso 2: Escapar guiones bajos dentro de fórmulas en línea: \\( ... \\)
         def fix_inline(m):
@@ -76,7 +77,7 @@ def process_file(filepath):
             new_lines.append(line)
             i += 1
 
-        parts[idx] = '\n'.join(new_lines)
+        parts[idx] = '\n'.join(new_lines) + trailing_newline
 
     result = ''.join(parts)
     # Limpieza de saltos y citas consecutivas redundantes

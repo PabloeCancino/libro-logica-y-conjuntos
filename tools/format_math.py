@@ -20,6 +20,7 @@ def process_file(filepath):
             continue
 
         text = parts[idx]
+        trailing_newline = '\n' if text.endswith('\n') else ''
 
         # Step 2: Escape unescaped underscores inside inline math: \\( ... \\)
         def fix_inline(m):
@@ -71,7 +72,7 @@ def process_file(filepath):
             new_lines.append(line)
             i += 1
 
-        parts[idx] = '\n'.join(new_lines)
+        parts[idx] = '\n'.join(new_lines) + trailing_newline
 
     result = ''.join(parts)
     # Fix excess consecutive blank lines or quote lines
@@ -85,10 +86,12 @@ def process_file(filepath):
     return False
 
 if __name__ == '__main__':
-    files = sorted(glob.glob('src/**/*.md', recursive=True) + glob.glob('src/*.md'))
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    src_dir = os.path.join(base_dir, 'src')
+    files = sorted(glob.glob(os.path.join(src_dir, '**', '*.md'), recursive=True) + glob.glob(os.path.join(src_dir, '*.md')))
     modified = 0
     for f in files:
         if process_file(f):
-            print(f'Modified: {f}')
+            print(f'Modificado: {os.path.relpath(f, base_dir)}')
             modified += 1
-    print(f'Total files modified: {modified}')
+    print(f'Total de archivos formateados: {modified}')

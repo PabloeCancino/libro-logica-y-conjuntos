@@ -61,16 +61,18 @@ Los **diagramas de Venn**, ideados por John Venn en 1880, representan las relaci
 * Círculos o elipses en su interior representan conjuntos individuales.
 * El sombreado de regiones denota el resultado específico de una operación.
 
-### Representación de las Operaciones en 2 Conjuntos:```
+### Representación de las Operaciones en 2 Conjuntos
+
+```text
  ┌─────────────────────────── U ───────────────────────────┐
  │ │
  │ ╭─────────────╮ ╭─────────────╮ │
  │ / \ / \ │
  │ / A \ B \ / B \ A \ │
- │ │ X │ │
+ │ │ │ X │ │ │
  │ │ A / \ B │ │
  │ \ / \ / │
- │ \ / A∩B \ / │
+ │ \ / A ∩ B \ / │
  │ ╰─────────────╯ ╰─────────────╯ │
  │ │
  │ Región Exterior: (A ∪ B)ᶜ │
