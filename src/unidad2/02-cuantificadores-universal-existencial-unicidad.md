@@ -1,43 +1,52 @@
 # 2.2 Cuantificador Universal, Existencial y de Unicidad
 
-Una función proposicional \(P(x)\) puede transformarse en una proposición cerrada no sólo asignando un valor específico a la variable libre \(x\), sino también mediante la aplicación de **cuantificadores lógicos**.
+Una función proposicional \\(P(x)\\) puede transformarse en una proposición cerrada no sólo asignando un valor específico a la variable libre \\(x\\), sino también mediante la aplicación de **cuantificadores lógicos**.
 
 ---
 
 ## 1. Los Tres Cuantificadores Fundamentales
 
 ### A. El Cuantificador Universal (∀)
-El símbolo **\(\forall\)** (del inglés *for All*) representa la generalización universal:
+El símbolo **\\(\forall\\)** (del inglés *for All*) representa la generalización universal:
 
 > **Definición 2.3 (Cuantificación Universal):**  
-> Sea \(P(x)\) un predicado con dominio \(U\). La proposición:
-> \[
-> (\forall x \in U) \, P(x) \quad \text{o simplemente} \quad \forall x \, P(x)
-> \]
-> se lee *"Para todo \(x\) en \(U\), se cumple \(P(x)\)"* o *"Para cada \(x\) en \(U\), \(P(x)\) es verdadero"*.
+> Sea \\(P(x)\\) un predicado con dominio \\(U\\). La proposición:
 > 
-> * **Condición de Verdad:** Es **Verdadera** si y sólo si el conjunto de verdad abarca la totalidad del universo de discurso: \(T_P = U\).
-> * **Condición de Falsedad:** Es **Falsa** si existe al menos un elemento testigo \(x_0 \in U\) tal que \(P(x_0)\) es falso. A dicho elemento \(x_0\) se le denomina **contraejemplo**.
+> \\[
+> (\forall x \in U) \, P(x) \quad \text{o simplemente} \quad \forall x \, P(x)
+> \\]
+> 
+> se lee *"Para todo \\(x\\) en \\(U\\), se cumple \\(P(x)\\)"* o *"Para cada \\(x\\) en \\(U\\), \\(P(x)\\) es verdadero"*.
+> 
+> * **Condición de Verdad:** Es **Verdadera** si y sólo si el conjunto de verdad abarca la totalidad del universo de discurso: \\(T\_P = U\\).
+> * **Condición de Falsedad:** Es **Falsa** si existe al menos un elemento testigo \\(x\_0 \in U\\) tal que \\(P(x\_0)\\) es falso. A dicho elemento \\(x\_0\\) se le denomina **contraejemplo**.
+
+---
 
 ### B. El Cuantificador Existencial (∃)
-El símbolo **\(\exists\)** (del inglés *there Exists*) expresa la existencia de al menos un elemento:
+El símbolo **\\(\exists\\)** (del inglés *there Exists*) expresa la existencia de al menos un elemento:
 
 > **Definición 2.4 (Cuantificación Existencial):**  
-> Sea \(P(x)\) un predicado con dominio \(U\). La proposición:
-> \[
-> (\exists x \in U) \, P(x) \quad \text{o simplemente} \quad \exists x \, P(x)
-> \]
-> se lee *"Existe al menos un \(x\) en \(U\) tal que se cumple \(P(x)\)"*.
+> Sea \\(P(x)\\) un predicado con dominio \\(U\\). La proposición:
 > 
-> * **Condición de Verdad:** Es **Verdadera** si el conjunto de verdad no es vacío: \(T_P \neq \emptyset\). Para probarla basta exhibir un único elemento testigo \(x_0 \in U\) tal que \(P(x_0)\) sea verdadero.
-> * **Condición de Falsedad:** Es **Falsa** si ningún elemento del universo satisface la propiedad: \(T_P = \emptyset\).
+> \\[
+> (\exists x \in U) \, P(x) \quad \text{o simplemente} \quad \exists x \, P(x)
+> \\]
+> 
+> se lee *"Existe al menos un \\(x\\) en \\(U\\) tal que se cumple \\(P(x)\\)"*.
+> 
+> * **Condición de Verdad:** Es **Verdadera** si el conjunto de verdad no es vacío: \\(T\_P \neq \emptyset\\). Para probarla basta exhibir un único elemento testigo \\(x\_0 \in U\\) tal que \\(P(x\_0)\\) sea verdadero.
+> * **Condición de Falsedad:** Es **Falsa** si ningún elemento del universo satisface la propiedad: \\(T\_P = \emptyset\\).
+
+---
 
 ### C. El Cuantificador de Existencia Única (∃!)
 En matemáticas frecuentemente se requiere afirmar no sólo que existe una solución o un objeto, sino que este es **estrictamente único**:
 
 > **Definición 2.5 (Cuantificación de Existencia Única):**  
-> La proposición \((\exists! x \in U) \, P(x)\) se lee *"Existe un único \(x\) en \(U\) tal que \(P(x)\)"*, y se descompone formalmente en dos partes independientes:
-> \[
+> La proposición \\((\exists! x \in U) \, P(x)\\) se lee *"Existe un único \\(x\\) en \\(U\\) tal que \\(P(x)\\)"*, y se descompone formalmente en dos partes independientes:
+> 
+> \\[
 > (\exists! x) P(x) \;\equiv\; \underbrace{(\exists x) P(x)}_{\text{Existencia}} \;\land\; \underbrace{(\forall y)(\forall z) [P(y) \land P(z) \to y = z]}_{\text{Unicidad}}
 > \\]
 
@@ -50,15 +59,19 @@ La negación de un enunciado cuantificado transforma el tipo de cuantificador e 
 > **Teorema 2.1 (Dualidad de Cuantificadores):**  
 > Para cualquier predicado \\(P(x)\\) sobre un universo \\(U\\):
 > 1. **Negación del Universal:**
+> 
 > \\[
 > \neg [(\forall x) P(x)] \;\equiv\; (\exists x) \neg P(x)
 > \\]
+> 
 > *"Negar que todos los elementos cumplen \\(P\\) equivale a afirmar que existe al menos uno que NO lo cumple."*
 > 
 > 2. **Negación del Existencial:**
+> 
 > \\[
 > \neg [(\exists x) P(x)] \;\equiv\; (\forall x) \neg P(x)
 > \\]
+> 
 > *"Negar que existe algún elemento que cumple \\(P\\) equivale a afirmar que absolutamente todos los elementos NO lo cumplen."*
 
 ---
