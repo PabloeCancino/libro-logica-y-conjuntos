@@ -12,12 +12,12 @@ El cálculo proposicional analizado en la Unidad 1 resulta insuficiente para exp
 > 2. Al sustituir la variable \\(x\\) por un elemento específico y concreto \\(a \in U\\), la expresión resultante \\(P(a)\\) se convierte en una **proposición lógica** con valor de verdad bien definido (Verdadero o Falso).
 
 ### Ejemplos en Distintos Universos
-* Sea \\(U = \mathbb{Z}\\) y el predicado \\(P(x): "x \text{ es un número par}"\\):
-  * \\(P(4)\\): "4 es par" $\implies$ Proposición **Verdadera (\\(V\\))**.
-  * \\(P(7)\\): "7 es par" $\implies$ Proposición **Falsa (\\(F\\))**.
-* Sea \\(U = \mathbb{R}\\) y el predicado \\(Q(x): "x^2 - 4 = 0"\\):
-  * \\(Q(2)\\): "\\(2^2 - 4 = 0\\)" $\implies$ Proposición **Verdadera (\\(V\\))**.
-  * \\(Q(3)\\): "\\(3^2 - 4 = 0\\)" $\implies$ Proposición **Falsa (\\(F\\))**.
+* Sea \\(U = \mathbb{Z}\\) y el predicado \\(P(x)\\): *"\\(x\\) es un número par"*:
+  * \\(P(4)\\): "4 es par" \\(\implies\\) Proposición **Verdadera (\\(V\\))**.
+  * \\(P(7)\\): "7 es par" \\(\implies\\) Proposición **Falsa (\\(F\\))**.
+* Sea \\(U = \mathbb{R}\\) y el predicado \\(Q(x)\\): *"\\(x^2 - 4 = 0\\)"*:
+  * \\(Q(2)\\): "\\(2^2 - 4 = 0\\)" \\(\implies\\) Proposición **Verdadera (\\(V\\))**.
+  * \\(Q(3)\\): "\\(3^2 - 4 = 0\\)" \\(\implies\\) Proposición **Falsa (\\(F\\))**.
 
 ---
 
@@ -26,12 +26,12 @@ El cálculo proposicional analizado en la Unidad 1 resulta insuficiente para exp
 El concepto se generaliza de forma natural a funciones proposicionales de varias variables \\(P(x\_1, x\_2, \dots, x\_n)\\) sobre el producto cartesiano de dominios \\(U\_1 \times U\_2 \times \dots \times U\_n\\):
 
 * **Predicados binarios \\(P(x, y)\\):**
-  * Sea \\(U = \mathbb{N}\\) y \\(L(x, y): "x < y"\\).
-  * \\(L(2, 5)\\): "\\(2 < 5\\)" $\implies$ **\\(V\\)**.
-  * \\(L(5, 2)\\): "\\(5 < 2\\)" $\implies$ **\\(F\\)**.
+  * Sea \\(U = \mathbb{N}\\) y \\(L(x, y)\\): *"\\(x < y\\)"*.
+  * \\(L(2, 5)\\): "\\(2 < 5\\)" \\(\implies\\) **\\(V\\)**.
+  * \\(L(5, 2)\\): "\\(5 < 2\\)" \\(\implies\\) **\\(F\\)**.
 * **Predicados algebraicos:**
-  * Sea \\(U = \mathbb{R}\\) y \\(E(x, y, z): "x^2 + y^2 = z^2"\\).
-  * \\(E(3, 4, 5)\\): "\\(3^2 + 4^2 = 5^2\\)" $\implies$ **\\(V\\)** (Terna pitagórica).
+  * Sea \\(U = \mathbb{R}\\) y \\(E(x, y, z)\\): *"\\(x^2 + y^2 = z^2\\)"*.
+  * \\(E(3, 4, 5)\\): "\\(3^2 + 4^2 = 5^2\\)" \\(\implies\\) **\\(V\\)** (Terna pitagórica).
 
 ---
 
@@ -48,7 +48,7 @@ El concepto se generaliza de forma natural a funciones proposicionales de varias
 Existe un isomorfismo conceptual estricto entre los operadores lógicos aplicados a predicados y las operaciones entre sus conjuntos de verdad:
 
 | Operación Lógica sobre Predicados | Notación Lógica | Operación Conjuntista | Conjunto de Verdad Resultante |
-| :--- | :--- | :--- | :--- |
+| :--- | :---: | :---: | :---: |
 | **Negación** | \\(\neg P(x)\\) | Complemento | \\(T\_{\neg P} = (T\_P)^c = U \setminus T\_P\\) |
 | **Conjunción** | \\(P(x) \land Q(x)\\) | Intersección | \\(T\_{P \land Q} = T\_P \cap T\_Q\\) |
 | **Disyunción** | \\(P(x) \lor Q(x)\\) | Unión | \\(T\_{P \lor Q} = T\_P \cup T\_Q\\) |

@@ -153,9 +153,9 @@ p \to q \;\equiv\; \neg q \to \neg p
 ### D. Variantes del Condicional y Falacias de Equivalencia
 Dada la proposición condicional directa \\(p \to q\\):
 * **Directa:** \\(p \to q\\)
-* **Contrapositiva:** \\(\neg q \to \neg p\\) $\implies$ **Es equivalente a la directa.**
-* **Recíproca (o conversa):** \\(q \to p\\) $\implies$ **NO es equivalente a la directa.**
-* **Inversa:** \\(\neg p \to \neg q\\) $\implies$ **NO es equivalente a la directa** (pero sí es equivalente a la recíproca).
+* **Contrapositiva:** \\(\neg q \to \neg p\\) \\(\implies\\) **Es equivalente a la directa.**
+* **Recíproca (o conversa):** \\(q \to p\\) \\(\implies\\) **NO es equivalente a la directa.**
+* **Inversa:** \\(\neg p \to \neg q\\) \\(\implies\\) **NO es equivalente a la directa** (pero sí es equivalente a la recíproca).
 
 | \\(p\\) | \\(q\\) | Directa: \\(p \to q\\) | Contrapositiva: \\(\neg q \to \neg p\\) | Recíproca: \\(q \to p\\) | Inversa: \\(\neg p \to \neg q\\) |
 | :---: | :---: | :---: | :---: | :---: | :---: |

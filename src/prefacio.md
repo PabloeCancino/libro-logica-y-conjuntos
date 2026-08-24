@@ -22,7 +22,7 @@ A lo largo de sus capítulos, este libro combina:
 El contenido está distribuido en cuatro unidades curriculares maestras:
 * **Unidad 1. Lógica Proposicional y Tablas de Verdad:** Estudio de proposiciones atómicas y compuestas, funciones de verdad de las conectivas lógicas, jerarquía operacional, álgebra de proposiciones, tautologías y reglas semánticas de validez argumental.
 * **Unidad 2. Cuantificadores y Reglas de Inferencia:** Funciones proposicionales, cálculo de predicados de primer orden, cuantificadores universales, existenciales y de unicidad, refutación por contraejemplos y deducción natural con 8 esquemas de inferencia formal.
-* **Unidad 3. Teoría de Conjuntos y Álgebra Booleana:** Pertenencia, descripción por extensión y comprensión, axiomas básicos, operaciones conjuntistas ($\cup, \cap, \setminus, A^c, \Delta$), leyes de De Morgan, particiones, principio de inclusión-exclusión y producto cartesiano.
+* **Unidad 3. Teoría de Conjuntos y Álgebra Booleana:** Pertenencia, descripción por extensión y comprensión, axiomas básicos, operaciones conjuntistas (\\(\cup, \cap, \setminus, A^c, \Delta\\)), leyes de De Morgan, particiones, principio de inclusión-exclusión y producto cartesiano.
 * **Unidad 4. Métodos de Demostración, Relaciones, Funciones e Inducción:** Técnicas de demostración matemática (directa, contrapositiva, reducción al absurdo, por casos), inducción matemática simple y fuerte, relaciones de equivalencia, clases y conjunto cociente, relaciones de orden, funciones inyectivas/sobreyectivas/biyectivas y la teoría de cardinalidad infinita de Cantor.
 
 ---

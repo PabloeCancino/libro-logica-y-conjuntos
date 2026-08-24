@@ -87,9 +87,9 @@ La proposición:
 pero el recíproco **es en general FALSO**.
 
 > **Ejemplo Ilustrativo en \\(\mathbb{R}\\):**  
-> Sea \\(U = \mathbb{R}\\) y el predicado \\(P(x, y): "x + y = 0"\\).
-> 1. \\((\forall x)(\exists y)(x + y = 0)\\): *"Para cada número real \\(x\\), existe un número real \\(y\\) (a saber, \\(y = -x\\)) tal que su suma es cero"*. $\to$ **VERDADERO**.
-> 2. \\((\exists y)(\forall x)(x + y = 0)\\): *"Existe un número real fijo y universal \\(y\\) que sumado con cualquier número \\(x\\) da cero"*. $\to$ **FALSO** (no existe un único número que sea el inverso aditivo de todos a la vez).
+> Sea \\(U = \mathbb{R}\\) y el predicado \\(P(x, y)\\): *"\\(x + y = 0\\)"*.
+> 1. \\((\forall x)(\exists y)(x + y = 0)\\): *"Para cada número real \\(x\\), existe un número real \\(y\\) (a saber, \\(y = -x\\)) tal que su suma es cero"*. \\(\to\\) **VERDADERO**.
+> 2. \\((\exists y)(\forall x)(x + y = 0)\\): *"Existe un número real fijo y universal \\(y\\) que sumado con cualquier número \\(x\\) da cero"*. \\(\to\\) **FALSO** (no existe un único número que sea el inverso aditivo de todos a la vez).
 
 ---
 

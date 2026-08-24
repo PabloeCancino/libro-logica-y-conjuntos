@@ -14,9 +14,9 @@ A este principio fundamental de la lógica clásica se le conoce como el **Princ
 2. **Principio de No Contradicción:** Ningún enunciado puede ser simultáneamente verdadero y falso bajo la misma interpretación y en el mismo contexto.
 
 ### Ejemplos de Proposiciones Matemáticas
-* \\(p\\): "El número 17 es un número primo." $\to$ Es una proposición con valor de verdad **Verdadero (\\(V\\))**.
-* \\(q\\): "\\(2 + 3 = 7\\)." $\to$ Es una proposición con valor de verdad **Falso (\\(F\\))**.
-* \\(r\\): "Para todo número real \\(x\\), se cumple que \\(x^2 \ge 0\\)." $\to$ Es una proposición con valor de verdad **Verdadero (\\(V\\))**.
+* \\(p\\): "El número 17 es un número primo." \\(\to\\) Es una proposición con valor de verdad **Verdadero (\\(V\\))**.
+* \\(q\\): "\\(2 + 3 = 7\\)." \\(\to\\) Es una proposición con valor de verdad **Falso (\\(F\\))**.
+* \\(r\\): "Para todo número real \\(x\\), se cumple que \\(x^2 \ge 0\\)." \\(\to\\) Es una proposición con valor de verdad **Verdadero (\\(V\\))**.
 
 ### Enunciados que NO son Proposiciones
 * "¿Cuál es el valor de \\(x\\)?" (Oración interrogativa).

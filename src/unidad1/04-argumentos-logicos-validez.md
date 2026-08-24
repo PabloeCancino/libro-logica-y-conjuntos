@@ -33,7 +33,7 @@ Un argumento puede ser **formalmente válido** aun cuando sus premisas sean emp�
 > *Premisa 1:* Todos los peces son mamíferos. (Falso)  
 > *Premisa 2:* El tiburón es un pez. (Verdadero)  
 > *Conclusión:* Por lo tanto, el tiburón es un mamífero. (Falso)  
-> $\implies$ **El argumento es formalmente VÁLIDO**, ya que la estructura sigue el esquema riguroso: "Todo \\(A\\) es \\(B\\), \\(x\\) es \\(A\\), luego \\(x\\) es \\(B\\)".
+> \\(\implies\\) **El argumento es formalmente VÁLIDO**, ya que la estructura sigue el esquema riguroso: "Todo \\(A\\) es \\(B\\), \\(x\\) es \\(A\\), luego \\(x\\) es \\(B\\)".
 
 Un argumento es **sólido** (en inglés, *sound*) cuando es **válido** y además todas sus premisas son **materialmente verdaderas**.
 
