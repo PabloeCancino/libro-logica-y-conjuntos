@@ -6,7 +6,7 @@ El punto de partida del análisis lógico formal es el concepto de **proposició
 
 ## 1. Definición Formal de Proposición
 
-> **Definición 1.1 (Proposición Lógica):**  
+> **Definición 1.1 (Proposición Lógica):** 
 > Una **proposición** es cualquier enunciado declarativo del cual se puede afirmar inequívocamente su valor de verdad: o bien es **verdadero (\\(V\\))**, o bien es **falso (\\(F\\))**, pero no ambos simultáneamente.
 
 A este principio fundamental de la lógica clásica se le conoce como el **Principio de Bivalencia**:
@@ -77,12 +77,12 @@ El proceso de formalización consiste en traducir afirmaciones expresadas en len
 2. **Identificar las conectivas lógicas:** Reconocer términos de enlace como "y", "o", "si... entonces", "no", "si y sólo si".
 3. **Determinar la jerarquía y el alcance:** Utilizar paréntesis para indicar con exactitud el orden de evaluación sintáctica.
 
-> **Ejemplo de Formalización:**  
+> **Ejemplo de Formalización:** 
 > Consideremos el enunciado: *"Si la función \\(f\\) es diferenciable en \\(x\_0\\), entonces \\(f\\) es continua en \\(x\_0\\); sin embargo, si \\(f\\) es continua en \\(x\_0\\), no necesariamente \\(f\\) es diferenciable en \\(x\_0\\)."*
 > 
 > * Sean las atómicas:
->   * \\(p\\): "La función \\(f\\) es diferenciable en \\(x\_0\\)."
->   * \\(q\\): "La función \\(f\\) es continua en \\(x\_0\\)."
+> * \\(p\\): "La función \\(f\\) es diferenciable en \\(x\_0\\)."
+> * \\(q\\): "La función \\(f\\) es continua en \\(x\_0\\)."
 > * La estructura lógica formal es:
 >
 > \\[

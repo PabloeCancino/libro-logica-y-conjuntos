@@ -6,7 +6,7 @@ Las **funciones** constituyen el tipo especial de relación matemática más uti
 
 ## 1. Definición Conjuntista Formal de Función
 
-> **Definición 4.4 (Función o Aplicación):**  
+> **Definición 4.4 (Función o Aplicación):** 
 > Sean \\(A\\) y \\(B\\) dos conjuntos. Una **función** \\(f\\) de \\(A\\) en \\(B\\), denotada por \\(f: A \to B\\), es una relación binaria \\(f \subseteq A \times B\\) que satisface dos condiciones de existencia y unicidad:
 > 1. **Totalidad (Existencia):** Todo elemento del conjunto de partida \\(A\\) tiene asignada una imagen en \\(B\\):
 >
@@ -37,7 +37,7 @@ Una función \\(f: A \to B\\) es **inyectiva** si elementos distintos del domini
 (\forall x\_1, x\_2 \in A) \, [x\_1 \neq x\_2 \implies f(x\_1) \neq f(x\_2)]
 \\]
 
-> **Criterio Operativo de Demostración (por Contraposición):**  
+> **Criterio Operativo de Demostración (por Contraposición):** 
 > Para demostrar que \\(f\\) es inyectiva, se asume que \\(f(x\_1) = f(x\_2)\\) y se demuestra algebraicamente que \\(x\_1 = x\_2\\):
 >
 > \\[
@@ -62,23 +62,23 @@ Una función \\(f: A \to B\\) es **biyectiva** si y sólo si es **simultáneamen
 Dadas \\(f: A \to B\\) y \\(g: B \to C\\), la **función compuesta** \\(g \circ f: A \to C\\) se define por:
 
 \\[
-(g \circ f)(x) \;=\; g(f(x)) \quad \text{para todo } x \in A
+(g \circ f)(x) = g(f(x)) \quad \text{para todo } x \in A
 \\]
 
 * **Propiedades:**
-  * Es asociativa: \\(h \circ (g \circ f) = (h \circ g) \circ f\\).
-  * **No es conmutativa:** en general, \\(g \circ f \neq f \circ g\\).
-  * Si \\(f\\) y \\(g\\) son inyectivas, \\(g \circ f\\) es inyectiva.
-  * Si \\(f\\) y \\(g\\) son sobreyectivas, \\(g \circ f\\) es sobreyectiva.
-  * Si \\(f\\) y \\(g\\) son biyectivas, \\(g \circ f\\) es biyectiva.
+ * Es asociativa: \\(h \circ (g \circ f) = (h \circ g) \circ f\\).
+ * **No es conmutativa:** en general, \\(g \circ f \neq f \circ g\\).
+ * Si \\(f\\) y \\(g\\) son inyectivas, \\(g \circ f\\) es inyectiva.
+ * Si \\(f\\) y \\(g\\) son sobreyectivas, \\(g \circ f\\) es sobreyectiva.
+ * Si \\(f\\) y \\(g\\) son biyectivas, \\(g \circ f\\) es biyectiva.
 
 ### B. La Función Inversa (f⁻¹)
-> **Teorema 4.10 (Existencia de la Función Inversa):**  
-> Una función \\(f: A \to B\\) admite función inversa \\(f^{-1}: B \to A\\) si y sólo si \\(f\\) es **Biyectiva**.  
+> **Teorema 4.10 (Existencia de la Función Inversa):** 
+> Una función \\(f: A \to B\\) admite función inversa \\(f^{-1}: B \to A\\) si y sólo si \\(f\\) es **Biyectiva**. 
 > En tal caso, \\(f^{-1}\\) satisface:
 >
 > \\[
-> f^{-1} \circ f \;=\; \text{id}\_A \qquad \text{y} \qquad f \circ f^{-1} \;=\; \text{id}\_B
+> f^{-1} \circ f = \text{id}\_A \qquad \text{y} \qquad f \circ f^{-1} = \text{id}\_B
 > \\]
 >
 > Además, para la composición de biyecciones: \\((g \circ f)^{-1} = f^{-1} \circ g^{-1}\\).
@@ -89,7 +89,7 @@ Dadas \\(f: A \to B\\) y \\(g: B \to C\\), la **función compuesta** \\(g \circ 
 
 El concepto de biyección permitió a **Georg Cantor (1874)** extender el concepto de tamaño o cardinalidad a conjuntos infinitos:
 
-> **Definición 4.5 (Equinumerosidad o Coordinabilidad):**  
+> **Definición 4.5 (Equinumerosidad o Coordinabilidad):** 
 > Dos conjuntos \\(A\\) y \\(B\\) tienen la **misma cardinalidad** (denotado \\(|A| = |B|\\) o \\(A \approx B\\)) si y sólo si **existe una función biyectiva \\(f: A \to B\\)**.
 
 ### A. Conjuntos Numerables (ℵ₀, Álef Cero)
@@ -100,14 +100,14 @@ Un conjunto \\(A\\) es **infinito numerable** si tiene la misma cardinalidad que
 * \\(\mathbb{Q}\\) (los números racionales) es **numerable** (demostrado por Cantor mediante su célebre recorrido diagonal en zigzag sobre la cuadrícula \\(\mathbb{N} \times \mathbb{N}\\)).
 
 ### B. Conjuntos No Numerables y el Argumento Diagonal de Cantor
-> **Teorema 4.11 (No Numerabilidad de los Reales):**  
-> El conjunto de los números reales \\(\mathbb{R}\\) (y el intervalo \\((0, 1)\\)) **NO es numerable**. Su cardinalidad se denota por \\(\mathfrak{c} = 2^{\aleph\_0}\\) (la potencia del continuo).  
+> **Teorema 4.11 (No Numerabilidad de los Reales):** 
+> El conjunto de los números reales \\(\mathbb{R}\\) (y el intervalo \\((0, 1)\\)) **NO es numerable**. Su cardinalidad se denota por \\(\mathfrak{c} = 2^{\aleph\_0}\\) (la potencia del continuo). 
 >
 > \\[
-> |\mathbb{N}| \;<\; |\mathbb{R}| \qquad (\aleph\_0 < \mathfrak{c})
+> |\mathbb{N}| < |\mathbb{R}| \qquad (\aleph\_0 < \mathfrak{c})
 > \\]
 
-*Idea de la Demostración Diagonal de Cantor:*  
+*Idea de la Demostración Diagonal de Cantor:* 
 Si \\((0, 1)\\) fuera numerable, podríamos listar todos sus números reales en una sucesión infinita en desarrollo decimal:
 
 \\[
@@ -125,20 +125,20 @@ r\_3 = 0.d\_{31}d\_{32}d\_{33}\dots
 Cantor construye un nuevo número real \\(x = 0.c\_1 c\_2 c\_3 \dots \in (0, 1)\\) eligiendo cada dígito \\(c\_k \neq d\_{kk}\\) (alterando la diagonal). Este número \\(x\\) difiere de \\(r\_1\\) en el primer decimal, de \\(r\_2\\) en el segundo decimal, y en general \\(x \neq r\_n\\) para todo \\(n\\). Por tanto, la lista nunca puede ser completa, lo que prueba que \\(\mathbb{R}\\) es **no numerable**.
 
 ### C. El Teorema de Cantor Generalizado
-> **Teorema 4.12 (Teorema de Cantor):**  
+> **Teorema 4.12 (Teorema de Cantor):** 
 > Para **cualquier** conjunto \\(A\\) (finito o infinito), la cardinalidad de su conjunto potencia es estrictamente mayor que la del propio conjunto:
 >
 > \\[
-> |A| \;<\; |\mathcal{P}(A)|
+> |A| < |\mathcal{P}(A)|
 > \\]
 >
 > Es decir, **no existe ninguna función sobreyectiva** \\(f: A \to \mathcal{P}(A)\\).
 
-*Consecuencia Filosófica y Matemática:*  
+*Consecuencia Filosófica y Matemática:* 
 No existe un "infinito supremo". Existe una **jerarquía infinita de infinitos crecientes**:
 
 \\[
-|\mathbb{N}| \;<\; |\mathcal{P}(\mathbb{N})| \;<\; |\mathcal{P}(\mathcal{P}(\mathbb{N}))| \;<\; |\mathcal{P}(\mathcal{P}(\mathcal{P}(\mathbb{N})))| \;<\; \dots
+|\mathbb{N}| < |\mathcal{P}(\mathbb{N})| < |\mathcal{P}(\mathcal{P}(\mathbb{N}))| < |\mathcal{P}(\mathcal{P}(\mathcal{P}(\mathbb{N})))| < \dots
 \\]
 
 lo que abrió las puertas al fascinante universo de los números transfinitos en la matemática moderna.

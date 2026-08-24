@@ -9,7 +9,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 ### Demostración 1: 1ª Ley de De Morgan Proposicional
 
 \\[
-\neg(p \land q) \;\equiv\; \neg p \lor \neg q
+\neg(p \land q) \equiv \neg p \lor \neg q
 \\]
 
 1. **Objetivo:** Demostrar que la negación de una conjunción \\(\neg(p \land q)\\) es lógicamente equivalente a la disyunción de las negaciones \\(\neg p \lor \neg q\\).
@@ -25,7 +25,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 ### Demostración 2: Silogismo Hipotético
 
 \\[
-[(p \to q) \land (q \to r)] \;\implies\; (p \to r)
+[(p \to q) \land (q \to r)] \implies (p \to r)
 \\]
 
 1. **Premisa 1:** \\(p \to q\\).
@@ -40,7 +40,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 ### Demostración 3: Equivalencia Disyuntiva del Condicional
 
 \\[
-(p \to q) \;\equiv\; (\neg p \lor q)
+(p \to q) \equiv (\neg p \lor q)
 \\]
 
 1. El condicional \\(p \to q\\) es falso únicamente cuando \\(p = V\\) y \\(q = F\\).
@@ -55,7 +55,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 ### Demostración 4: Negación del Cuantificador Universal
 
 \\[
-\neg(\forall x \in A)\, p(x) \;\equiv\; (\exists x \in A)\, \neg p(x)
+\neg(\forall x \in A)\, p(x) \equiv (\exists x \in A)\, \neg p(x)
 \\]
 
 1. Supongamos que \\(\neg(\forall x \in A) p(x)\\) es verdadera.
@@ -70,7 +70,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 ### Demostración 5: Regla Modus Tollendo Tollens
 
 \\[
-[(p \to q) \land \neg q] \;\implies\; \neg p
+[(p \to q) \land \neg q] \implies \neg p
 \\]
 
 1. **Premisas:** \\(p \to q\\) y \\(\neg q\\).
@@ -86,7 +86,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 ### Demostración 6: De Morgan Conjuntista
 
 \\[
-(A \cup B)^c \;=\; A^c \cap B^c
+(A \cup B)^c = A^c \cap B^c
 \\]
 
 1. \\(x \in (A \cup B)^c \iff x \notin (A \cup B)\\) (Definición de complemento).
@@ -101,7 +101,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 ### Demostración 7: Descomposición Ortogonal de un Conjunto
 
 \\[
-A \;=\; (A \cap B) \cup (A \setminus B)
+A = (A \cap B) \cup (A \setminus B)
 \\]
 
 1. Reescribimos la diferencia relativa como \\(A \setminus B = A \cap B^c\\).
@@ -115,7 +115,7 @@ A \;=\; (A \cap B) \cup (A \setminus B)
 ### Demostración 8: Distributividad de la Intersección sobre la Unión
 
 \\[
-A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C)
+A \cap (B \cup C) = (A \cap B) \cup (A \cap C)
 \\]
 
 1. Sea \\(x \in \mathcal{U}\\).
@@ -132,7 +132,7 @@ A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C)
 ### Demostración 9: Irracionalidad de √2
 
 \\[
-\sqrt{2} \;\notin\; \mathbb{Q}
+\sqrt{2} \notin \mathbb{Q}
 \\]
 
 1. Supongamos por contradicción que \\(\sqrt{2} \in \mathbb{Q}\\).
@@ -148,7 +148,7 @@ A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C)
 ### Demostración 10: Infinitud de los Números Primos (Euclides)
 
 \\[
-|\mathbb{P}| \;=\; \infty
+|\mathbb{P}| = \infty
 \\]
 
 1. Supongamos por contradicción que el conjunto de primos es finito: \\(\mathbb{P} = \{p\_1, p\_2, \dots, p\_n\}\\).
@@ -164,7 +164,7 @@ A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C)
 ### Demostración 11: Suma de los Primeros n Naturales
 
 \\[
-\sum\_{i=1}^n i \;=\; \frac{n(n+1)}{2}
+\sum\_{i=1}^n i = \frac{n(n+1)}{2}
 \\]
 
 1. **Base (\\(n=1\\)):** \\(1 = \frac{1(2)}{2} = 1\\) (Verdadero).
@@ -182,7 +182,7 @@ A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C)
 ### Demostración 12: Cardinalidad del Conjunto Potencia
 
 \\[
-|\mathcal{P}(A)| \;=\; 2^n \quad (\text{para } |A| = n)
+|\mathcal{P}(A)| = 2^n \quad (\text{para } |A| = n)
 \\]
 
 1. **Base (\\(n=0\\)):** \\(A = \emptyset \implies \mathcal{P}(\emptyset) = \{\emptyset\}\\), \\(|\mathcal{P}(\emptyset)| = 1 = 2^0\\).
@@ -196,7 +196,7 @@ A \cap (B \cup C) \;=\; (A \cap B) \cup (A \cap C)
 ### Demostración 13: Prueba por Contraposición de la Paridad
 
 \\[
-n^2 \text{ es par} \;\implies\; n \text{ es par}
+n^2 \text{ es par} \implies n \text{ es par}
 \\]
 
 1. Demostraremos la contrapositiva equivalente: *"Si \\(n\\) es impar, entonces \\(n^2\\) es impar"*.
@@ -210,7 +210,7 @@ n^2 \text{ es par} \;\implies\; n \text{ es par}
 ### Demostración 14: Desigualdad de Bernoulli
 
 \\[
-(1 + x)^n \;\ge\; 1 + nx \quad (\forall x > -1, \; n \in \mathbb{N})
+(1 + x)^n \ge 1 + nx \quad (\forall x > -1, n \in \mathbb{N})
 \\]
 
 1. **Base (\\(n=1\\)):** \\((1 + x)^1 = 1 + x \ge 1 + 1\cdot x\\) (Verdadero).

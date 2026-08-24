@@ -9,12 +9,12 @@ Continuando con las técnicas formales de demostración matemática, abordamos l
 El método de **demostración por contradicción** (*Reductio ad Absurdum*) es una de las herramientas más potentes del razonamiento deductivo. Se basa en la tautología:
 
 \\[
-(\neg P \implies \bot) \;\implies\; P
+(\neg P \implies \bot) \implies P
 \\]
 
 donde \\(\bot\\) representa una contradicción lógica explícita (una afirmación del tipo \\(R \land \neg R\\)).
 
-> **Estructura de la Prueba por Contradicción:**  
+> **Estructura de la Prueba por Contradicción:** 
 > 1. Para demostrar que una proposición \\(P\\) es verdadera, se formula la **suposición por contradicción** de que \\(P\\) es **Falsa** (es decir, que \\(\neg P\\) es verdadera).
 > 2. Si el teorema a demostrar es una implicación \\(P \implies Q\\), negar la implicación equivale a asumir que:
 >
@@ -27,7 +27,7 @@ donde \\(\bot\\) representa una contradicción lógica explícita (una afirmaci�
 
 ### Ejemplo Clásico 1: La Irracionalidad de √2 (Demostración de Euclides)
 
-> **Teorema 4.3:**  
+> **Teorema 4.3:** 
 > El número \\(\sqrt{2}\\) es irracional (\\(\sqrt{2} \notin \mathbb{Q}\\)).
 
 *Demostración por Contradicción:*
@@ -35,14 +35,14 @@ donde \\(\bot\\) representa una contradicción lógica explícita (una afirmaci�
 2. Por definición de número racional, existen enteros \\(a, b \in \mathbb{Z}\\) con \\(b \neq 0\\) tales que:
 
 \\[
-\sqrt{2} \;=\; \frac{a}{b}
+\sqrt{2} = \frac{a}{b}
 \\]
 
 3. Sin pérdida de generalidad, podemos asumir que la fracción \\(\frac{a}{b}\\) está en su **forma irreducible**, es decir, que \\(a\\) y \\(b\\) son **coprimos** (su máximo común divisor es \\(\gcd(a, b) = 1\\); no comparten factores primos comunes).
 4. Elevando ambos miembros al cuadrado:
 
 \\[
-2 \;=\; \frac{a^2}{b^2} \implies a^2 \;=\; 2b^2
+2 = \frac{a^2}{b^2} \implies a^2 = 2b^2
 \\]
 
 5. Como \\(b \in \mathbb{Z}\\), \\(a^2\\) es un múltiplo de 2, luego \\(a^2\\) es **par**.
@@ -51,7 +51,7 @@ donde \\(\bot\\) representa una contradicción lógica explícita (una afirmaci�
 8. Sustituyendo \\(a = 2k\\) en la ecuación del paso 4:
 
 \\[
-(2k)^2 \;=\; 2b^2 \implies 4k^2 \;=\; 2b^2 \implies b^2 \;=\; 2k^2
+(2k)^2 = 2b^2 \implies 4k^2 = 2b^2 \implies b^2 = 2k^2
 \\]
 
 9. De aquí se deduce que \\(b^2\\) es par, y por el Teorema 4.2, **\\(b\\) también es par**.
@@ -69,16 +69,16 @@ La **demostración por casos** se fundamenta en la regla del dilema constructivo
 \\]
 
 ### Ejemplo:
-> **Teorema 4.4:**  
+> **Teorema 4.4:** 
 > Para todo entero \\(n \in \mathbb{Z}\\), el producto \\(n(n+1)\\) es un número par.
 
-*Demostración por Casos:*  
+*Demostración por Casos:* 
 Por el algoritmo de la división, todo entero \\(n\\) es par o impar (casos exhaustivos):
-* **Caso 1 (\\(n\\) es par):** Existe \\(k \in \mathbb{Z}\\) con \\(n = 2k\\).  
-  Entonces \\(n(n+1) = 2k(2k+1) = 2[k(2k+1)]\\), que es claramente par.
-* **Caso 2 (\\(n\\) es impar):** Existe \\(k \in \mathbb{Z}\\) con \\(n = 2k+1\\).  
-  Entonces \\(n+1 = 2k+2 = 2(k+1)\\).  
-  Luego \\(n(n+1) = (2k+1) \cdot 2(k+1) = 2[(2k+1)(k+1)]\\), que también es par.
+* **Caso 1 (\\(n\\) es par):** Existe \\(k \in \mathbb{Z}\\) con \\(n = 2k\\). 
+ Entonces \\(n(n+1) = 2k(2k+1) = 2[k(2k+1)]\\), que es claramente par.
+* **Caso 2 (\\(n\\) es impar):** Existe \\(k \in \mathbb{Z}\\) con \\(n = 2k+1\\). 
+ Entonces \\(n+1 = 2k+2 = 2(k+1)\\). 
+ Luego \\(n(n+1) = (2k+1) \cdot 2(k+1) = 2[(2k+1)(k+1)]\\), que también es par.
 * Como ambos casos son exhaustivos y en ambos se concluye la paridad, el teorema queda demostrado para todo \\(n \in \mathbb{Z}\\). \\(\blacksquare\\)
 
 ---
@@ -95,5 +95,5 @@ Para probar que existe un **único** elemento que cumple \\(P(x)\\):
 2. **Paso 2 (Unicidad):** Se asume que existen dos elementos \\(x\_1\\) y \\(x\_2\\) que cumplen la propiedad (\\(P(x\_1) \land P(x\_2)\\)), y mediante deducciones formales se demuestra rigurosamente que:
 
 \\[
-x\_1 \;=\; x\_2
+x\_1 = x\_2
 \\]

@@ -8,7 +8,7 @@ La **Teoría de Conjuntos** constituye el lenguaje unificador sobre el cual se c
 
 En la formulación matemática moderna (teoría intuitiva y axiomática), los términos **conjunto**, **elemento** y la relación binaria de **pertenencia** se asumen como **nociones primitivas**:
 
-> **Definición 3.1 (Conjunto y Pertenencia):**  
+> **Definición 3.1 (Conjunto y Pertenencia):** 
 > Un **conjunto** es una colección bien definida de objetos distintos. A los objetos que forman parte de la colección se les denomina **elementos** o **miembros** del conjunto.
 > * Si un objeto \\(a\\) forma parte del conjunto \\(A\\), se escribe:
 >
@@ -31,13 +31,13 @@ En la formulación matemática moderna (teoría intuitiva y axiomática), los t�
 1. **Irrelevancia del Orden:** En un conjunto no existe un ordenamiento intrínseco de sus elementos:
 
 \\[
-\{1, 2, 3\} \;=\; \{3, 1, 2\} \;=\; \{2, 3, 1\}
+\{1, 2, 3\} = \{3, 1, 2\} = \{2, 3, 1\}
 \\]
 
 2. **Irrelevancia de la Repetición:** La repetición de un elemento no altera el conjunto ni incrementa su tamaño:
 
 \\[
-\{1, 1, 2, 3, 3, 3\} \;=\; \{1, 2, 3\}
+\{1, 1, 2, 3, 3, 3\} = \{1, 2, 3\}
 \\]
 
 ---
@@ -56,7 +56,7 @@ Consiste en **listar explícitamente todos sus elementos**, encerrados entre lla
 Consiste en enunciar una **propiedad o función proposicional \\(P(x)\\)** que caracteriza de forma unívoca a todos los elementos del conjunto dentro de un universo \\(U\\):
 
 \\[
-A \;=\; \{x \in U \mid P(x)\} \qquad \text{o bien} \qquad A \;=\; \{x \mid P(x)\}
+A = \{x \in U \mid P(x)\} \qquad \text{o bien} \qquad A = \{x \mid P(x)\}
 \\]
 
 El símbolo \\(\mid\\) (o los dos puntos \\(:\\)) se lee *"tal que"*.
@@ -70,17 +70,17 @@ El símbolo \\(\mid\\) (o los dos puntos \\(:\\)) se lee *"tal que"*.
 A lo largo de todo el análisis matemático se emplean los siguientes conjuntos numéricos canónicos, vinculados por una cadena estricta de contención:
 
 \\[
-\mathbb{N} \;\subset\; \mathbb{Z} \;\subset\; \mathbb{Q} \;\subset\; \mathbb{R} \;\subset\; \mathbb{C}
+\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}
 \\]
 
 | Símbolo | Nombre | Definición Formal |
 | :---: | :--- | :--- |
 | **\\(\mathbb{N}\\)** | Naturales | \\(\{1, 2, 3, 4, 5, \dots\}\\) (enteros positivos) |
 | **\\(\mathbb{Z}\\)** | Enteros | \\(\{\dots, -2, -1, 0, 1, 2, \dots\}\\) |
-| **\\(\mathbb{Q}\\)** | Racionales | \\(\left\{\frac{p}{q} \;\middle|\; p, q \in \mathbb{Z}, \; q \neq 0\right\}\\) (cociente irreducible) |
+| **\\(\mathbb{Q}\\)** | Racionales | \\(\left\{\frac{p}{q} \middle| p, q \in \mathbb{Z}, q \neq 0\right\}\\) (cociente irreducible) |
 | **\\(\mathbb{I} = \mathbb{R} \setminus \mathbb{Q}\\)** | Irracionales | Números reales no expresables como fracción (ej. \\(\sqrt{2}, \pi, e\\)) |
 | **\\(\mathbb{R}\\)** | Reales | Cuerpo ordenado completo (decimales infinitos) |
-| **\\(\mathbb{C}\\)** | Complejos | \\(\{a + bi \mid a, b \in \mathbb{R}, \; i^2 = -1\}\\) |
+| **\\(\mathbb{C}\\)** | Complejos | \\(\{a + bi \mid a, b \in \mathbb{R}, i^2 = -1\}\\) |
 
 ---
 
@@ -90,11 +90,11 @@ En los orígenes de la teoría de conjuntos desarrollada por Georg Cantor (Teor�
 
 En 1901, el filósofo y matemático británico **Bertrand Russell** descubrió una contradicción devastadora en este principio:
 
-> **La Paradoja de Russell:**  
+> **La Paradoja de Russell:** 
 > Definamos la colección \\(R\\) formada por todos aquellos conjuntos que **no se pertenecen a sí mismos**:
 >
 > \\[
-> R \;=\; \{x \mid x \notin x\}
+> R = \{x \mid x \notin x\}
 > \\]
 >
 > Ahora preguntémonos si \\(R\\) pertenece a sí mismo (\\(R \in R\\)):
@@ -104,7 +104,7 @@ En 1901, el filósofo y matemático británico **Bertrand Russell** descubrió u
 > En cualquier caso se deduce la contradicción formal:
 >
 > \\[
-> R \in R \;\iff\; R \notin R
+> R \in R \iff R \notin R
 > \\]
 
 ### Consecuencia Matemática:

@@ -5,15 +5,15 @@
 ---
 
 <div style="text-align: center; margin: 30px 0;">
-  <h2>Universidad Autónoma de Nayarit</h2>
-  <h3>Unidad Académica de Ciencias Básicas e Ingenierías</h3>
-  <h4>Programa Académico de la Licenciatura en Matemáticas (PALMAT)</h4>
-  <p style="margin-top: 25px; font-size: 1.15em; font-weight: bold;">
-    Dr. Pablo Eduardo Cancino Marentes & Dr. Sergio Enrique Yarza Acuña
-  </p>
-  <p style="color: #666; font-style: italic;">
-    Tepic, Nayarit, México — 2026
-  </p>
+ <h2>Universidad Autónoma de Nayarit</h2>
+ <h3>Unidad Académica de Ciencias Básicas e Ingenierías</h3>
+ <h4>Programa Académico de la Licenciatura en Matemáticas (PALMAT)</h4>
+ <p style="margin-top: 25px; font-size: 1.15em; font-weight: bold;">
+ Dr. Pablo Eduardo Cancino Marentes & Dr. Sergio Enrique Yarza Acuña
+ </p>
+ <p style="color: #666; font-style: italic;">
+ Tepic, Nayarit, México — 2026
+ </p>
 </div>
 
 ---

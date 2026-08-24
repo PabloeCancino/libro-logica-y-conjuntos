@@ -9,7 +9,7 @@ Una función proposicional \\(P(x)\\) puede transformarse en una proposición ce
 ### A. El Cuantificador Universal (∀)
 El símbolo **\\(\forall\\)** (del inglés *for All*) representa la generalización universal:
 
-> **Definición 2.3 (Cuantificación Universal):**  
+> **Definición 2.3 (Cuantificación Universal):** 
 > Sea \\(P(x)\\) un predicado con dominio \\(U\\). La proposición:
 >
 > \\[
@@ -26,7 +26,7 @@ El símbolo **\\(\forall\\)** (del inglés *for All*) representa la generalizaci
 ### B. El Cuantificador Existencial (∃)
 El símbolo **\\(\exists\\)** (del inglés *there Exists*) expresa la existencia de al menos un elemento:
 
-> **Definición 2.4 (Cuantificación Existencial):**  
+> **Definición 2.4 (Cuantificación Existencial):** 
 > Sea \\(P(x)\\) un predicado con dominio \\(U\\). La proposición:
 >
 > \\[
@@ -43,11 +43,11 @@ El símbolo **\\(\exists\\)** (del inglés *there Exists*) expresa la existencia
 ### C. El Cuantificador de Existencia Única (∃!)
 En matemáticas frecuentemente se requiere afirmar no sólo que existe una solución o un objeto, sino que este es **estrictamente único**:
 
-> **Definición 2.5 (Cuantificación de Existencia Única):**  
+> **Definición 2.5 (Cuantificación de Existencia Única):** 
 > La proposición \\((\exists! x \in U) \, P(x)\\) se lee *"Existe un único \\(x\\) en \\(U\\) tal que \\(P(x)\\)"*, y se descompone formalmente en dos partes independientes:
 >
 > \\[
-> (\exists! x) P(x) \;\equiv\; \underbrace{(\exists x) P(x)}\_{\text{Existencia}} \;\land\; \underbrace{(\forall y)(\forall z) [P(y) \land P(z) \to y = z]}\_{\text{Unicidad}}
+> (\exists! x) P(x) \equiv \underbrace{(\exists x) P(x)}\_{\text{Existencia}} \land \underbrace{(\forall y)(\forall z) [P(y) \land P(z) \to y = z]}\_{\text{Unicidad}}
 > \\]
 
 ---
@@ -56,12 +56,12 @@ En matemáticas frecuentemente se requiere afirmar no sólo que existe una soluc
 
 La negación de un enunciado cuantificado transforma el tipo de cuantificador e invierte el predicado interno:
 
-> **Teorema 2.1 (Dualidad de Cuantificadores):**  
+> **Teorema 2.1 (Dualidad de Cuantificadores):** 
 > Para cualquier predicado \\(P(x)\\) sobre un universo \\(U\\):
 > 1. **Negación del Universal:**
 >
 > \\[
-> \neg [(\forall x) P(x)] \;\equiv\; (\exists x) \neg P(x)
+> \neg [(\forall x) P(x)] \equiv (\exists x) \neg P(x)
 > \\]
 >
 > *"Negar que todos los elementos cumplen \\(P\\) equivale a afirmar que existe al menos uno que NO lo cumple."*
@@ -69,7 +69,7 @@ La negación de un enunciado cuantificado transforma el tipo de cuantificador e 
 > 2. **Negación del Existencial:**
 >
 > \\[
-> \neg [(\exists x) P(x)] \;\equiv\; (\forall x) \neg P(x)
+> \neg [(\exists x) P(x)] \equiv (\forall x) \neg P(x)
 > \\]
 >
 > *"Negar que existe algún elemento que cumple \\(P\\) equivale a afirmar que absolutamente todos los elementos NO lo cumplen."*
@@ -83,23 +83,23 @@ Cuando una proposición involucra dos o más variables, el orden relativo de los
 ### Cuantificadores Homogéneos (Conmutan)
 
 \\[
-(\forall x)(\forall y) P(x, y) \;\equiv\; (\forall y)(\forall x) P(x, y)
+(\forall x)(\forall y) P(x, y) \equiv (\forall y)(\forall x) P(x, y)
 \\]
 
 \\[
-(\exists x)(\exists y) P(x, y) \;\equiv\; (\exists y)(\exists x) P(x, y)
+(\exists x)(\exists y) P(x, y) \equiv (\exists y)(\exists x) P(x, y)
 \\]
 
 ### Cuantificadores Heterogéneos (¡NO Conmutan en General!)
 La proposición:
 
 \\[
-(\exists y)(\forall x) P(x, y) \;\implies\; (\forall x)(\exists y) P(x, y)
+(\exists y)(\forall x) P(x, y) \implies (\forall x)(\exists y) P(x, y)
 \\]
 
 pero el recíproco **es en general FALSO**.
 
-> **Ejemplo Ilustrativo en \\(\mathbb{R}\\):**  
+> **Ejemplo Ilustrativo en \\(\mathbb{R}\\):** 
 > Sea \\(U = \mathbb{R}\\) y el predicado \\(P(x, y)\\): *"\\(x + y = 0\\)"*.
 > 1. \\((\forall x)(\exists y)(x + y = 0)\\): *"Para cada número real \\(x\\), existe un número real \\(y\\) (a saber, \\(y = -x\\)) tal que su suma es cero"*. \\(\to\\) **VERDADERO**.
 > 2. \\((\exists y)(\forall x)(x + y = 0)\\): *"Existe un número real fijo y universal \\(y\\) que sumado con cualquier número \\(x\\) da cero"*. \\(\to\\) **FALSO** (no existe un único número que sea el inverso aditivo de todos a la vez).

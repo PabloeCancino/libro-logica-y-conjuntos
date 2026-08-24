@@ -6,7 +6,7 @@ El análisis cuantitativo de conjuntos finitos y la descomposición estructural 
 
 ## 1. Particiones de un Conjunto
 
-> **Definición 3.4 (Partición):**  
+> **Definición 3.4 (Partición):** 
 > Sea \\(A\\) un conjunto no vacío. Una **partición** de \\(A\\) es una colección \\(\mathcal{P} = \{A\_i\}\_{i \in I}\\) de subconjuntos de \\(A\\) (llamados *bloques*, *clases* o *celdas*) que satisfacen simultáneamente tres condiciones axiomáticas:
 > 1. **No vacuidad:** Ningún bloque es vacío:
 >
@@ -23,7 +23,7 @@ El análisis cuantitativo de conjuntos finitos y la descomposición estructural 
 > 3. **Cobertura Total (Exhaustividad):** La unión de todos los bloques reconstruye exactamente el conjunto original \\(A\\):
 >
 > \\[
-> \bigcup\_{i \in I} A\_i \;=\; A
+> \bigcup\_{i \in I} A\_i = A
 > \\]
 
 ### Ejemplo en un Conjunto Finito:
@@ -40,7 +40,7 @@ El número total de particiones posibles de un conjunto de \\(n\\) elementos vie
 
 ## 2. Cardinalidad de Conjuntos Finitos
 
-> **Definición 3.5 (Cardinalidad):**  
+> **Definición 3.5 (Cardinalidad):** 
 > La **cardinalidad** de un conjunto finito \\(A\\), denotada por \\(|A|\\) o \\(\#(A)\\), es el número exacto de elementos distintos que contiene.
 > * \\(|\emptyset| = 0\\).
 > * Si \\(A = \{x\_1, x\_2, \dots, x\_n\}\\) con \\(x\_i \neq x\_j\\) para todo \\(i \neq j\\), entonces \\(|A| = n\\).
@@ -51,7 +51,7 @@ El número total de particiones posibles de un conjunto de \\(n\\) elementos vie
 3. Si \\(A \cap B = \emptyset\\) (conjuntos disjuntos), entonces:
 
 \\[
-|A \cup B| \;=\; |A| + |B|
+|A \cup B| = |A| + |B|
 \\]
 
 ---
@@ -61,22 +61,22 @@ El número total de particiones posibles de un conjunto de \\(n\\) elementos vie
 Cuando dos o más conjuntos no son disjuntos, sumar sus cardinalidades individuales contaría los elementos compartidos más de una vez. El **Principio de Inclusión-Exclusión** corrige este exceso de manera alternante.
 
 ### A. Para Dos Conjuntos:
-> **Teorema 3.3 (P.I.E. para 2 Conjuntos):**  
+> **Teorema 3.3 (P.I.E. para 2 Conjuntos):** 
 > Para cualesquiera conjuntos finitos \\(A\\) y \\(B\\):
 >
 > \\[
-> |A \cup B| \;=\; |A| + |B| - |A \cap B|
+> |A \cup B| = |A| + |B| - |A \cap B|
 > \\]
 
-*Demostración:*  
-Podemos descomponer \\(A \cup B\\) en tres bloques disjuntos: \\(A \setminus B\\), \\(B \setminus A\\) y \\(A \cap B\\).  
+*Demostración:* 
+Podemos descomponer \\(A \cup B\\) en tres bloques disjuntos: \\(A \setminus B\\), \\(B \setminus A\\) y \\(A \cap B\\). 
 Entonces:
 
 \\[
 |A \cup B| = |A \setminus B| + |B \setminus A| + |A \cap B|
 \\]
 
-Por otra parte, \\(|A| = |A \setminus B| + |A \cap B|\\) y \\(|B| = |B \setminus A| + |A \cap B|\\).  
+Por otra parte, \\(|A| = |A \setminus B| + |A \cap B|\\) y \\(|B| = |B \setminus A| + |A \cap B|\\). 
 Sumando ambas ecuaciones:
 
 \\[
@@ -86,26 +86,26 @@ Sumando ambas ecuaciones:
 Restando \\(|A \cap B|\\) en ambos miembros se obtiene la fórmula. \\(\blacksquare\\)
 
 ### B. Para Tres Conjuntos:
-> **Teorema 3.4 (P.I.E. para 3 Conjuntos):**  
+> **Teorema 3.4 (P.I.E. para 3 Conjuntos):** 
 > Para cualesquiera conjuntos finitos \\(A, B, C\\):
 >
 > \\[
-> |A \cup B \cup C| \;=\; |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
+> |A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
 > \\]
 
 ### C. Forma General para n Conjuntos
-> **Teorema 3.5 (P.I.E. General):**  
+> **Teorema 3.5 (P.I.E. General):** 
 > Para una familia finita \\(A\_1, A\_2, \dots, A\_n\\):
 >
 > \\[
-> \left|\bigcup\_{i=1}^n A\_i\right| \;=\; \sum\_{i=1}^n |A\_i| - \sum\_{1 \le i < j \le n} |A\_i \cap A\_j| + \sum\_{1 \le i < j < k \le n} |A\_i \cap A\_j \cap A\_k| - \dots + (-1)^{n-1} |A\_1 \cap \dots \cap A\_n|
+> \left|\bigcup\_{i=1}^n A\_i\right| = \sum\_{i=1}^n |A\_i| - \sum\_{1 \le i < j \le n} |A\_i \cap A\_j| + \sum\_{1 \le i < j < k \le n} |A\_i \cap A\_j \cap A\_k| - \dots + (-1)^{n-1} |A\_1 \cap \dots \cap A\_n|
 > \\]
 
 ---
 
 ## 4. Ejemplo de Aplicación en Conteo
 
-> **Problema:**  
+> **Problema:** 
 > En una muestra de 100 estudiantes de la Licenciatura en Matemáticas de la UAN:
 > * 60 cursan Álgebra Lineal (\\(A\\)).
 > * 50 cursan Cálculo Diferencial (\\(B\\)).
@@ -117,7 +117,7 @@ Restando \\(|A \cap B|\\) en ambos miembros se obtiene la fórmula. \\(\blacksqu
 > 
 > ¿Cuántos estudiantes cursan **al menos una** de estas tres materias?
 
-*Solución:*  
+*Solución:* 
 Aplicando el Teorema 3.4:
 
 \\[

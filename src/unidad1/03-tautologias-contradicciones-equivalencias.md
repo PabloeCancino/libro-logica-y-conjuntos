@@ -8,24 +8,24 @@ El análisis de las tablas de verdad permite clasificar semánticamente a las f�
 
 Dada una fórmula proposicional \\(A\\):
 
-1. **Tautología (o Ley Lógica, \\(\top\\)):**  
-   Es una fórmula que resulta **verdadera en todas y cada una de sus interpretaciones posibles** (su columna final en la tabla de verdad contiene únicamente el valor \\(V\\)).  
-   *Ejemplo fundamental:* El principio de tercio excluso \\(p \lor \neg p\\).
+1. **Tautología (o Ley Lógica, \\(\top\\)):** 
+ Es una fórmula que resulta **verdadera en todas y cada una de sus interpretaciones posibles** (su columna final en la tabla de verdad contiene únicamente el valor \\(V\\)). 
+ *Ejemplo fundamental:* El principio de tercio excluso \\(p \lor \neg p\\).
 
-2. **Contradicción (o Absurdo, \\(\bot\\)):**  
-   Es una fórmula que resulta **falsa en todas y cada una de sus interpretaciones posibles** (su columna final contiene únicamente el valor \\(F\\)).  
-   *Ejemplo fundamental:* \\(p \land \neg p\\).
+2. **Contradicción (o Absurdo, \\(\bot\\)):** 
+ Es una fórmula que resulta **falsa en todas y cada una de sus interpretaciones posibles** (su columna final contiene únicamente el valor \\(F\\)). 
+ *Ejemplo fundamental:* \\(p \land \neg p\\).
 
-3. **Contingencia (o Fórmula Sintética):**  
-   Es una fórmula que es verdadera bajo al menos una interpretación y falsa bajo al menos otra (su columna final contiene tanto valores \\(V\\) como \\(F\\)).  
-   *Ejemplo:* \\(p \to q\\).
+3. **Contingencia (o Fórmula Sintética):** 
+ Es una fórmula que es verdadera bajo al menos una interpretación y falsa bajo al menos otra (su columna final contiene tanto valores \\(V\\) como \\(F\\)). 
+ *Ejemplo:* \\(p \to q\\).
 
 ---
 
 ## 2. Equivalencia Lógica (≡ o ⇔)
 
-> **Definición 1.2 (Equivalencia Lógica):**  
-> Dos fórmulas proposicionales \\(A\\) y \\(B\\) son **lógicamente equivalentes** (denotado \\(A \equiv B\\)) si y sólo si tienen exactamente la misma tabla de verdad bajo cualquier asignación de valores de sus variables atómicas.  
+> **Definición 1.2 (Equivalencia Lógica):** 
+> Dos fórmulas proposicionales \\(A\\) y \\(B\\) son **lógicamente equivalentes** (denotado \\(A \equiv B\\)) si y sólo si tienen exactamente la misma tabla de verdad bajo cualquier asignación de valores de sus variables atómicas. 
 > Equivalentemente, \\(A \equiv B\\) si y sólo si la fórmula bicondicional \\(A \leftrightarrow B\\) es una **tautología**.
 
 ---
@@ -37,55 +37,55 @@ Las siguientes equivalencias lógicas constituyen las identidades fundamentales 
 ### A. Leyes de Idempotencia
 
 \\[
-p \land p \;\equiv\; p, \qquad p \lor p \;\equiv\; p
+p \land p \equiv p, \qquad p \lor p \equiv p
 \\]
 
 ### B. Leyes Conmutativas
 
 \\[
-p \land q \;\equiv\; q \land p, \qquad p \lor q \;\equiv\; q \lor p
+p \land q \equiv q \land p, \qquad p \lor q \equiv q \lor p
 \\]
 
 ### C. Leyes Asociativas
 
 \\[
-(p \land q) \land r \;\equiv\; p \land (q \land r), \qquad (p \lor q) \lor r \;\equiv\; p \lor (q \lor r)
+(p \land q) \land r \equiv p \land (q \land r), \qquad (p \lor q) \lor r \equiv p \lor (q \lor r)
 \\]
 
 ### D. Leyes Distributivas
 
 \\[
-p \land (q \lor r) \;\equiv\; (p \land q) \lor (p \land r)
+p \land (q \lor r) \equiv (p \land q) \lor (p \land r)
 \\]
 
 \\[
-p \lor (q \land r) \;\equiv\; (p \lor q) \land (p \lor r)
+p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)
 \\]
 
 ### E. Leyes de Identidad y Dominación (con ⊤ y ⊥)
 
 \\[
-p \land \top \;\equiv\; p, \qquad p \lor \bot \;\equiv\; p \quad \text{(Identidad)}
+p \land \top \equiv p, \qquad p \lor \bot \equiv p \quad \text{(Identidad)}
 \\]
 
 \\[
-p \lor \top \;\equiv\; \top, \qquad p \land \bot \;\equiv\; \bot \quad \text{(Dominación)}
+p \lor \top \equiv \top, \qquad p \land \bot \equiv \bot \quad \text{(Dominación)}
 \\]
 
 ### F. Leyes de Complemento y Doble Negación
 
 \\[
-p \lor \neg p \;\equiv\; \top, \qquad p \land \neg p \;\equiv\; \bot
+p \lor \neg p \equiv \top, \qquad p \land \neg p \equiv \bot
 \\]
 
 \\[
-\neg(\neg p) \;\equiv\; p \quad \text{(Doble Negación o Involución)}
+\neg(\neg p) \equiv p \quad \text{(Doble Negación o Involución)}
 \\]
 
 ### G. Leyes de Absorción
 
 \\[
-p \lor (p \land q) \;\equiv\; p, \qquad p \land (p \lor q) \;\equiv\; p
+p \lor (p \land q) \equiv p, \qquad p \land (p \lor q) \equiv p
 \\]
 
 ---
@@ -94,18 +94,18 @@ p \lor (p \land q) \;\equiv\; p, \qquad p \land (p \lor q) \;\equiv\; p
 
 Nombradas en honor al lógico británico Augustus De Morgan (1806–1871), establecen la dualidad fundamental entre la conjunción y la disyunción bajo la acción del operador de negación:
 
-> **Teorema 1.1 (Leyes de De Morgan):**  
+> **Teorema 1.1 (Leyes de De Morgan):** 
 > Para cualesquiera proposiciones \\(p\\) y \\(q\\):
 > 1. **Primera Ley:** La negación de una conjunción es equivalente a la disyunción de las negaciones:
 >
 > \\[
-> \neg(p \land q) \;\equiv\; \neg p \lor \neg q
+> \neg(p \land q) \equiv \neg p \lor \neg q
 > \\]
 >
 > 2. **Segunda Ley:** La negación de una disyunción es equivalente a la conjunción de las negaciones:
 >
 > \\[
-> \neg(p \lor q) \;\equiv\; \neg p \land \neg q
+> \neg(p \lor q) \equiv \neg p \land \neg q
 > \\]
 
 ### Demostración Formal mediante Tablas de Verdad
@@ -130,7 +130,7 @@ El condicional material \\(p \to q\\) posee diversas equivalencias de enorme tra
 ### A. Expresión Disyuntiva del Condicional
 
 \\[
-p \to q \;\equiv\; \neg p \lor q
+p \to q \equiv \neg p \lor q
 \\]
 
 *Demostración:* \\(p \to q\\) es falso solo cuando \\(p=V\\) y \\(q=F\\); en ese mismo caso \\(\neg p=F\\) y \\(q=F\\), por lo que \\(\neg p \lor q = F\\). En los demás casos ambos son \\(V\\).
@@ -139,16 +139,16 @@ p \to q \;\equiv\; \neg p \lor q
 Aplicando De Morgan a la forma disyuntiva:
 
 \\[
-\neg(p \to q) \;\equiv\; \neg(\neg p \lor q) \;\equiv\; \neg(\neg p) \land \neg q \;\equiv\; p \land \neg q
+\neg(p \to q) \equiv \neg(\neg p \lor q) \equiv \neg(\neg p) \land \neg q \equiv p \land \neg q
 \\]
 
-> **Resultado Clave:**  
+> **Resultado Clave:** 
 > Negar una afirmación condicional "Si \\(p\\), entonces \\(q\\)" **NO** produce otro condicional, sino la conjunción: "\\(p\\) ocurre **y al mismo tiempo no ocurre** \\(q\\)".
 
 ### C. La Contrapositiva (o Contraposición)
 
 \\[
-p \to q \;\equiv\; \neg q \to \neg p
+p \to q \equiv \neg q \to \neg p
 \\]
 
 * Demostración: \\(\neg q \to \neg p \equiv \neg(\neg q) \lor \neg p \equiv q \lor \neg p \equiv \neg p \lor q \equiv p \to q\\).

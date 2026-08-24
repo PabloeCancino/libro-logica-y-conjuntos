@@ -38,7 +38,7 @@ Representa la unión distributiva ("o"). La proposición \\(p \lor q\\) es **fal
 | \\(F\\) | \\(V\\) | \\(V\\) |
 | \\(F\\) | \\(F\\) | \\(F\\) |
 
-> **Nota sobre la Disyunción Exclusiva (\\(\oplus\\) o \\(\underline{\lor}\\)):**  
+> **Nota sobre la Disyunción Exclusiva (\\(\oplus\\) o \\(\underline{\lor}\\)):** 
 > La disyunción exclusiva \\(p \oplus q\\) es verdadera si y sólo si exactamente una de las componentes es verdadera (pero no ambas). Se define formalmente como \\(p \oplus q \equiv (p \lor q) \land \neg(p \land q)\\).
 
 ---
@@ -46,8 +46,8 @@ Representa la unión distributiva ("o"). La proposición \\(p \lor q\\) es **fal
 ### D. El Condicional Material (→)
 El condicional \\(p \to q\\) (leído "Si \\(p\\), entonces \\(q\\)") establece una relación de implicación donde \\(p\\) es el **antecedente** (o hipótesis) y \\(q\\) es el **consecuente** (o conclusión o tesis).
 
-> **Caso Crítico del Condicional:**  
-> \\(p \to q\\) es **FALSO en un único escenario**: cuando el antecedente \\(p\\) es VERDADERO y el consecuente \\(q\\) es FALSO (\\(V \to F = F\\)).  
+> **Caso Crítico del Condicional:** 
+> \\(p \to q\\) es **FALSO en un único escenario**: cuando el antecedente \\(p\\) es VERDADERO y el consecuente \\(q\\) es FALSO (\\(V \to F = F\\)). 
 > Cuando el antecedente \\(p\\) es falso, el condicional es **vacuamente verdadero** (\\(F \to V = V\\) y \\(F \to F = V\\)).
 
 | \\(p\\) | \\(q\\) | \\(p \to q\\) |

@@ -6,11 +6,11 @@ Las **relaciones** constituyen la formalización conjuntista de los vínculos, a
 
 ## 1. Definición Formal de Relación Binaria
 
-> **Definición 4.1 (Relación Binaria):**  
+> **Definición 4.1 (Relación Binaria):** 
 > Sean \\(A\\) y \\(B\\) dos conjuntos. Una **relación binaria** \\(R\\) de \\(A\\) en \\(B\\) es cualquier subconjunto del producto cartesiano:
 >
 > \\[
-> R \;\subseteq\; A \times B
+> R \subseteq A \times B
 > \\]
 >
 > Si \\(A = B\\), decimos que \\(R\\) es una **relación binaria sobre el conjunto \\(A\\)** (\\(R \subseteq A \times A\\)).
@@ -57,14 +57,14 @@ Dada una relación \\(R \subseteq A \times A\\):
 
 ## 3. Relaciones de Equivalencia, Clases y Conjunto Cociente
 
-> **Definición 4.2 (Relación de Equivalencia):**  
+> **Definición 4.2 (Relación de Equivalencia):** 
 > Una relación binaria \\(R\\) (usualmente denotada por \\(\sim\\) o \\(\equiv\\)) sobre un conjunto \\(A\\) es una **relación de equivalencia** si y sólo si es **Reflexiva**, **Simétrica** y **Transitiva** (Propiedades RST).
 
 ### A. Clases de Equivalencia
 Dada una relación de equivalencia \\(\sim\\) sobre \\(A\\) y un elemento \\(a \in A\\), la **clase de equivalencia** de \\(a\\), denotada por \\([a]\\) o \\(\overline{a}\\), es el conjunto de todos los elementos de \\(A\\) que están relacionados con \\(a\\):
 
 \\[
-[a] \;=\; \{x \in A \mid x \sim a\}
+[a] = \{x \in A \mid x \sim a\}
 \\]
 
 El elemento \\(a\\) se denomina un **representante** de la clase \\([a]\\).
@@ -73,10 +73,10 @@ El elemento \\(a\\) se denomina un **representante** de la clase \\([a]\\).
 Es el conjunto cuyos elementos son todas las clases de equivalencia inducidas sobre \\(A\\):
 
 \\[
-A/\sim \;=\; \{[a] \mid a \in A\}
+A/\sim = \{[a] \mid a \in A\}
 \\]
 
-> **Teorema 4.9 (Teorema Fundamental de las Relaciones de Equivalencia):**  
+> **Teorema 4.9 (Teorema Fundamental de las Relaciones de Equivalencia):** 
 > Sea \\(\sim\\) una relación de equivalencia sobre un conjunto no vacío \\(A\\). Entonces:
 > 1. Para todo \\(a \in A\\), \\(a \in [a]\\) (luego ninguna clase es vacía).
 > 2. \\(a \sim b \iff [a] = [b]\\).
@@ -89,13 +89,13 @@ A/\sim \;=\; \{[a] \mid a \in A\}
 Para un entero fijo \\(n \ge 2\\), definimos sobre \\(\mathbb{Z}\\):
 
 \\[
-a \equiv b \pmod{n} \;\iff\; n \mid (a - b)
+a \equiv b \pmod{n} \iff n \mid (a - b)
 \\]
 
 Esta relación es de equivalencia y particiona a \\(\mathbb{Z}\\) en exactamente \\(n\\) clases disjuntas:
 
 \\[
-\mathbb{Z}/n\mathbb{Z} \;=\; \{[0], [1], [2], \dots, [n-1]\}
+\mathbb{Z}/n\mathbb{Z} = \{[0], [1], [2], \dots, [n-1]\}
 \\]
 
 lo que da origen a la **Aritmética Modular** y al anillo de clases residuales \\(\mathbb{Z}\_n\\).
@@ -104,8 +104,8 @@ lo que da origen a la **Aritmética Modular** y al anillo de clases residuales \
 
 ## 4. Relaciones de Orden (Posets y Diagramas de Hasse)
 
-> **Definición 4.3 (Orden Parcial):**  
-> Una relación binaria \\(R\\) (denotada por \\(\le\\) o \\(\preceq\\)) sobre \\(A\\) es un **orden parcial** si es **Reflexiva**, **Antisimétrica** y **Transitiva**.  
+> **Definición 4.3 (Orden Parcial):** 
+> Una relación binaria \\(R\\) (denotada por \\(\le\\) o \\(\preceq\\)) sobre \\(A\\) es un **orden parcial** si es **Reflexiva**, **Antisimétrica** y **Transitiva**. 
 > El par \\((A, \le)\\) se denomina **conjunto parcialmente ordenado** (o *poset*, del inglés *partially ordered set*).
 
 * **Orden Total (o Lineal):** Si además todo par de elementos es comparable:

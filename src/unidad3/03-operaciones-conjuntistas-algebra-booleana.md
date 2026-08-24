@@ -12,35 +12,35 @@ Sean \\(A, B \subseteq \mathcal{U}\\):
 Reúne todos los elementos que pertenecen a \\(A\\), a \\(B\\) o a ambos:
 
 \\[
-A \cup B \;=\; \{x \in \mathcal{U} \mid x \in A \lor x \in B\}
+A \cup B = \{x \in \mathcal{U} \mid x \in A \lor x \in B\}
 \\]
 
 ### B. Intersección (A ∩ B)
 Reúne los elementos comunes que pertenecen simultáneamente a \\(A\\) y a \\(B\\):
 
 \\[
-A \cap B \;=\; \{x \in \mathcal{U} \mid x \in A \land x \in B\}
+A \cap B = \{x \in \mathcal{U} \mid x \in A \land x \in B\}
 \\]
 
-> **Definición (Conjuntos Disjuntos):**  
+> **Definición (Conjuntos Disjuntos):** 
 > Dos conjuntos \\(A\\) y \\(B\\) son **disjuntos** (o ajenos) si no comparten ningún elemento:
 >
 > \\[
-> A \cap B \;=\; \emptyset
+> A \cap B = \emptyset
 > \\]
 
 ### C. Diferencia Relativa (A ∖ B o A - B)
 Reúne los elementos de \\(A\\) que **no** pertenecen a \\(B\\):
 
 \\[
-A \setminus B \;=\; \{x \in \mathcal{U} \mid x \in A \land x \notin B\}
+A \setminus B = \{x \in \mathcal{U} \mid x \in A \land x \notin B\}
 \\]
 
 ### D. Complemento Absoluto (Aᶜ o A')
 Reúne todos los elementos del universo \\(\mathcal{U}\\) que no pertenecen a \\(A\\):
 
 \\[
-A^c \;=\; \mathcal{U} \setminus A \;=\; \{x \in \mathcal{U} \mid x \notin A\}
+A^c = \mathcal{U} \setminus A = \{x \in \mathcal{U} \mid x \notin A\}
 \\]
 
 *Propiedad inmediata:* \\(A \setminus B = A \cap B^c\\).
@@ -49,7 +49,7 @@ A^c \;=\; \mathcal{U} \setminus A \;=\; \{x \in \mathcal{U} \mid x \notin A\}
 Reúne los elementos que pertenecen a \\(A\\) o a \\(B\\), pero **no a ambos** simultáneamente:
 
 \\[
-A \Delta B \;=\; (A \setminus B) \cup (B \setminus A) \;=\; (A \cup B) \setminus (A \cap B)
+A \Delta B = (A \setminus B) \cup (B \setminus A) = (A \cup B) \setminus (A \cap B)
 \\]
 
 ---
@@ -62,19 +62,19 @@ Los **diagramas de Venn**, ideados por John Venn en 1880, representan las relaci
 * El sombreado de regiones denota el resultado específico de una operación.
 
 ### Representación de las Operaciones en 2 Conjuntos:```
-    ┌─────────────────────────── U ───────────────────────────┐
-    │                                                         │
-    │         ╭─────────────╮     ╭─────────────╮             │
-    │        /               \   /               \            │
-    │       /     A \ B       \ /      B \ A      \           │
-    │      │                   X                   │          │
-    │      │        A         / \        B         │          │
-    │       \                /   \                /           │
-    │        \              / A∩B \              /            │
-    │         ╰─────────────╯     ╰─────────────╯             │
-    │                                                         │
-    │                  Región Exterior: (A ∪ B)ᶜ              │
-    └─────────────────────────────────────────────────────────┘
+ ┌─────────────────────────── U ───────────────────────────┐
+ │ │
+ │ ╭─────────────╮ ╭─────────────╮ │
+ │ / \ / \ │
+ │ / A \ B \ / B \ A \ │
+ │ │ X │ │
+ │ │ A / \ B │ │
+ │ \ / \ / │
+ │ \ / A∩B \ / │
+ │ ╰─────────────╯ ╰─────────────╯ │
+ │ │
+ │ Región Exterior: (A ∪ B)ᶜ │
+ └─────────────────────────────────────────────────────────┘
 ```
 
 * **Unión \\(A \cup B\\):** Se sombrean las tres regiones interiores: \\(A \setminus B\\), \\(A \cap B\\) y \\(B \setminus A\\).
@@ -140,37 +140,37 @@ A \cup A^c = \mathcal{U}, \qquad A \cap A^c = \emptyset
 ### G. Leyes de De Morgan para Conjuntos
 
 \\[
-(A \cup B)^c \;=\; A^c \cap B^c
+(A \cup B)^c = A^c \cap B^c
 \\]
 
 \\[
-(A \cap B)^c \;=\; A^c \cup B^c
+(A \cap B)^c = A^c \cup B^c
 \\]
 
 ---
 
 ## 4. Demostración Formal de la 1ª Ley de De Morgan Conjuntista
 
-> **Teorema 3.2:**  
+> **Teorema 3.2:** 
 > \\((A \cup B)^c = A^c \cap B^c\\).
 
 *Demostración por doble contención:*
 
-1. **Parte 1: Probar que \\((A \cup B)^c \subseteq A^c \cap B^c\\):**  
-   Sea \\(x \in (A \cup B)^c\\).  
-   Por definición de complemento, \\(x \notin (A \cup B)\\).  
-   Esto significa que \\(\neg(x \in A \lor x \in B)\\).  
-   Por la 1ª Ley de De Morgan lógica, \\(\neg(x \in A) \land \neg(x \in B)\\), lo que equivale a \\(x \notin A \land x \notin B\\).  
-   Por definición de complemento, \\(x \in A^c \land x \in B^c\\).  
-   Por definición de intersección, \\(x \in A^c \cap B^c\\).  
-   Por lo tanto, \\((A \cup B)^c \subseteq A^c \cap B^c\\).
+1. **Parte 1: Probar que \\((A \cup B)^c \subseteq A^c \cap B^c\\):** 
+ Sea \\(x \in (A \cup B)^c\\). 
+ Por definición de complemento, \\(x \notin (A \cup B)\\). 
+ Esto significa que \\(\neg(x \in A \lor x \in B)\\). 
+ Por la 1ª Ley de De Morgan lógica, \\(\neg(x \in A) \land \neg(x \in B)\\), lo que equivale a \\(x \notin A \land x \notin B\\). 
+ Por definición de complemento, \\(x \in A^c \land x \in B^c\\). 
+ Por definición de intersección, \\(x \in A^c \cap B^c\\). 
+ Por lo tanto, \\((A \cup B)^c \subseteq A^c \cap B^c\\).
 
-2. **Parte 2: Probar que \\(A^c \cap B^c \subseteq (A \cup B)^c\\):**  
-   Sea \\(x \in A^c \cap B^c\\).  
-   Entonces \\(x \in A^c \land x \in B^c\\), lo que significa que \\(x \notin A \land x \notin B\\).  
-   Equivalentemente, \\(\neg(x \in A) \land \neg(x \in B)\\).  
-   Por la equivalencia lógica de De Morgan, \\(\neg(x \in A \lor x \in B)\\).  
-   Esto significa que \\(x \notin (A \cup B)\\), y en consecuencia \\(x \in (A \cup B)^c\\).  
-   Por lo tanto, \\(A^c \cap B^c \subseteq (A \cup B)^c\\).
+2. **Parte 2: Probar que \\(A^c \cap B^c \subseteq (A \cup B)^c\\):** 
+ Sea \\(x \in A^c \cap B^c\\). 
+ Entonces \\(x \in A^c \land x \in B^c\\), lo que significa que \\(x \notin A \land x \notin B\\). 
+ Equivalentemente, \\(\neg(x \in A) \land \neg(x \in B)\\). 
+ Por la equivalencia lógica de De Morgan, \\(\neg(x \in A \lor x \in B)\\). 
+ Esto significa que \\(x \notin (A \cup B)\\), y en consecuencia \\(x \in (A \cup B)^c\\). 
+ Por lo tanto, \\(A^c \cap B^c \subseteq (A \cup B)^c\\).
 
 **Conclusión:** Al haberse verificado ambas contenciones, se concluye formalmente que \\((A \cup B)^c = A^c \cap B^c\\). \\(\blacksquare\\)
