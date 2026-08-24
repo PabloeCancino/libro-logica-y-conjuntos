@@ -63,27 +63,84 @@ Los **diagramas de Venn**, ideados por John Venn en 1880, representan las relaci
 
 ### Representación de las Operaciones en 2 Conjuntos
 
-```text
- ┌─────────────────────────── U ───────────────────────────┐
- │ │
- │ ╭─────────────╮ ╭─────────────╮ │
- │ / \ / \ │
- │ / A \ B \ / B \ A \ │
- │ │ │ X │ │ │
- │ │ A / \ B │ │
- │ \ / \ / │
- │ \ / A ∩ B \ / │
- │ ╰─────────────╯ ╰─────────────╯ │
- │ │
- │ Región Exterior: (A ∪ B)ᶜ │
- └─────────────────────────────────────────────────────────┘
-```
+<div style="display:flex; flex-wrap:wrap; gap:18px; justify-content:center; margin:20px 0;">
 
-* **Unión \\(A \cup B\\):** Se sombrean las tres regiones interiores: \\(A \setminus B\\), \\(A \cap B\\) y \\(B \setminus A\\).
-* **Intersección \\(A \cap B\\):** Se sombrea únicamente la lente central común.
-* **Diferencia \\(A \setminus B\\):** Se sombrea la medialuna izquierda de \\(A\\).
-* **Diferencia Simétrica \\(A \Delta B\\):** Se sombrean las dos medialunas externas, dejando el centro en blanco.
-* **Complemento \\(A^c\\):** Se sombrea todo el rectángulo exterior salvo el círculo \\(A\\).
+<figure style="margin:0; text-align:center;">
+<svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#334155">U</text>
+  <circle cx="95" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="145" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
+  <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
+</svg>
+<figcaption>Unión A ∪ B</figcaption>
+</figure>
+
+<figure style="margin:0; text-align:center;">
+<svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipA2"><circle cx="95" cy="90" r="55"/></clipPath>
+  </defs>
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#334155">U</text>
+  <circle cx="145" cy="90" r="55" fill="#93c5fd" opacity="0.9" clip-path="url(#clipA2)"/>
+  <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
+  <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
+</svg>
+<figcaption>Intersección A ∩ B</figcaption>
+</figure>
+
+<figure style="margin:0; text-align:center;">
+<svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#334155">U</text>
+  <circle cx="95" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="145" cy="90" r="55" fill="#ffffff"/>
+  <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
+  <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
+</svg>
+<figcaption>Diferencia A ∖ B</figcaption>
+</figure>
+
+<figure style="margin:0; text-align:center;">
+<svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="clipA4"><circle cx="95" cy="90" r="55"/></clipPath>
+  </defs>
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#334155">U</text>
+  <circle cx="95" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="145" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="145" cy="90" r="55" fill="#ffffff" clip-path="url(#clipA4)"/>
+  <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
+  <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
+</svg>
+<figcaption>Diferencia simétrica A Δ B</figcaption>
+</figure>
+
+<figure style="margin:0; text-align:center;">
+<svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#93c5fd" opacity="0.85" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#1e3a8a">U</text>
+  <circle cx="120" cy="95" r="55" fill="#ffffff"/>
+  <circle cx="120" cy="95" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="112" y="99" font-size="16" fill="#1e3a8a">A</text>
+</svg>
+<figcaption>Complemento A<sup>c</sup></figcaption>
+</figure>
+
+</div>
+
+Cada diagrama sombrea (en azul) exactamente la región que define la operación correspondiente; el rectángulo representa el universo \\(\mathcal{U}\\) y los contornos azul oscuro delimitan los conjuntos \\(A\\) y \\(B\\).
 
 ---
 

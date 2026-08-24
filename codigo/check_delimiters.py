@@ -1,4 +1,5 @@
 import os
+import sys
 import glob
 
 def audit_file(filepath):
@@ -47,5 +48,7 @@ if __name__ == '__main__':
             
     if total_issues == 0:
         print("✅ Auditoría exitosa: Todos los delimitadores matemáticos están correctamente escapados (0 errores).")
+        sys.exit(0)
     else:
         print(f"❌ Se encontraron {total_issues} delimitadores con diagonal simple.")
+        sys.exit(1)
