@@ -10,7 +10,7 @@ El objetivo central de la lógica deductiva es formalizar y analizar los **argum
 > Un **argumento deductivo** es una estructura lógica compuesta por un conjunto finito de proposiciones \\(p\_1, p\_2, \dots, p\_k\\) llamadas **premisas** (o hipótesis), y una proposición \\(c\\) llamada **conclusión** (o tesis), denotado formalmente por:
 >
 > \\[
-> p\_1, p\_2, \dots, p\_k \vdash c \qquad \text{o bien} \qquad \frac{p\_1, p\_2, \dots, p\_k}{\therefore c}
+> p\_1, p\_2, \dots, p\_k \vdash c \qquad \text{o bien} \qquad \frac{p\_1 \land p\_2 \land \dots \land p\_k}{\therefore c}
 > \\]
 
 ---
@@ -78,7 +78,7 @@ Una **falacia formal** es un patrón de inferencia defectuoso que aparenta ser v
 Consiste en intentar deducir la hipótesis a partir de la conclusión:
 
 \\[
-\frac{p \to q, \quad q}{\therefore p} \quad \text{(INVÁLIDO)}
+\frac{p \to q \quad \land q}{\therefore p} \quad \text{(INVÁLIDO)}
 \\]
 
 *Tabla de verdad:*
@@ -97,7 +97,7 @@ La fila con \\(p=F, q=V\\) invalida el argumento.
 Consiste en intentar negar la conclusión negando la hipótesis:
 
 \\[
-\frac{p \to q, \quad \neg p}{\therefore \neg q} \quad \text{(INVÁLIDO)}
+\frac{p \to q \quad \land \neg p}{\therefore \neg q} \quad \text{(INVÁLIDO)}
 \\]
 
 *Ejemplo en lenguaje natural:* "Si un número termina en 0, es divisible por 5. El número 15 no termina en 0. Por lo tanto, 15 no es divisible por 5." (Falso, 15 sí es divisible por 5).

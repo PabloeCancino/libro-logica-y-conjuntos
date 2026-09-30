@@ -65,7 +65,7 @@ donde \\(\bot\\) representa una contradicción lógica explícita (una afirmaci�
 La **demostración por casos** se fundamenta en la regla del dilema constructivo. Se utiliza cuando el dominio de la hipótesis puede descomponerse en un número finito de casos \\(C\_1, C\_2, \dots, C\_k\\) que cubren la totalidad de las posibilidades (es decir, \\(C\_1 \lor C\_2 \lor \dots \lor C\_k \equiv \top\\)):
 
 \\[
-\frac{(C\_1 \lor \dots \lor C\_k), \quad C\_1 \implies Q, \quad \dots, \quad C\_k \implies Q}{\therefore Q}
+\frac{(C\_1 \lor \dots \lor C\_k) \quad \land (C\_1 \implies Q) \quad \land \dots \land (C\_k \implies Q)}{\therefore Q}
 \\]
 
 ### Ejemplo:

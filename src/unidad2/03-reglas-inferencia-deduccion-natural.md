@@ -12,33 +12,33 @@ A continuación se resumen las reglas de derivación elementales más importante
 "El método que afirmando el antecedente, afirma el consecuente".
 
 \\[
-\frac{p \to q, \quad p}{\therefore q}
+\frac{p \to q \quad \land p}{\therefore q}
 \\]
 
 ### B. Modus Tollendo Tollens (m.t.t. o Modus Tollens)
 "El método que negando el consecuente, niega el antecedente".
 
 \\[
-\frac{p \to q, \quad \neg q}{\therefore \neg p}
+\frac{p \to q \quad \land \neg q}{\therefore \neg p}
 \\]
 
 ### C. Modus Tollendo Ponens (m.t.p. o Silogismo Disyuntivo)
 "El método que negando una alternativa de la disyunción, afirma la otra".
 
 \\[
-\frac{p \lor q, \quad \neg p}{\therefore q} \qquad \text{o bien} \qquad \frac{p \lor q, \quad \neg q}{\therefore p}
+\frac{p \lor q \quad \land \neg p}{\therefore q} \qquad \text{o bien} \qquad \frac{p \lor q \quad \land \neg q}{\therefore p}
 \\]
 
 ### D. Ley del Silogismo Hipotético (Transitividad de la Implicación)
 
 \\[
-\frac{p \to q, \quad q \to r}{\therefore p \to r}
+\frac{p \to q \quad \land q \to r}{\therefore p \to r}
 \\]
 
 ### E. Ley del Dilema Constructivo
 
 \\[
-\frac{(p \to q) \land (r \to s), \quad p \lor r}{\therefore q \lor s}
+\frac{(p \to q) \land (r \to s) \quad \land (p \lor r)}{\therefore q \lor s}
 \\]
 
 ### F. Ley de Simplificación Conjuntiva
@@ -56,7 +56,7 @@ A continuación se resumen las reglas de derivación elementales más importante
 ### H. Ley de Conjunción (o Introducción del ∧)
 
 \\[
-\frac{p, \quad q}{\therefore p \land q}
+\frac{p \quad \land q}{\therefore p \land q}
 \\]
 
 ---
