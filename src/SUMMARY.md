@@ -32,6 +32,8 @@
 
 # Unidad 4. Métodos de Demostración, Relaciones, Funciones e Inducción
 
+- [4.0 Cómo leer, descubrir y escribir demostraciones](unidad4/00-como-leer-y-escribir-demostraciones.md)
+- [4.0.1 Seis demostraciones modelo: lógica y conjuntos](unidad4/00a-seis-demostraciones-modelo.md)
 - [4.1 Métodos de demostración directa y por contraposición](unidad4/01-metodos-demostracion-directa-contraposicion.md)
 - [4.2 Prueba por contradicción, por casos, existencia y unicidad](unidad4/02-prueba-contradiccion-casos-existencia-unicidad.md)
 - [4.3 El Principio de Inducción Matemática](unidad4/03-principio-induccion-matematica.md)
