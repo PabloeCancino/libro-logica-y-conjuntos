@@ -194,21 +194,21 @@ Antes de entregar una demostración, compruebe:
 ## 8. Ejercicios
 
 1. **Esqueleto.** Para cada una de las siguientes tesis, escriba únicamente las **primeras y últimas líneas** de la demostración (el esqueleto de la sección 3), sin completar el cuerpo:
- 1. \\(A \cap B \subseteq A \cup B\\)
- 2. \\((\forall x \in \mathbb{R})(\exists y \in \mathbb{R})(y > x)\\)
- 3. \\(A \subseteq B \iff A \cup B = B\\)
- 4. \\(A \cap B = \emptyset \implies A \subseteq B^c\\)
+   1. \\(A \cap B \subseteq A \cup B\\)
+   2. \\((\forall x \in \mathbb{R})(\exists y \in \mathbb{R})(y > x)\\)
+   3. \\(A \subseteq B \iff A \cup B = B\\)
+   4. \\(A \cap B = \emptyset \implies A \subseteq B^c\\)
 
 2. **Hacia adelante y hacia atrás.** Demuestre, presentando primero el borrador de dos columnas y después la redacción final: si \\(A \subseteq B\\) y \\(C \subseteq D\\), entonces \\(A \times C \subseteq B \times D\\).
 
 3. **Detecte el error.** Cada «demostración» siguiente es incorrecta. Identifique el error de la tabla de la sección 5 y diga si el enunciado es verdadero o falso:
- 1. *Enunciado:* «\\(A \cup B = A \cup C \implies B = C\\).» *Prueba:* «Quitando \\(A\\) de ambos lados queda \\(B = C\\).»
- 2. *Enunciado:* «Si \\(A \cap B \subseteq C\\) entonces \\(A \subseteq C\\).» *Prueba:* «Sea \\(x \in A\\). Tomemos \\(x \in B\\) también. Entonces \\(x \in A\cap B \subseteq C\\), luego \\(x \in C\\).»
- 3. *Enunciado:* «Si \\(n^2\\) es divisible por 4, entonces \\(n\\) es divisible por 4.» *Prueba:* «\\(n=4\\): \\(n^2 = 16\\) es divisible por 4 y \\(n\\) también.»
+   1. *Enunciado:* «\\(A \cup B = A \cup C \implies B = C\\).» *Prueba:* «Quitando \\(A\\) de ambos lados queda \\(B = C\\).»
+   2. *Enunciado:* «Si \\(A \cap B \subseteq C\\) entonces \\(A \subseteq C\\).» *Prueba:* «Sea \\(x \in A\\). Tomemos \\(x \in B\\) también. Entonces \\(x \in A\cap B \subseteq C\\), luego \\(x \in C\\).»
+   3. *Enunciado:* «Si \\(n^2\\) es divisible por 4, entonces \\(n\\) es divisible por 4.» *Prueba:* «\\(n=4\\): \\(n^2 = 16\\) es divisible por 4 y \\(n\\) también.»
 
 4. **Contraejemplo o prueba.** Para cada afirmación decida, probando con casos pequeños, si es verdadera o falsa; si es verdadera, demuéstrela; si es falsa, dé un contraejemplo:
- 1. \\(\mathcal{P}(A \cup B) = \mathcal{P}(A) \cup \mathcal{P}(B)\\)
- 2. \\(\mathcal{P}(A \cap B) = \mathcal{P}(A) \cap \mathcal{P}(B)\\)
- 3. \\(A \times (B \cap C) = (A \times B) \cap (A \times C)\\)
+   1. \\(\mathcal{P}(A \cup B) = \mathcal{P}(A) \cup \mathcal{P}(B)\\)
+   2. \\(\mathcal{P}(A \cap B) = \mathcal{P}(A) \cap \mathcal{P}(B)\\)
+   3. \\(A \times (B \cap C) = (A \times B) \cap (A \times C)\\)
 
 5. **Reescritura.** Tome una demostración de este libro (por ejemplo, la del Teorema 4.2) y escriba su *borrador* de dos columnas: qué se supone, qué se quiere y qué definiciones se desempacaron.

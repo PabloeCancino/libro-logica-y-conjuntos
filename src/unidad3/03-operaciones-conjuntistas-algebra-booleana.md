@@ -67,73 +67,73 @@ Los **diagramas de Venn**, ideados por John Venn en 1880, representan las relaci
 
 <figure style="margin:0; text-align:center;">
 <svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
- <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
- <text x="12" y="20" font-size="14" fill="#334155">U</text>
- <circle cx="95" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
- <circle cx="145" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
- <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
- <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
- <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
- <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#334155">U</text>
+  <circle cx="95" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="145" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
+  <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
 </svg>
 <figcaption>Unión A ∪ B</figcaption>
 </figure>
 
 <figure style="margin:0; text-align:center;">
 <svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
- <defs>
- <clipPath id="clipA2"><circle cx="95" cy="90" r="55"/></clipPath>
- </defs>
- <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
- <text x="12" y="20" font-size="14" fill="#334155">U</text>
- <circle cx="145" cy="90" r="55" fill="#93c5fd" opacity="0.9" clip-path="url(#clipA2)"/>
- <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
- <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
- <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
- <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
+  <defs>
+    <clipPath id="clipA2"><circle cx="95" cy="90" r="55"/></clipPath>
+  </defs>
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#334155">U</text>
+  <circle cx="145" cy="90" r="55" fill="#93c5fd" opacity="0.9" clip-path="url(#clipA2)"/>
+  <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
+  <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
 </svg>
 <figcaption>Intersección A ∩ B</figcaption>
 </figure>
 
 <figure style="margin:0; text-align:center;">
 <svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
- <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
- <text x="12" y="20" font-size="14" fill="#334155">U</text>
- <circle cx="95" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
- <circle cx="145" cy="90" r="55" fill="#ffffff"/>
- <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
- <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
- <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
- <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#334155">U</text>
+  <circle cx="95" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="145" cy="90" r="55" fill="#ffffff"/>
+  <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
+  <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
 </svg>
 <figcaption>Diferencia A ∖ B</figcaption>
 </figure>
 
 <figure style="margin:0; text-align:center;">
 <svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
- <defs>
- <clipPath id="clipA4"><circle cx="95" cy="90" r="55"/></clipPath>
- </defs>
- <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
- <text x="12" y="20" font-size="14" fill="#334155">U</text>
- <circle cx="95" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
- <circle cx="145" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
- <circle cx="145" cy="90" r="55" fill="#ffffff" clip-path="url(#clipA4)"/>
- <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
- <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
- <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
- <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
+  <defs>
+    <clipPath id="clipA4"><circle cx="95" cy="90" r="55"/></clipPath>
+  </defs>
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#334155">U</text>
+  <circle cx="95" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="145" cy="90" r="55" fill="#93c5fd" opacity="0.85"/>
+  <circle cx="145" cy="90" r="55" fill="#ffffff" clip-path="url(#clipA4)"/>
+  <circle cx="95" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <circle cx="145" cy="90" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="55" y="90" font-size="16" fill="#1e3a8a">A</text>
+  <text x="180" y="90" font-size="16" fill="#1e3a8a">B</text>
 </svg>
 <figcaption>Diferencia simétrica A Δ B</figcaption>
 </figure>
 
 <figure style="margin:0; text-align:center;">
 <svg viewBox="0 0 240 190" width="220" xmlns="http://www.w3.org/2000/svg">
- <rect x="2" y="2" width="236" height="150" rx="8" fill="#93c5fd" opacity="0.85" stroke="#94a3b8" stroke-width="2"/>
- <text x="12" y="20" font-size="14" fill="#1e3a8a">U</text>
- <circle cx="120" cy="95" r="55" fill="#ffffff"/>
- <circle cx="120" cy="95" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
- <text x="112" y="99" font-size="16" fill="#1e3a8a">A</text>
+  <rect x="2" y="2" width="236" height="150" rx="8" fill="#93c5fd" opacity="0.85" stroke="#94a3b8" stroke-width="2"/>
+  <text x="12" y="20" font-size="14" fill="#1e3a8a">U</text>
+  <circle cx="120" cy="95" r="55" fill="#ffffff"/>
+  <circle cx="120" cy="95" r="55" fill="none" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="112" y="99" font-size="16" fill="#1e3a8a">A</text>
 </svg>
 <figcaption>Complemento A<sup>c</sup></figcaption>
 </figure>
@@ -232,4 +232,4 @@ A \cup A^c = \mathcal{U}, \qquad A \cap A^c = \emptyset
  Esto significa que \\(x \notin (A \cup B)\\), y en consecuencia \\(x \in (A \cup B)^c\\). 
  Por lo tanto, \\(A^c \cap B^c \subseteq (A \cup B)^c\\).
 
-**Conclusión:** Al haberse verificado ambas contenciones, se concluye formalmente que \\((A \cup B)^c = A^c \cap B^c\\). \\(\blacksquare\\)
+**Conclusión:** Al haberse verificado ambas contenciones, se concluye formalmente que \\((A \cup B)^c = A^c \cap B^c\\). \\(\blacksquare\\)

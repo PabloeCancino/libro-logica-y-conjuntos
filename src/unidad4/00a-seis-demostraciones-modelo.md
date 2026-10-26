@@ -166,10 +166,10 @@ Como \\(x\\) era arbitrario, ambos conjuntos tienen los mismos elementos; por ex
 
 * \\(B \subseteq A \cup B\\): si \\(x \in B\\), entonces \\(x \in A \lor x \in B\\), luego \\(x \in A \cup B\\).
 * \\(A \cup B \subseteq B\\): sea \\(x \in A \cup B\\). Entonces \\(x \in A\\) o \\(x \in B\\).
- * *Caso 1:* \\(x \in A\\). Por hipótesis \\(A \subseteq B\\), luego \\(x \in B\\).
- * *Caso 2:* \\(x \in B\\). No hay nada que probar.
+  * *Caso 1:* \\(x \in A\\). Por hipótesis \\(A \subseteq B\\), luego \\(x \in B\\).
+  * *Caso 2:* \\(x \in B\\). No hay nada que probar.
 
- En ambos casos \\(x \in B\\).
+  En ambos casos \\(x \in B\\).
 
 Por doble contención, \\(A \cup B = B\\).
 
