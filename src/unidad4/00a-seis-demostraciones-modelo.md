@@ -9,13 +9,15 @@ Esta sección reúne **seis demostraciones breves y completas** que sirven de pa
 
 > **Cómo usar esta sección.** Lea primero el enunciado e intente su propio borrador (sección 4.0, método hacia adelante y hacia atrás). Compare después con el modelo. Al final encontrará una tabla que conecta ambas partes y ejercicios graduados.
 
-Varios resultados ya aparecen en unidades anteriores (De Morgan y la contrapositiva en la sección 1.3; De Morgan para conjuntos en la sección 3.3). Aquí se retoman **con otro método**, para que el lector vea la misma verdad demostrada de formas distintas.
+**Requisitos.** Esta sección supone las secciones 1.3 (equivalencias), 2.3 (reglas de inferencia, incluida la prueba condicional), 3.2 y 3.3 (inclusión, igualdad y operaciones) y 4.0 (esqueletos de demostración).
+
+**Relación con secciones anteriores.** Los modelos L1 y L2 **repiten deliberadamente**, como patrones de método, dos resultados ya demostrados en la sección 1.3 (De Morgan por tabla de verdad y la contrapositiva por cadena de equivalencias); sirven de repaso y de pieza para los modelos conjuntistas. El modelo C2 ya aparece en la sección 3.3 por doble contención; aquí se demuestra por cadena de equivalencias para comparar ambos estilos.
 
 | Modelo | Resultado | Método |
 | :---: | :--- | :--- |
 | L1 | \\(\neg(p \land q) \equiv \neg p \lor \neg q\\) | Tabla de verdad (semántico) |
 | L2 | \\((p \to q) \equiv (\neg q \to \neg p)\\) | Cadena de equivalencias (algebraico) |
-| L3 | \\(p \to q,\; q \to r \;\vdash\; p \to r\\) | Deducción natural y prueba condicional (sintáctico) |
+| L3 | \\(p \to q,\ q \to r \vdash p \to r\\) | Deducción natural y prueba condicional (sintáctico) |
 | C1 | \\(A \cap B \subseteq A\\) | Elemento arbitrario |
 | C2 | \\((A \cup B)^c = A^c \cap B^c\\) | Cadena de equivalencias sobre pertenencia |
 | C3 | \\(A \subseteq B \iff A \cup B = B\\) | Doble implicación y prueba por casos |
@@ -71,7 +73,7 @@ Las columnas cuarta y séptima (en negritas) coinciden en las cuatro filas. Por 
 
 Como cada paso es una equivalencia, \\(p \to q \equiv \neg q \to \neg p\\). \\(\blacksquare\\)
 
-**Qué observar.** Esta equivalencia es la base lógica de la demostración por contraposición (sección 4.1). No debe confundirse con el *recíproco* \\(q \to p\\), que **no** es equivalente a \\(p \to q\\): la fila \\(p = F,\ q = V\\) lo refuta.
+**Qué observar.** Esta equivalencia es la base lógica de la demostración por contraposición, que se desarrolla en la sección 4.1. No debe confundirse con el *recíproco* \\(q \to p\\), que **no** es equivalente a \\(p \to q\\): la fila \\(p = F,\ q = V\\) lo refuta.
 
 ---
 
@@ -97,7 +99,7 @@ Como cada paso es una equivalencia, \\(p \to q \equiv \neg q \to \neg p\\). \\(\
 **Qué observar.**
 
 * La línea 3 **no** es una premisa: es un supuesto de trabajo que desaparece en la línea 6. Ninguna conclusión puede depender de un supuesto que sigue abierto.
-* Este resultado es una *derivación* (\\(\vdash\\)). Su contraparte semántica es que \\(((p \to q) \land (q \to r)) \to (p \to r)\\) es una tautología (\\(\models\\)), que puede comprobarse con una tabla de \\(2^3 = 8\\) filas (Ejercicio 3).
+* Este resultado es una *derivación* (\\(\vdash\\)). Su contraparte semántica es que \\(((p \to q) \land (q \to r)) \to (p \to r)\\) es una tautología (\\(\models\\)), que puede comprobarse con una tabla de \\(2^3 = 8\\) filas (es el Ejercicio 3.d de la Unidad 1).
 
 ---
 
@@ -156,7 +158,7 @@ Como \\(x\\) era arbitrario, ambos conjuntos tienen los mismos elementos; por ex
 > A \subseteq B \iff A \cup B = B
 > \\]
 
-**Método.** Una equivalencia exige **dos implicaciones independientes** (sección 4.1). La primera incluye una igualdad de conjuntos (doble contención) y una **prueba por casos** (por la disyunción \\(x \in A \lor x \in B\\)).
+**Método.** Una equivalencia exige **dos implicaciones independientes** (esqueleto de \\(P \iff Q\\) en la sección 4.0). La primera incluye una igualdad de conjuntos (doble contención) y una **prueba por casos** (por la disyunción \\(x \in A \lor x \in B\\)).
 
 **Demostración.**
 
@@ -164,10 +166,10 @@ Como \\(x\\) era arbitrario, ambos conjuntos tienen los mismos elementos; por ex
 
 * \\(B \subseteq A \cup B\\): si \\(x \in B\\), entonces \\(x \in A \lor x \in B\\), luego \\(x \in A \cup B\\).
 * \\(A \cup B \subseteq B\\): sea \\(x \in A \cup B\\). Entonces \\(x \in A\\) o \\(x \in B\\).
-  * *Caso 1:* \\(x \in A\\). Por hipótesis \\(A \subseteq B\\), luego \\(x \in B\\).
-  * *Caso 2:* \\(x \in B\\). No hay nada que probar.
+ * *Caso 1:* \\(x \in A\\). Por hipótesis \\(A \subseteq B\\), luego \\(x \in B\\).
+ * *Caso 2:* \\(x \in B\\). No hay nada que probar.
 
-  En ambos casos \\(x \in B\\).
+ En ambos casos \\(x \in B\\).
 
 Por doble contención, \\(A \cup B = B\\).
 
@@ -212,7 +214,7 @@ Cada ley lógica produce una ley conjuntista:
 
 1. **(L)** Demuestre por tabla de verdad que \\(\neg(p \lor q) \equiv \neg p \land \neg q\\).
 2. **(L)** Demuestre por una cadena de equivalencias, anotando la ley de cada paso, que \\(p \to q \equiv \neg(p \land \neg q)\\).
-3. **(L)** Construya la tabla de verdad de \\(((p \to q) \land (q \to r)) \to (p \to r)\\) y verifique que es una tautología.
+3. **(L)** Construya la tabla de verdad de \\(p \to (q \to p)\\) y verifique que es una tautología. Explique con palabras por qué «una proposición verdadera se sigue de cualquier cosa».
 4. **(C)** Demuestre que \\(A \subseteq A \cup B\\).
 
 ### Nivel medio
@@ -226,3 +228,5 @@ Cada ley lógica produce una ley conjuntista:
 
 9. **(C)** Demuestre que si \\(A \subseteq B\\), entonces \\(B^c \subseteq A^c\\), usando el Modelo L2 (contraposición) para escribir la prueba en pocas líneas.
 10. **(C)** Decida si es verdadera o falsa la afirmación: «Si \\(A \cup B \subseteq A \cup C\\), entonces \\(B \subseteq C\\)». Si es verdadera, demuéstrela; si es falsa, dé un contraejemplo. *Pista:* pruebe con conjuntos de uno o dos elementos (sección 4.0, errores frecuentes).
+
+> **Soluciones.** Al final de la Unidad 4, en la página [Ejercicios de la Unidad 4](ejercicios.md), hay un bloque plegable con las soluciones de estos diez ejercicios.

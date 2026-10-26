@@ -2,13 +2,24 @@ import os
 import glob
 import re
 
+def escape_math_braces(math_str):
+    """
+    Duplica la diagonal de las llaves \\{ y \\} (-> \\\\{ y \\\\}) dentro de fórmulas.
+    En CommonMark, \\{ es un escape de Markdown: la diagonal se consume y MathJax recibe
+    solo "{", por lo que las llaves de conjuntos desaparecen al renderizar
+    ({1, 2} se mostraría como 1, 2). Con \\\\{ MathJax recibe \\{ y dibuja la llave.
+    """
+    return re.sub(r'(?<!\\)\\([{}])', r'\\\\\1', math_str)
+
 def escape_math_underscores(math_str):
     """
-    Escapa los guiones bajos que no estén ya precedidos por diagonal invertida.
+    Escapa los guiones bajos que no estén ya precedidos por diagonal invertida
+    y, además, las llaves (ver escape_math_braces).
     Esto previene que CommonMark interprete pares de subíndices (ej. x_1 y x_2, o _{...})
     como etiquetas HTML de cursiva <em>...</em> dentro de fórmulas KaTeX/MathJax.
     """
-    return re.sub(r'(?<!\\)_', r'\\_', math_str)
+    math_str = re.sub(r'(?<!\\)_', r'\\_', math_str)
+    return escape_math_braces(math_str)
 
 def process_file(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:

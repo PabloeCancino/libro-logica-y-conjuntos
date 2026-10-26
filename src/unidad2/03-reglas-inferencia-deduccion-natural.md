@@ -59,6 +59,30 @@ A continuación se resumen las reglas de derivación elementales más importante
 \frac{p \quad \land q}{\therefore p \land q}
 \\]
 
+### I. Prueba Condicional (Teorema de la Deducción)
+
+Las reglas anteriores permiten *usar* condicionales ya dados. Para **demostrar** un condicional \\(p \to q\\) se emplea la **prueba condicional**, que formaliza el gesto «suponga \\(p\\)…» de las demostraciones matemáticas:
+
+> **Regla (Prueba Condicional, P.C.):** 
+> 1. Se **introduce** \\(p\\) como *supuesto* temporal (no es una premisa). 
+> 2. Se deduce \\(q\\) mediante las reglas de inferencia, usando las premisas y el supuesto. 
+> 3. Se **descarga** el supuesto y se concluye \\(p \to q\\). Esta línea ya no depende de \\(p\\).
+
+Esta regla es la versión formal del **Teorema de la Deducción**, que se aplica en la sección 4.1.
+
+*Ejemplo:* la ley del silogismo hipotético (D) puede *derivarse* de las demás reglas.
+
+| Paso | Expresión Lógica | Justificación / Regla Utilizada |
+| :---: | :--- | :--- |
+| **(1)** | \\(p \to q\\) | Premisa |
+| **(2)** | \\(q \to r\\) | Premisa |
+| **(3)** | \\(p\\) | Supuesto (se abre la prueba condicional) |
+| **(4)** | \\(q\\) | Modus Ponens entre (1) y (3) |
+| **(5)** | \\(r\\) | Modus Ponens entre (2) y (4) |
+| **(6)** | \\(p \to r\\) | Prueba Condicional, pasos (3) a (5); se descarga el supuesto (3) |
+
+> **Cuidado.** Una vez descargado el supuesto, ningún paso posterior puede usar las líneas (4) y (5), pues dependían de \\(p\\). Y la conclusión \\(p \to r\\) **no** afirma \\(r\\): solo afirma que \\(r\\) se sigue *si* se admite \\(p\\).
+
 ---
 
 ## 2. Reglas de Inferencia para Cuantificadores

@@ -31,13 +31,41 @@ def audit_file(filepath):
             i += 1
     return bad
 
+def audit_math_braces(filepath):
+    """
+    Detecta llaves con una sola diagonal (\\{ o \\}) dentro de fórmulas \\\\( ... \\\\) o
+    \\\\[ ... \\\\]. CommonMark consume esa diagonal y las llaves desaparecen al renderizar;
+    deben escribirse como \\\\{ y \\\\}. Se ignoran los bloques de código.
+    """
+    import re
+    with open(filepath, 'r', encoding='utf-8') as fp:
+        content = fp.read()
+    bad = []
+    brace = re.compile(r'(?<!\\)\\([{}])')
+    for part in re.split(r'(```.*?```)', content, flags=re.DOTALL):
+        if part.startswith('```'):
+            continue
+        for m in re.finditer(r'\\\\\(.*?\\\\\)|\\\\\[.*?\\\\\]', part, flags=re.DOTALL):
+            for b in brace.finditer(m.group(0)):
+                s = m.group(0)
+                bad.append((b.group(1), s[max(0, b.start() - 15):min(len(s), b.end() + 25)]))
+    return bad
+
 if __name__ == '__main__':
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     src_dir = os.path.join(base_dir, 'src')
     files = sorted(glob.glob(os.path.join(src_dir, '**', '*.md'), recursive=True) + glob.glob(os.path.join(src_dir, '*.md')))
     
     total_issues = 0
+    brace_issues = 0
     for f in files:
+        bissues = audit_math_braces(f)
+        if bissues:
+            rel = os.path.relpath(f, base_dir)
+            print(f"=== {rel} === (llaves con una sola diagonal: {len(bissues)})")
+            for b in bissues[:5]:
+                print("  Snippet:", repr(b[1]))
+            brace_issues += len(bissues)
         issues = audit_file(f)
         if issues:
             rel = os.path.relpath(f, base_dir)
@@ -46,9 +74,10 @@ if __name__ == '__main__':
                 print("  Snippet:", repr(b[1]))
             total_issues += len(issues)
             
+    total_issues += brace_issues
     if total_issues == 0:
         print("✅ Auditoría exitosa: Todos los delimitadores matemáticos están correctamente escapados (0 errores).")
         sys.exit(0)
     else:
-        print(f"❌ Se encontraron {total_issues} delimitadores con diagonal simple.")
+        print(f"❌ Se encontraron {total_issues} problemas (delimitadores o llaves con diagonal simple).")
         sys.exit(1)

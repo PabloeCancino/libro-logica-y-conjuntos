@@ -49,6 +49,26 @@
 
 ---
 
+## 📝 Bloque E: Demostraciones Básicas — de la Tabla al Álgebra y a los Argumentos
+
+Este bloque sigue el orden de la unidad: primero verificación **semántica** (tablas, sección 1.2 y 1.3), luego demostración **algebraica** (leyes de la sección 1.3) y, al final, **validez de argumentos** (sección 1.4).
+
+6. Demuestre por tabla de verdad la ley distributiva \\(p \lor (q \land r) \equiv (p \lor q) \land (p \lor r)\\). ¿Cuántas filas necesita y por qué?
+
+7. Demuestre por cadena de equivalencias, indicando la ley de cada paso, la **ley de exportación** \\(p \to (q \to r) \equiv (p \land q) \to r\\).
+ *Sugerencia:* escriba cada condicional como disyunción (sección 1.3, §5.A).
+
+8. Demuestre por cadena de equivalencias que \\((p \to q) \land (p \to r) \equiv p \to (q \land r)\\).
+
+9. Demuestre por cadena de equivalencias que \\((p \to r) \land (q \to r) \equiv (p \lor q) \to r\\), e interprételo con palabras: «si cada una de dos causas produce \\(r\\), entonces cualquiera de ellas lo produce».
+
+10. Analice mediante tablas de verdad la validez de cada argumento. En los inválidos, señale la fila que lo refuta:
+ - a) Premisas: \\(p \lor q\\), \\(\neg p\\). Conclusión: \\(q\\).
+ - b) Premisas: \\(p \lor q\\), \\(p\\). Conclusión: \\(\neg q\\).
+ - c) Premisas: \\(p \to q\\), \\(\neg q\\). Conclusión: \\(\neg p\\).
+
+---
+
 ## 💡 Soluciones y Guías Seleccionadas
 
 > **Solución al Ejercicio 3.a:** 
@@ -64,3 +84,75 @@
 > \\(\equiv p \land (q \lor \neg q)\\) por la Ley Distributiva de \\(\land\\) sobre \\(\lor\\). 
 > \\(\equiv p \land \top\\) por la Ley del Complemento (Tercio Excluso \\(q \lor \neg q \equiv \top\\)). 
 > \\(\equiv p\\) por la Ley de Identidad. \\(\blacksquare\\)
+
+---
+
+## 💡 Soluciones del Bloque E (Ejercicios 6 a 10)
+
+<details>
+<summary><strong>Mostrar / ocultar las soluciones de los Ejercicios 6 a 10</strong></summary>
+
+**Ejercicio 6.** Con 3 variables hay \\(2^3 = 8\\) interpretaciones.
+
+| \\(p\\) | \\(q\\) | \\(r\\) | \\(q \land r\\) | \\(p \lor (q \land r)\\) | \\(p \lor q\\) | \\(p \lor r\\) | \\((p \lor q) \land (p \lor r)\\) |
+| :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
+| V | V | V | V | **V** | V | V | **V** |
+| V | V | F | F | **V** | V | V | **V** |
+| V | F | V | F | **V** | V | V | **V** |
+| V | F | F | F | **V** | V | V | **V** |
+| F | V | V | V | **V** | V | V | **V** |
+| F | V | F | F | **F** | V | F | **F** |
+| F | F | V | F | **F** | F | V | **F** |
+| F | F | F | F | **F** | F | F | **F** |
+
+Las columnas quinta y octava coinciden en las ocho filas. \\(\blacksquare\\)
+
+**Ejercicio 7.** Ley de exportación.
+
+| Paso | Fórmula | Justificación |
+| :---: | :--- | :--- |
+| 1 | \\(p \to (q \to r)\\) | Punto de partida |
+| 2 | \\(\neg p \lor (\neg q \lor r)\\) | Definición del condicional (dos veces) |
+| 3 | \\((\neg p \lor \neg q) \lor r\\) | Asociatividad de \\(\lor\\) |
+| 4 | \\(\neg(p \land q) \lor r\\) | De Morgan: \\(\neg p \lor \neg q \equiv \neg(p \land q)\\) |
+| 5 | \\((p \land q) \to r\\) | Definición del condicional |
+
+\\(\blacksquare\\)
+
+**Ejercicio 8.**
+
+| Paso | Fórmula | Justificación |
+| :---: | :--- | :--- |
+| 1 | \\((p \to q) \land (p \to r)\\) | Punto de partida |
+| 2 | \\((\neg p \lor q) \land (\neg p \lor r)\\) | Definición del condicional |
+| 3 | \\(\neg p \lor (q \land r)\\) | Distributividad de \\(\lor\\) sobre \\(\land\\) (leída de derecha a izquierda) |
+| 4 | \\(p \to (q \land r)\\) | Definición del condicional |
+
+\\(\blacksquare\\)
+
+**Ejercicio 9.**
+
+| Paso | Fórmula | Justificación |
+| :---: | :--- | :--- |
+| 1 | \\((p \to r) \land (q \to r)\\) | Punto de partida |
+| 2 | \\((\neg p \lor r) \land (\neg q \lor r)\\) | Definición del condicional |
+| 3 | \\((\neg p \land \neg q) \lor r\\) | Distributividad de \\(\lor\\) sobre \\(\land\\) (de derecha a izquierda), con \\(r\\) como factor común |
+| 4 | \\(\neg(p \lor q) \lor r\\) | De Morgan: \\(\neg p \land \neg q \equiv \neg(p \lor q)\\) |
+| 5 | \\((p \lor q) \to r\\) | Definición del condicional |
+
+\\(\blacksquare\\) *Interpretación:* la equivalencia justifica el análisis «por casos»: para probar que \\(p \lor q\\) implica \\(r\\) basta probar cada caso por separado.
+
+**Ejercicio 10.**
+
+| \\(p\\) | \\(q\\) | \\(p \lor q\\) | \\(\neg p\\) | \\(\neg q\\) | \\(p \to q\\) |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| V | V | V | F | F | V |
+| V | F | V | F | V | F |
+| F | V | V | V | F | V |
+| F | F | F | V | V | V |
+
+* **a) Válido.** Las premisas \\(p \lor q\\) y \\(\neg p\\) son verdaderas a la vez solo en la fila 3 (\\(p = F,\ q = V\\)), y allí \\(q\\) es verdadera. (Es el silogismo disyuntivo, sección 2.3.)
+* **b) Inválido.** En la fila 1 (\\(p = V,\ q = V\\)) las premisas \\(p \lor q\\) y \\(p\\) son verdaderas, pero la conclusión \\(\neg q\\) es falsa. Es la falacia de tratar la disyunción *inclusiva* como si fuera exclusiva.
+* **c) Válido.** Las premisas \\(p \to q\\) y \\(\neg q\\) son verdaderas a la vez solo en la fila 4 (\\(p = F,\ q = F\\)), y allí \\(\neg p\\) es verdadera. (Es el modus tollens, sección 2.3.)
+
+</details>

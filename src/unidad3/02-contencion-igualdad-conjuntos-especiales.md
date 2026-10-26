@@ -42,6 +42,8 @@ Para demostrar rigurosamente que dos conjuntos \\(A\\) y \\(B\\) son iguales en 
 2. **Paso 2 (Probar que \\(B \subseteq A\\)):** Se toma un elemento arbitrario \\(y \in B\\) y se deduce que \\(y \in A\\).
 3. **Conclusión:** Por el principio de antisimetría y el axioma de extensionalidad, \\(A = B\\).
 
+> **Nota.** Esta técnica se retoma con más detalle en las secciones 4.0 (esqueletos y normas de redacción) y 4.0.1 (demostraciones modelo, incluida la ley de De Morgan para conjuntos). Si es su primer contacto con las demostraciones, conviene leer esas secciones junto con los ejercicios de esta unidad.
+
 ---
 
 ## 3. Conjuntos Notables: El Conjunto Vacío y el Conjunto Universal

@@ -12,7 +12,8 @@ Este directorio reúne las herramientas de ingeniería y automatización desarro
 * **Solución aplicada:**  
   1. Protege y respeta bloques de código (```).
   2. Escapa todos los guiones bajos no escapados dentro de fórmulas en línea (`\\( ... \\)`) convirtiéndolos a `\\_`.
-  3. Formatea y aísla los bloques display `\\[ ... \\]`, incluyendo aquellos ubicados dentro de citas o definiciones `> \\[ ... \\]`.
+  3. Duplica la diagonal de las llaves (`\\{` → `\\\\{`) para que los conjuntos conserven sus llaves al renderizar.
+  4. Formatea y aísla los bloques display `\\[ ... \\]`, incluyendo aquellos ubicados dentro de citas o definiciones `> \\[ ... \\]`.
 * **Ejecución:**
   ```bash
   python codigo/format_math.py
@@ -60,3 +61,4 @@ Este directorio reúne las herramientas de ingeniería y automatización desarro
 2. **Fórmulas en bloque:** Utilizar siempre `\\[ ... \\]` aisladas en líneas independientes.
 3. **Tablas de Verdad:** Utilizar sintaxis Markdown nativa con celdas centradas (`| :---: |`) en lugar de entornos multilínea `\begin{array}`.
 4. **Encabezados Markdown (`#`, `##`, `###`):** Utilizar caracteres Unicode limpios (`¬`, `∧`, `∨`, `→`, `↔`, `⊆`, `∪`, `∩`, `√2`, `ℵ₀`) en lugar de fórmulas LaTeX para asegurar anclas HTML y URLs limpias en la barra lateral (TOC).
+5. **Llaves de conjuntos:** Dentro de fórmulas, escribir siempre `\\\\{` y `\\\\}` (diagonal doble). Con una sola diagonal, CommonMark la consume y las llaves desaparecen al renderizar (`{1, 2}` se vería como `1, 2`). `format_math.py` lo corrige y `check_delimiters.py` lo audita.
