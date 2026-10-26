@@ -4,20 +4,20 @@
 
 ## 📝 Bloque A: Pertenencia, Inclusión y Conjunto Potencia
 
-1. Sean los conjuntos \\(A = \{1, 2, \{1, 2\}, \emptyset\}\\). Determine el valor de verdad (Verdadero o Falso) de cada una de las siguientes afirmaciones:
+1. Sean los conjuntos \\(A = \\{1, 2, \\{1, 2\\}, \emptyset\\}\\). Determine el valor de verdad (Verdadero o Falso) de cada una de las siguientes afirmaciones:
  - a) \\(1 \in A\\)
- - b) \\(\{1\} \in A\\)
- - c) \\(\{1\} \subseteq A\\)
- - d) \\(\{1, 2\} \in A\\)
- - e) \\(\{1, 2\} \subseteq A\\)
+ - b) \\(\\{1\\} \in A\\)
+ - c) \\(\\{1\\} \subseteq A\\)
+ - d) \\(\\{1, 2\\} \in A\\)
+ - e) \\(\\{1, 2\\} \subseteq A\\)
  - f) \\(\emptyset \in A\\)
  - g) \\(\emptyset \subseteq A\\)
- - h) \\(\{\emptyset\} \subseteq A\\)
+ - h) \\(\\{\emptyset\\} \subseteq A\\)
 
 2. Determine el conjunto potencia \\(\mathcal{P}(A)\\) y su cardinalidad para cada uno de los siguientes conjuntos:
  - a) \\(A = \emptyset\\)
- - b) \\(A = \{a\}\\)
- - c) \\(A = \{1, \{2, 3\}\}\\)
+ - b) \\(A = \\{a\\}\\)
+ - c) \\(A = \\{1, \\{2, 3\\}\\}\\)
  - d) \\(A = \mathcal{P}(\emptyset)\\)
 
 ---
@@ -35,7 +35,7 @@
 
 ## 📝 Bloque C: Cardinalidad, Particiones y Principio de Inclusión-Exclusión
 
-4. Encuentre todas las particiones posibles del conjunto \\(A = \{a, b, c, d\}\\). (Verifique que el total coincida con el número de Bell \\(B\_4 = 15\\)).
+4. Encuentre todas las particiones posibles del conjunto \\(A = \\{a, b, c, d\\}\\). (Verifique que el total coincida con el número de Bell \\(B\_4 = 15\\)).
 
 5. En una encuesta a 200 estudiantes de la UAN:
  - 120 utilizan Python para sus proyectos.
@@ -54,7 +54,7 @@
 
 ## 📝 Bloque D: Producto Cartesiano y Familias Indexadas
 
-6. Sean \\(A = \{1, 2\}\\), \\(B = \{a, b\}\\) y \\(C = \{x\}\\).
+6. Sean \\(A = \\{1, 2\\}\\), \\(B = \\{a, b\\}\\) y \\(C = \\{x\\}\\).
  - a) Calcule explícitamente \\(A \times B \times C\\).
  - b) Demuestre que \\(A \times (B \cap C) = (A \times B) \cap (A \times C)\\).
 
@@ -76,8 +76,8 @@
 
 > **Solución al Ejercicio 3.e:** 
 > La afirmación es en general **FALSA**. 
-> *Contraejemplo:* Sean \\(A = \{1\}\\) y \\(B = \{2\}\\). 
-> Se tiene \\(A \cup B = \{1, 2\}\\). 
-> El subconjunto \\(\{1, 2\} \in \mathcal{P}(A \cup B)\\). 
-> Sin embargo, \\(\mathcal{P}(A) = \{\emptyset, \{1\}\}\\) y \\(\mathcal{P}(B) = \{\emptyset, \{2\}\}\\), por lo que \\(\mathcal{P}(A) \cup \mathcal{P}(B) = \{\emptyset, \{1\}, \{2\}\}\\). 
-> Como \\(\{1, 2\} \notin \mathcal{P}(A) \cup \mathcal{P}(B)\\), se concluye que \\(\mathcal{P}(A \cup B) \neq \mathcal{P}(A) \cup \mathcal{P}(B)\\) (en realidad se cumple únicamente la inclusión estricta \\(\mathcal{P}(A) \cup \mathcal{P}(B) \subsetneq \mathcal{P}(A \cup B)\\)). \\(\blacksquare\\)
+> *Contraejemplo:* Sean \\(A = \\{1\\}\\) y \\(B = \\{2\\}\\). 
+> Se tiene \\(A \cup B = \\{1, 2\\}\\). 
+> El subconjunto \\(\\{1, 2\\} \in \mathcal{P}(A \cup B)\\). 
+> Sin embargo, \\(\mathcal{P}(A) = \\{\emptyset, \\{1\\}\\}\\) y \\(\mathcal{P}(B) = \\{\emptyset, \\{2\\}\\}\\), por lo que \\(\mathcal{P}(A) \cup \mathcal{P}(B) = \\{\emptyset, \\{1\\}, \\{2\\}\\}\\). 
+> Como \\(\\{1, 2\\} \notin \mathcal{P}(A) \cup \mathcal{P}(B)\\), se concluye que \\(\mathcal{P}(A \cup B) \neq \mathcal{P}(A) \cup \mathcal{P}(B)\\) (en realidad se cumple únicamente la inclusión estricta \\(\mathcal{P}(A) \cup \mathcal{P}(B) \subsetneq \mathcal{P}(A \cup B)\\)). \\(\blacksquare\\)

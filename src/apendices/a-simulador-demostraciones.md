@@ -13,7 +13,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 \\]
 
 1. **Objetivo:** Demostrar que la negación de una conjunción \\(\neg(p \land q)\\) es lógicamente equivalente a la disyunción de las negaciones \\(\neg p \lor \neg q\\).
-2. **Método:** Tablas de verdad exhaustivas para las cuatro combinaciones de \\((p, q) \in \{V, F\}^2\\).
+2. **Método:** Tablas de verdad exhaustivas para las cuatro combinaciones de \\((p, q) \in \\{V, F\\}^2\\).
 3. **Fila \\((V, V)\\):** \\(p \land q = V \implies \neg(p \land q) = F\\). Por la derecha: \\(\neg p \lor \neg q = F \lor F = F\\). Coinciden en \\(F\\).
 4. **Fila \\((V, F)\\):** \\(p \land q = F \implies \neg(p \land q) = V\\). Por la derecha: \\(\neg p \lor \neg q = F \lor V = V\\). Coinciden en \\(V\\).
 5. **Fila \\((F, V)\\):** \\(p \land q = F \implies \neg(p \land q) = V\\). Por la derecha: \\(\neg p \lor \neg q = V \lor F = V\\). Coinciden en \\(V\\).
@@ -151,7 +151,7 @@ A \cap (B \cup C) = (A \cap B) \cup (A \cap C)
 |\mathbb{P}| = \infty
 \\]
 
-1. Supongamos por contradicción que el conjunto de primos es finito: \\(\mathbb{P} = \{p\_1, p\_2, \dots, p\_n\}\\).
+1. Supongamos por contradicción que el conjunto de primos es finito: \\(\mathbb{P} = \\{p\_1, p\_2, \dots, p\_n\\}\\).
 2. Construimos el entero \\(N = (p\_1 \cdot p\_2 \cdot \dots \cdot p\_n) + 1\\).
 3. Como \\(N > 1\\), por el Teorema Fundamental de la Aritmética, \\(N\\) tiene un divisor primo \\(q\\).
 4. Por la suposición de finitud, \\(q\\) debe ser igual a algún \\(p\_i\\) de la lista.
@@ -185,9 +185,9 @@ A \cap (B \cup C) = (A \cap B) \cup (A \cap C)
 |\mathcal{P}(A)| = 2^n \quad (\text{para } |A| = n)
 \\]
 
-1. **Base (\\(n=0\\)):** \\(A = \emptyset \implies \mathcal{P}(\emptyset) = \{\emptyset\}\\), \\(|\mathcal{P}(\emptyset)| = 1 = 2^0\\).
+1. **Base (\\(n=0\\)):** \\(A = \emptyset \implies \mathcal{P}(\emptyset) = \\{\emptyset\\}\\), \\(|\mathcal{P}(\emptyset)| = 1 = 2^0\\).
 2. **Hipótesis Inductiva:** Todo conjunto con \\(k\\) elementos posee \\(2^k\\) subconjuntos.
-3. Sea \\(B = A \cup \{x\_{k+1}\}\\) con \\(|A| = k\\) y \\(x\_{k+1} \notin A\\).
+3. Sea \\(B = A \cup \\{x\_{k+1}\\}\\) con \\(|A| = k\\) y \\(x\_{k+1} \notin A\\).
 4. Los subconjuntos de \\(B\\) se dividen en dos clases disjuntas: los que no contienen a \\(x\_{k+1}\\) (que son los \\(2^k\\) subconjuntos de \\(A\\)) y los que sí lo contienen (formados agregando \\(x\_{k+1}\\) a cada uno de los anteriores, otros \\(2^k\\)).
 5. Total: \\(2^k + 2^k = 2^{k+1}\\). Por inducción, \\(|\mathcal{P}(A)| = 2^n\\) para todo \\(n \ge 0\\). \\(\blacksquare\\)
 

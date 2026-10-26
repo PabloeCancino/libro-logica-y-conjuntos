@@ -7,7 +7,7 @@ El análisis cuantitativo de conjuntos finitos y la descomposición estructural 
 ## 1. Particiones de un Conjunto
 
 > **Definición 3.4 (Partición):** 
-> Sea \\(A\\) un conjunto no vacío. Una **partición** de \\(A\\) es una colección \\(\mathcal{P} = \{A\_i\}\_{i \in I}\\) de subconjuntos de \\(A\\) (llamados *bloques*, *clases* o *celdas*) que satisfacen simultáneamente tres condiciones axiomáticas:
+> Sea \\(A\\) un conjunto no vacío. Una **partición** de \\(A\\) es una colección \\(\mathcal{P} = \\{A\_i\\}\_{i \in I}\\) de subconjuntos de \\(A\\) (llamados *bloques*, *clases* o *celdas*) que satisfacen simultáneamente tres condiciones axiomáticas:
 > 1. **No vacuidad:** Ningún bloque es vacío:
 >
 > \\[
@@ -27,12 +27,12 @@ El análisis cuantitativo de conjuntos finitos y la descomposición estructural 
 > \\]
 
 ### Ejemplo en un Conjunto Finito:
-Sea \\(A = \{1, 2, 3\}\\). Las siguientes son particiones válidas de \\(A\\):
-* \\(\mathcal{P}\_1 = \{\{1\}, \{2\}, \{3\}\}\\) (partición discreta).
-* \\(\mathcal{P}\_2 = \{\{1, 2\}, \{3\}\}\\).
-* \\(\mathcal{P}\_3 = \{\{1, 3\}, \{2\}\}\\).
-* \\(\mathcal{P}\_4 = \{\{2, 3\}, \{1\}\}\\).
-* \\(\mathcal{P}\_5 = \{\{1, 2, 3\}\}\\) (partición trivial).
+Sea \\(A = \\{1, 2, 3\\}\\). Las siguientes son particiones válidas de \\(A\\):
+* \\(\mathcal{P}\_1 = \\{\\{1\\}, \\{2\\}, \\{3\\}\\}\\) (partición discreta).
+* \\(\mathcal{P}\_2 = \\{\\{1, 2\\}, \\{3\\}\\}\\).
+* \\(\mathcal{P}\_3 = \\{\\{1, 3\\}, \\{2\\}\\}\\).
+* \\(\mathcal{P}\_4 = \\{\\{2, 3\\}, \\{1\\}\\}\\).
+* \\(\mathcal{P}\_5 = \\{\\{1, 2, 3\\}\\}\\) (partición trivial).
 
 El número total de particiones posibles de un conjunto de \\(n\\) elementos viene dado por el **\\(n\\)-ésimo Número de Bell** \\(B\_n\\) (para \\(n=3\\), \\(B\_3 = 5\\); para \\(n=4\\), \\(B\_4 = 15\\)).
 
@@ -43,7 +43,7 @@ El número total de particiones posibles de un conjunto de \\(n\\) elementos vie
 > **Definición 3.5 (Cardinalidad):** 
 > La **cardinalidad** de un conjunto finito \\(A\\), denotada por \\(|A|\\) o \\(\#(A)\\), es el número exacto de elementos distintos que contiene.
 > * \\(|\emptyset| = 0\\).
-> * Si \\(A = \{x\_1, x\_2, \dots, x\_n\}\\) con \\(x\_i \neq x\_j\\) para todo \\(i \neq j\\), entonces \\(|A| = n\\).
+> * Si \\(A = \\{x\_1, x\_2, \dots, x\_n\\}\\) con \\(x\_i \neq x\_j\\) para todo \\(i \neq j\\), entonces \\(|A| = n\\).
 
 ### Propiedades Fundamentales del Cardinal:
 1. Si \\(A \subseteq B\\), entonces \\(|A| \le |B|\\).

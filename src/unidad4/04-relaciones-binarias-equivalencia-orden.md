@@ -19,9 +19,9 @@ Las **relaciones** constituyen la formalización conjuntista de los vínculos, a
 > * Si \\((a, b) \notin R\\), se escribe \\(a \, \cancel{R} \, b\\).
 
 ### Conceptos Asociados:
-* **Dominio:** \\(\text{Dom}(R) = \{a \in A \mid (\exists b \in B) [(a, b) \in R]\}\\).
-* **Rango (o Imagen):** \\(\text{Ran}(R) = \{b \in B \mid (\exists a \in A) [(a, b) \in R]\}\\).
-* **Relación Inversa:** \\(R^{-1} = \{(b, a) \in B \times A \mid (a, b) \in R\}\subseteq B \times A\\).
+* **Dominio:** \\(\text{Dom}(R) = \\{a \in A \mid (\exists b \in B) [(a, b) \in R]\\}\\).
+* **Rango (o Imagen):** \\(\text{Ran}(R) = \\{b \in B \mid (\exists a \in A) [(a, b) \in R]\\}\\).
+* **Relación Inversa:** \\(R^{-1} = \\{(b, a) \in B \times A \mid (a, b) \in R\\}\subseteq B \times A\\).
 
 ---
 
@@ -64,7 +64,7 @@ Dada una relación \\(R \subseteq A \times A\\):
 Dada una relación de equivalencia \\(\sim\\) sobre \\(A\\) y un elemento \\(a \in A\\), la **clase de equivalencia** de \\(a\\), denotada por \\([a]\\) o \\(\overline{a}\\), es el conjunto de todos los elementos de \\(A\\) que están relacionados con \\(a\\):
 
 \\[
-[a] = \{x \in A \mid x \sim a\}
+[a] = \\{x \in A \mid x \sim a\\}
 \\]
 
 El elemento \\(a\\) se denomina un **representante** de la clase \\([a]\\).
@@ -73,7 +73,7 @@ El elemento \\(a\\) se denomina un **representante** de la clase \\([a]\\).
 Es el conjunto cuyos elementos son todas las clases de equivalencia inducidas sobre \\(A\\):
 
 \\[
-A/\sim = \{[a] \mid a \in A\}
+A/\sim = \\{[a] \mid a \in A\\}
 \\]
 
 > **Teorema 4.9 (Teorema Fundamental de las Relaciones de Equivalencia):** 
@@ -95,7 +95,7 @@ a \equiv b \pmod{n} \iff n \mid (a - b)
 Esta relación es de equivalencia y particiona a \\(\mathbb{Z}\\) en exactamente \\(n\\) clases disjuntas:
 
 \\[
-\mathbb{Z}/n\mathbb{Z} = \{[0], [1], [2], \dots, [n-1]\}
+\mathbb{Z}/n\mathbb{Z} = \\{[0], [1], [2], \dots, [n-1]\\}
 \\]
 
 lo que da origen a la **Aritmética Modular** y al anillo de clases residuales \\(\mathbb{Z}\_n\\).

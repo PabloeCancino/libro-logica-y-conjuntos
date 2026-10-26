@@ -12,14 +12,14 @@ Sean \\(A, B \subseteq \mathcal{U}\\):
 Reúne todos los elementos que pertenecen a \\(A\\), a \\(B\\) o a ambos:
 
 \\[
-A \cup B = \{x \in \mathcal{U} \mid x \in A \lor x \in B\}
+A \cup B = \\{x \in \mathcal{U} \mid x \in A \lor x \in B\\}
 \\]
 
 ### B. Intersección (A ∩ B)
 Reúne los elementos comunes que pertenecen simultáneamente a \\(A\\) y a \\(B\\):
 
 \\[
-A \cap B = \{x \in \mathcal{U} \mid x \in A \land x \in B\}
+A \cap B = \\{x \in \mathcal{U} \mid x \in A \land x \in B\\}
 \\]
 
 > **Definición (Conjuntos Disjuntos):** 
@@ -33,14 +33,14 @@ A \cap B = \{x \in \mathcal{U} \mid x \in A \land x \in B\}
 Reúne los elementos de \\(A\\) que **no** pertenecen a \\(B\\):
 
 \\[
-A \setminus B = \{x \in \mathcal{U} \mid x \in A \land x \notin B\}
+A \setminus B = \\{x \in \mathcal{U} \mid x \in A \land x \notin B\\}
 \\]
 
 ### D. Complemento Absoluto (Aᶜ o A')
 Reúne todos los elementos del universo \\(\mathcal{U}\\) que no pertenecen a \\(A\\):
 
 \\[
-A^c = \mathcal{U} \setminus A = \{x \in \mathcal{U} \mid x \notin A\}
+A^c = \mathcal{U} \setminus A = \\{x \in \mathcal{U} \mid x \notin A\\}
 \\]
 
 *Propiedad inmediata:* \\(A \setminus B = A \cap B^c\\).

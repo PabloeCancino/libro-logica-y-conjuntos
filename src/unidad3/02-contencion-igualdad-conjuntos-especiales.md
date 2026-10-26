@@ -50,7 +50,7 @@ Para demostrar rigurosamente que dos conjuntos \\(A\\) y \\(B\\) son iguales en 
 Es el único conjunto que **no contiene ningún elemento**:
 
 \\[
-\emptyset = \{x \mid x \neq x\} \qquad (\forall x) [x \notin \emptyset]
+\emptyset = \\{x \mid x \neq x\\} \qquad (\forall x) [x \notin \emptyset]
 \\]
 
 > **Teorema 3.1 (Inclusión Vacua del Conjunto Vacío):** 
@@ -66,7 +66,7 @@ Es el único conjunto que **no contiene ningún elemento**:
 > Dado que una implicación con antecedente falso es **vacuamente verdadera** (\\(F \to P = V\\)), la afirmación universal es verdadera para todo \\(x\\). Por lo tanto, \\(\emptyset \subseteq A\\). \\(\blacksquare\\)
 
 > **Advertencia de Notación:** 
-> Distíngase estrictamente entre \\(\emptyset\\) (conjunto vacío, sin elementos, \\(|\emptyset| = 0\\)) y \\(\{\emptyset\}\\) (conjunto unitario cuyo único elemento es el conjunto vacío, \\(|\{\emptyset\}| = 1\\)).
+> Distíngase estrictamente entre \\(\emptyset\\) (conjunto vacío, sin elementos, \\(|\emptyset| = 0\\)) y \\(\\{\emptyset\\}\\) (conjunto unitario cuyo único elemento es el conjunto vacío, \\(|\\{\emptyset\\}| = 1\\)).
 
 ### B. El Conjunto Universal (U)
 Es el conjunto que contiene la totalidad de los objetos bajo estudio en un contexto matemático determinado. Para todo subconjunto \\(A\\) de dicho contexto se cumple:
@@ -83,7 +83,7 @@ Es el conjunto que contiene la totalidad de los objetos bajo estudio en un conte
 > Dado un conjunto \\(A\\), su **conjunto potencia** (o conjunto de partes), denotado por \\(\mathcal{P}(A)\\) o \\(2^A\\), es el conjunto formado por **todos los posibles subconjuntos** de \\(A\\):
 >
 > \\[
-> \mathcal{P}(A) = \{X \mid X \subseteq A\}
+> \mathcal{P}(A) = \\{X \mid X \subseteq A\\}
 > \\]
 >
 > Por lo tanto, para cualquier conjunto \\(X\\):
@@ -109,8 +109,8 @@ Es el conjunto que contiene la totalidad de los objetos bajo estudio en un conte
  *Justificación combinatoria:* Para construir un subconjunto de \\(A\\), para cada uno de los \\(n\\) elementos se toma una decisión binaria independiente: o bien se incluye en el subconjunto (1), o bien se excluye (0). El principio de multiplicación arroja \\(2 \times 2 \times \dots \times 2 = 2^n\\) elecciones posibles.
 
 ### Ejemplo Detallado:
-Sea \\(A = \{1, 2, 3\}\\) (donde \\(|A| = 3\\)). Su conjunto potencia tiene \\(2^3 = 8\\) subconjuntos:
+Sea \\(A = \\{1, 2, 3\\}\\) (donde \\(|A| = 3\\)). Su conjunto potencia tiene \\(2^3 = 8\\) subconjuntos:
 
 \\[
-\mathcal{P}(A) = \Big\{ \emptyset, \{1\}, \{2\}, \{3\}, \{1, 2\}, \{1, 3\}, \{2, 3\}, \{1, 2, 3\} \Big\}
+\mathcal{P}(A) = \Big\\{ \emptyset, \\{1\\}, \\{2\\}, \\{3\\}, \\{1, 2\\}, \\{1, 3\\}, \\{2, 3\\}, \\{1, 2, 3\\} \Big\\}
 \\]

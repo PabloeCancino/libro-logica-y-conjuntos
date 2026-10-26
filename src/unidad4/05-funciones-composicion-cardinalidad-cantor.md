@@ -24,7 +24,7 @@ Las **funciones** constituyen el tipo especial de relación matemática más uti
 
 * **Dominio:** \\(\text{Dom}(f) = A\\).
 * **Codominio:** \\(B\\).
-* **Imagen o Recorrido (Rango):** \\(\text{Im}(f) = f(A) = \{f(x) \in B \mid x \in A\} \subseteq B\\).
+* **Imagen o Recorrido (Rango):** \\(\text{Im}(f) = f(A) = \\{f(x) \in B \mid x \in A\\} \subseteq B\\).
 
 ---
 

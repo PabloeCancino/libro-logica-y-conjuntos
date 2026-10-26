@@ -1,6 +1,6 @@
 # 1.2 Conectivas Lógicas y Evaluación de Tablas de Verdad
 
-Las **conectivas lógicas** son operadores formales (funciones de verdad) que toman uno o más valores de verdad del conjunto \\(\mathbb{B} = \{V, F\}\\) y devuelven un único valor de verdad resultante.
+Las **conectivas lógicas** son operadores formales (funciones de verdad) que toman uno o más valores de verdad del conjunto \\(\mathbb{B} = \\{V, F\\}\\) y devuelven un único valor de verdad resultante.
 
 ---
 
