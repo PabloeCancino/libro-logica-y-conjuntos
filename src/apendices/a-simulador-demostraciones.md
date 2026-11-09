@@ -91,7 +91,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 
 1. \\(x \in (A \cup B)^c \iff x \notin (A \cup B)\\) (Definición de complemento).
 2. \\(\iff \neg(x \in A \lor x \in B)\\) (Definición de unión).
-3. \\(\iff x \notin A \land x \notin B\\) (1ª Ley de De Morgan lógica).
+3. \\(\iff x \notin A \land x \notin B\\) (2ª Ley de De Morgan lógica).
 4. \\(\iff x \in A^c \land x \in B^c\\) (Definición de complementos individuales).
 5. \\(\iff x \in A^c \cap B^c\\) (Definición de intersección).
 6. Dado que cada paso es un bicondicional, queda demostrada la igualdad \\((A \cup B)^c = A^c \cap B^c\\). \\(\blacksquare\\)

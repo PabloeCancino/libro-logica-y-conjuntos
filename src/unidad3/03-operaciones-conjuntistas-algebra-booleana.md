@@ -219,7 +219,7 @@ A \cup A^c = \mathcal{U}, \qquad A \cap A^c = \emptyset
  Sea \\(x \in (A \cup B)^c\\). 
  Por definición de complemento, \\(x \notin (A \cup B)\\). 
  Esto significa que \\(\neg(x \in A \lor x \in B)\\). 
- Por la 1ª Ley de De Morgan lógica, \\(\neg(x \in A) \land \neg(x \in B)\\), lo que equivale a \\(x \notin A \land x \notin B\\). 
+ Por la 2ª Ley de De Morgan lógica, \\(\neg(x \in A) \land \neg(x \in B)\\), lo que equivale a \\(x \notin A \land x \notin B\\). 
  Por definición de complemento, \\(x \in A^c \land x \in B^c\\). 
  Por definición de intersección, \\(x \in A^c \cap B^c\\). 
  Por lo tanto, \\((A \cup B)^c \subseteq A^c \cap B^c\\).
@@ -232,4 +232,4 @@ A \cup A^c = \mathcal{U}, \qquad A \cap A^c = \emptyset
  Esto significa que \\(x \notin (A \cup B)\\), y en consecuencia \\(x \in (A \cup B)^c\\). 
  Por lo tanto, \\(A^c \cap B^c \subseteq (A \cup B)^c\\).
 
-**Conclusión:** Al haberse verificado ambas contenciones, se concluye formalmente que \\((A \cup B)^c = A^c \cap B^c\\). \\(\blacksquare\\)
+**Conclusión:** Al haberse verificado ambas contenciones, se concluye formalmente que \\((A \cup B)^c = A^c \cap B^c\\). \\(\blacksquare\\)

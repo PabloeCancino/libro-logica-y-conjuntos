@@ -85,7 +85,7 @@
 > * Si \\(d \in D\\), por la definición de \\(D\\) se tiene que \\(d \notin f(d) = D\\) (Contradicción). 
 > * Si \\(d \notin D\\), entonces \\(d \notin f(d)\\), por lo que \\(d\\) cumple la condición para pertenecer a \\(D\\), es decir, \\(d \in D\\) (Contradicción). 
 > En ambos casos se arriba a \\(d \in D \iff d \notin D\\) (\\(\bot\\)). 
-> Por tanto, \\(f\\) no puede ser sobreyectiva, demostrando que \\(|A| < |\mathcal{P}(A)|\\) para todo conjunto \\(A\\). \\(\blacksquare\\)
+> Por tanto, \\(f\\) no puede ser sobreyectiva; como además \\(x \mapsto \\{x\\}\\) es inyectiva, se concluye que \\(|A| < |\mathcal{P}(A)|\\) para todo conjunto \\(A\\). \\(\blacksquare\\)
 
 ---
 

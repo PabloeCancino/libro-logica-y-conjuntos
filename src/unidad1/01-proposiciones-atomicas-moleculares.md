@@ -86,5 +86,7 @@ El proceso de formalización consiste en traducir afirmaciones expresadas en len
 > * La estructura lógica formal es:
 >
 > \\[
-> (p \to q) \land \neg(q \to p)
+> p \to q
 > \\]
+>
+> La segunda cláusula (*«no necesariamente»*) **no** se formaliza como \\(\neg(q \to p)\\): esta fórmula equivale a \\(q \land \neg p\\) y afirmaría que *esta* \\(f\\) es continua y no diferenciable en \\(x\_0\\). Lo que dice la frase es que el recíproco \\(q \to p\\) no es válido para *toda* función (por ejemplo, \\(f(x) = |x|\\) en \\(x\_0 = 0\\)), una afirmación que requiere cuantificadores (Unidad 2).

@@ -95,9 +95,9 @@ El concepto de biyección permitió a **Georg Cantor (1874)** extender el concep
 ### A. Conjuntos Numerables (ℵ₀, Álef Cero)
 Un conjunto \\(A\\) es **infinito numerable** si tiene la misma cardinalidad que el conjunto de los números naturales: \\(|A| = |\mathbb{N}| = \aleph\_0\\).
 * \\(\mathbb{N}\\) es numerable.
-* El conjunto de los enteros pares \\(2\mathbb{N}\\) es numerable (biyección \\(f(n) = 2n\\), Paradoja del Hotel de Hilbert).
+* El conjunto de los enteros pares positivos \\(2\mathbb{N}\\) es numerable (biyección \\(f(n) = 2n\\), Paradoja del Hotel de Hilbert).
 * \\(\mathbb{Z}\\) es numerable (biyección alternante: \\(0, 1, -1, 2, -2, 3, -3, \dots\\)).
-* \\(\mathbb{Q}\\) (los números racionales) es **numerable** (demostrado por Cantor mediante su célebre recorrido diagonal en zigzag sobre la cuadrícula \\(\mathbb{N} \times \mathbb{N}\\)).
+* \\(\mathbb{Q}\\) (los números racionales) es **numerable** (por ejemplo, mediante el recorrido diagonal en zigzag de la cuadrícula \\(\mathbb{N} \times \mathbb{N}\\), una presentación posterior a la prueba original de Cantor de 1874).
 
 ### B. Conjuntos No Numerables y el Argumento Diagonal de Cantor
 > **Teorema 4.11 (No Numerabilidad de los Reales):** 
@@ -122,7 +122,7 @@ r\_2 = 0.d\_{21}d\_{22}d\_{23}\dots
 r\_3 = 0.d\_{31}d\_{32}d\_{33}\dots
 \\]
 
-Cantor construye un nuevo número real \\(x = 0.c\_1 c\_2 c\_3 \dots \in (0, 1)\\) eligiendo cada dígito \\(c\_k \neq d\_{kk}\\) (alterando la diagonal). Este número \\(x\\) difiere de \\(r\_1\\) en el primer decimal, de \\(r\_2\\) en el segundo decimal, y en general \\(x \neq r\_n\\) para todo \\(n\\). Por tanto, la lista nunca puede ser completa, lo que prueba que \\(\mathbb{R}\\) es **no numerable**.
+Cantor construye un nuevo número real \\(x = 0.c\_1 c\_2 c\_3 \dots \in (0, 1)\\) eligiendo cada dígito \\(c\_k \in \\{1, \dots, 8\\}\\) con \\(c\_k \neq d\_{kk}\\) (alterando la diagonal; por ejemplo, \\(c\_k = 5\\) si \\(d\_{kk} \neq 5\\) y \\(c\_k = 4\\) si \\(d\_{kk} = 5\\)), donde cada \\(r\_n\\) se escribe con su desarrollo decimal que no termina en infinitos nueves. Evitar los dígitos 0 y 9 garantiza que \\(x\\) tenga un único desarrollo decimal, de modo que diferir en un dígito implica ser un número distinto (recuérdese que \\(0.4999\ldots = 0.5\\)). Este número \\(x\\) difiere de \\(r\_1\\) en el primer decimal, de \\(r\_2\\) en el segundo decimal, y en general \\(x \neq r\_n\\) para todo \\(n\\). Por tanto, la lista nunca puede ser completa, lo que prueba que \\(\mathbb{R}\\) es **no numerable**.
 
 ### C. El Teorema de Cantor Generalizado
 > **Teorema 4.12 (Teorema de Cantor):** 
@@ -132,7 +132,7 @@ Cantor construye un nuevo número real \\(x = 0.c\_1 c\_2 c\_3 \dots \in (0, 1)\
 > |A| < |\mathcal{P}(A)|
 > \\]
 >
-> Es decir, **no existe ninguna función sobreyectiva** \\(f: A \to \mathcal{P}(A)\\).
+> Es decir, existe una inyección \\(A \to \mathcal{P}(A)\\) (\\(x \mapsto \\{x\\}\\)), pero **no existe ninguna función sobreyectiva** \\(f: A \to \mathcal{P}(A)\\).
 
 *Consecuencia Filosófica y Matemática:* 
 No existe un "infinito supremo". Existe una **jerarquía infinita de infinitos crecientes**:

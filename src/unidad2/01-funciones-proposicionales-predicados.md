@@ -53,7 +53,7 @@ Existe un isomorfismo conceptual estricto entre los operadores lógicos aplicado
 | **Negación** | \\(\neg P(x)\\) | Complemento | \\(T\_{\neg P} = (T\_P)^c = U \setminus T\_P\\) |
 | **Conjunción** | \\(P(x) \land Q(x)\\) | Intersección | \\(T\_{P \land Q} = T\_P \cap T\_Q\\) |
 | **Disyunción** | \\(P(x) \lor Q(x)\\) | Unión | \\(T\_{P \lor Q} = T\_P \cup T\_Q\\) |
-| **Condicional** | \\(P(x) \to Q(x)\\) | Inclusión | \\(T\_{P \to Q} = (T\_P)^c \cup T\_Q\\) |
+| **Condicional** | \\(P(x) \to Q(x)\\) | Complemento y unión | \\(T\_{P \to Q} = (T\_P)^c \cup T\_Q\\) |
 | **Implicación Universal** | \\(P(x) \implies Q(x)\\) | Contención | \\(T\_P \subseteq T\_Q\\) |
 | **Equivalencia Universal** | \\(P(x) \iff Q(x)\\) | Igualdad | \\(T\_P = T\_Q\\) |
 

@@ -10,7 +10,7 @@ El objetivo central de la lógica deductiva es formalizar y analizar los **argum
 > Un **argumento deductivo** es una estructura lógica compuesta por un conjunto finito de proposiciones \\(p\_1, p\_2, \dots, p\_k\\) llamadas **premisas** (o hipótesis), y una proposición \\(c\\) llamada **conclusión** (o tesis), denotado formalmente por:
 >
 > \\[
-> p\_1, p\_2, \dots, p\_k \vdash c \qquad \text{o bien} \qquad \frac{p\_1 \land p\_2 \land \dots \land p\_k}{\therefore c}
+> p\_1, p\_2, \dots, p\_k \models c \qquad \text{o bien} \qquad \frac{p\_1 \land p\_2 \land \dots \land p\_k}{\therefore c}
 > \\]
 
 ---
@@ -18,7 +18,7 @@ El objetivo central de la lógica deductiva es formalizar y analizar los **argum
 ## 2. Criterio Semántico de Validez
 
 > **Definición 1.4 (Validez de un Argumento):** 
-> Un argumento \\(p\_1, p\_2, \dots, p\_k \vdash c\\) es **válido** si y sólo si es **lógicamente imposible** que todas sus premisas sean simultáneamente verdaderas y su conclusión sea falsa. 
+> Un argumento \\(p\_1, p\_2, \dots, p\_k \models c\\) es **válido** si y sólo si es **lógicamente imposible** que todas sus premisas sean simultáneamente verdaderas y su conclusión sea falsa. 
 > Formalmente, el argumento es válido si la implicación conjuntiva:
 >
 > \\[

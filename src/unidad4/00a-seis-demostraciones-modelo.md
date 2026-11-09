@@ -140,13 +140,13 @@ En esta parte el método central es el **elemento arbitrario**: para hablar de t
 | 1 | \\(x \in (A \cup B)^c\\) | Punto de partida |
 | 2 | \\(\iff x \notin A \cup B\\) | Definición de complemento |
 | 3 | \\(\iff \neg(x \in A \lor x \in B)\\) | Definición de unión |
-| 4 | \\(\iff x \notin A \land x \notin B\\) | De Morgan lógico (Modelo L1) |
+| 4 | \\(\iff x \notin A \land x \notin B\\) | De Morgan lógico \\(\neg(p \lor q) \equiv \neg p \land \neg q\\) (ley dual del Modelo L1; Ejercicio 1) |
 | 5 | \\(\iff x \in A^c \land x \in B^c\\) | Definición de complemento |
 | 6 | \\(\iff x \in A^c \cap B^c\\) | Definición de intersección |
 
 Como \\(x\\) era arbitrario, ambos conjuntos tienen los mismos elementos; por extensionalidad, son iguales. \\(\blacksquare\\)
 
-**Qué observar.** El paso 4 es *exactamente* el Modelo L1. La ley de De Morgan de los conjuntos **hereda** su validez de la ley de De Morgan lógica. En la sección 3.3 se probó el mismo resultado por doble contención; compare ambos estilos.
+**Qué observar.** El paso 4 es *exactamente* la ley dual del Modelo L1, \\(\neg(p \lor q) \equiv \neg p \land \neg q\\) (Ejercicio 1 de esta sección). La ley de De Morgan de los conjuntos **hereda** su validez de la ley de De Morgan lógica. En la sección 3.3 se probó el mismo resultado por doble contención; compare ambos estilos.
 
 ---
 

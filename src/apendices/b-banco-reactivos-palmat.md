@@ -78,12 +78,12 @@ Este apéndice presenta una selección representativa y comentada del banco curr
 
 ### Reactivo 3.2: Pertenencia del Conjunto Vacío
 **Pregunta:** Para cualquier conjunto \\(A\\), ¿cuál de las siguientes afirmaciones es SIEMPRE verdadera? 
-- A) \\(A \in \mathcal{P}(A)\\) y \\(\emptyset \subseteq A\\) 
+- A) \\(\\{\emptyset\\} \subseteq A\\) 
 - B) \\(\emptyset \in A\\) 
 - C) **Tanto \\(A \in \mathcal{P}(A)\\) como \\(\emptyset \subseteq A\\) son siempre verdaderas (Correcta)** 
 - D) \\(|A \cup A^c| = 0\\) 
 
-> **Retroalimentación Formativa:** Por definición del conjunto potencia, \\(X \in \mathcal{P}(A) \iff X \subseteq A\\). Dado que \\(A \subseteq A\\) y \\(\emptyset \subseteq A\\) para cualquier conjunto, se tiene que \\(\emptyset \in \mathcal{P}(A)\\) y \\(A \in \mathcal{P}(A)\\).
+> **Retroalimentación Formativa:** Por definición del conjunto potencia, \\(X \in \mathcal{P}(A) \iff X \subseteq A\\). Dado que \\(A \subseteq A\\) y \\(\emptyset \subseteq A\\) para cualquier conjunto, se tiene que \\(\emptyset \in \mathcal{P}(A)\\) y \\(A \in \mathcal{P}(A)\\). La opción A es falsa en general: \\(\\{\emptyset\\} \subseteq A\\) equivale a \\(\emptyset \in A\\) (por ejemplo, falla para \\(A = \\{1\\}\\)).
 
 ---
 

@@ -23,7 +23,7 @@
 3. Escriba la negación formal de cada una de las siguientes proposiciones de modo que ningún operador de negación quede precediendo a un cuantificador:
  - a) \\((\forall x \in \mathbb{R})(\exists y \in \mathbb{R})(x + y > 0)\\)
  - b) \\((\exists x \in \mathbb{Z})(\forall y \in \mathbb{Z})(x \cdot y = y)\\)
- - c) \\((\forall \varepsilon > 0)(\exists \delta > 0)(\forall x) [|x - c| < \delta \implies |f(x) - L| < \varepsilon]\\)
+ - c) \\((\forall \varepsilon > 0)(\exists \delta > 0)(\forall x) [0 < |x - c| < \delta \implies |f(x) - L| < \varepsilon]\\)
  - d) \\((\forall x) [P(x) \to Q(x) \lor R(x)]\\)
 
 4. Para cada una de las siguientes afirmaciones universales sobre \\(U = \mathbb{R}\\), determine si es verdadera o falsa. Si es falsa, proporcione un **contraejemplo explícito**:

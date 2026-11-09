@@ -110,7 +110,7 @@ Este bloque integra las secciones 3.2 a 3.5 y está ordenado de menor a mayor di
 > Se tiene \\(A \cup B = \\{1, 2\\}\\). 
 > El subconjunto \\(\\{1, 2\\} \in \mathcal{P}(A \cup B)\\). 
 > Sin embargo, \\(\mathcal{P}(A) = \\{\emptyset, \\{1\\}\\}\\) y \\(\mathcal{P}(B) = \\{\emptyset, \\{2\\}\\}\\), por lo que \\(\mathcal{P}(A) \cup \mathcal{P}(B) = \\{\emptyset, \\{1\\}, \\{2\\}\\}\\). 
-> Como \\(\\{1, 2\\} \notin \mathcal{P}(A) \cup \mathcal{P}(B)\\), se concluye que \\(\mathcal{P}(A \cup B) \neq \mathcal{P}(A) \cup \mathcal{P}(B)\\) (en realidad se cumple únicamente la inclusión estricta \\(\mathcal{P}(A) \cup \mathcal{P}(B) \subsetneq \mathcal{P}(A \cup B)\\)). \\(\blacksquare\\)
+> Como \\(\\{1, 2\\} \notin \mathcal{P}(A) \cup \mathcal{P}(B)\\), se concluye que \\(\mathcal{P}(A \cup B) \neq \mathcal{P}(A) \cup \mathcal{P}(B)\\) (en general solo se cumple la inclusión \\(\mathcal{P}(A) \cup \mathcal{P}(B) \subseteq \mathcal{P}(A \cup B)\\), que es estricta exactamente cuando ni \\(A \subseteq B\\) ni \\(B \subseteq A\\)). \\(\blacksquare\\)
 
 ---
 
