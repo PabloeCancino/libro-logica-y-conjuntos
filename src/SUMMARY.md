@@ -41,6 +41,10 @@
 - [4.5 Funciones, composición, inversa y cardinalidad de Cantor](unidad4/05-funciones-composicion-cardinalidad-cantor.md)
 - [Ejercicios de la Unidad 4](unidad4/ejercicios.md)
 
+# Preparación para el Examen Final
+
+- [Auto-examen semestral](evaluacion/autoexamen-semestral.md)
+
 ---
 
 # Apéndices
