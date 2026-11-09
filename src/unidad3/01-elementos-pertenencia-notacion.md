@@ -77,7 +77,7 @@ A lo largo de todo el análisis matemático se emplean los siguientes conjuntos 
 | :---: | :--- | :--- |
 | **\\(\mathbb{N}\\)** | Naturales | \\(\\{1, 2, 3, 4, 5, \dots\\}\\) (enteros positivos) |
 | **\\(\mathbb{Z}\\)** | Enteros | \\(\\{\dots, -2, -1, 0, 1, 2, \dots\\}\\) |
-| **\\(\mathbb{Q}\\)** | Racionales | \\(\left\\{\frac{p}{q} \middle| p, q \in \mathbb{Z}, q \neq 0\right\\}\\) (cociente irreducible) |
+| **\\(\mathbb{Q}\\)** | Racionales | \\(\left\\{\frac{p}{q} \middle\| p, q \in \mathbb{Z}, q \neq 0\right\\}\\) (cociente irreducible) |
 | **\\(\mathbb{I} = \mathbb{R} \setminus \mathbb{Q}\\)** | Irracionales | Números reales no expresables como fracción (ej. \\(\sqrt{2}, \pi, e\\)) |
 | **\\(\mathbb{R}\\)** | Reales | Cuerpo ordenado completo (decimales infinitos) |
 | **\\(\mathbb{C}\\)** | Complejos | \\(\\{a + bi \mid a, b \in \mathbb{R}, i^2 = -1\\}\\) |

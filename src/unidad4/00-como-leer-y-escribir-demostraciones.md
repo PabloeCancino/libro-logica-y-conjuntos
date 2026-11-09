@@ -15,7 +15,7 @@ Las secciones siguientes presentan los métodos de demostración (directo, contr
 Todo teorema de este curso puede reescribirse con la forma
 
 \\[
-(\forall x \in U)\,[P(x) \implies Q(x)]
+(\forall x \in U)\\,[P(x) \implies Q(x)]
 \\]
 
 Antes de escribir una sola línea, responda por escrito tres preguntas:
@@ -67,8 +67,8 @@ La **forma lógica de la tesis** dicta la estructura de la prueba, incluso antes
 
 | Si la tesis tiene la forma… | Empiece así | Termine así |
 | :--- | :--- | :--- |
-| \\(\forall x\,P(x)\\) | «Sea \\(x\\) un elemento arbitrario del universo.» | «Como \\(x\\) era arbitrario, \\(\forall x\,P(x)\\).» |
-| \\(\exists x\,P(x)\\) | Proponga o construya un candidato \\(x\_0\\). | Verifique que \\(P(x\_0)\\) se cumple. |
+| \\(\forall x\\,P(x)\\) | «Sea \\(x\\) un elemento arbitrario del universo.» | «Como \\(x\\) era arbitrario, \\(\forall x\\,P(x)\\).» |
+| \\(\exists x\\,P(x)\\) | Proponga o construya un candidato \\(x\_0\\). | Verifique que \\(P(x\_0)\\) se cumple. |
 | \\(P \implies Q\\) | «Suponga \\(P\\).» | «Por lo tanto \\(Q\\).» |
 | \\(P \iff Q\\) | Dos partes: \\((\Rightarrow)\\) y \\((\Leftarrow)\\). | Cada parte es una implicación independiente. |
 | \\(P \land Q\\) | Pruebe \\(P\\); pruebe \\(Q\\). | «Luego \\(P \land Q\\).» |
@@ -82,8 +82,8 @@ Del mismo modo, la **forma de la hipótesis** dicta cómo *usarla*:
 
 | Si se tiene como dato… | Cómo se usa |
 | :--- | :--- |
-| \\(\forall x\,P(x)\\) | Se puede **instanciar** en cualquier elemento concreto \\(a\\): se obtiene \\(P(a)\\). |
-| \\(\exists x\,P(x)\\) | Se **nombra** un testigo: «Sea \\(x\_0\\) tal que \\(P(x\_0)\\).» |
+| \\(\forall x\\,P(x)\\) | Se puede **instanciar** en cualquier elemento concreto \\(a\\): se obtiene \\(P(a)\\). |
+| \\(\exists x\\,P(x)\\) | Se **nombra** un testigo: «Sea \\(x\_0\\) tal que \\(P(x\_0)\\).» |
 | \\(P \lor Q\\) | Se procede **por casos**: caso \\(P\\) y caso \\(Q\\). |
 | \\(A \subseteq B\\) y \\(a \in A\\) | Se concluye \\(a \in B\\). |
 | \\(x \in A \cup B\\) | Se divide en casos: \\(x \in A\\) o \\(x \in B\\). |

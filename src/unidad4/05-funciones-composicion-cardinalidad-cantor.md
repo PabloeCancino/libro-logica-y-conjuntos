@@ -11,13 +11,13 @@ Las **funciones** constituyen el tipo especial de relación matemática más uti
 > 1. **Totalidad (Existencia):** Todo elemento del conjunto de partida \\(A\\) tiene asignada una imagen en \\(B\\):
 >
 > \\[
-> (\forall x \in A)(\exists y \in B) \, [(x, y) \in f]
+> (\forall x \in A)(\exists y \in B) \\, [(x, y) \in f]
 > \\]
 >
 > 2. **Unicidad:** A cada elemento \\(x \in A\\) le corresponde **a lo sumo un único** elemento \\(y \in B\\):
 >
 > \\[
-> (\forall x \in A)(\forall y\_1, y\_2 \in B) \, [(x, y\_1) \in f \land (x, y\_2) \in f \implies y\_1 = y\_2]
+> (\forall x \in A)(\forall y\_1, y\_2 \in B) \\, [(x, y\_1) \in f \land (x, y\_2) \in f \implies y\_1 = y\_2]
 > \\]
 >
 > Cuando \\((x, y) \in f\\), escribimos la notación funcional habitual: \\(y = f(x)\\).
@@ -34,7 +34,7 @@ Las **funciones** constituyen el tipo especial de relación matemática más uti
 Una función \\(f: A \to B\\) es **inyectiva** si elementos distintos del dominio tienen imágenes distintas en el codominio:
 
 \\[
-(\forall x\_1, x\_2 \in A) \, [x\_1 \neq x\_2 \implies f(x\_1) \neq f(x\_2)]
+(\forall x\_1, x\_2 \in A) \\, [x\_1 \neq x\_2 \implies f(x\_1) \neq f(x\_2)]
 \\]
 
 > **Criterio Operativo de Demostración (por Contraposición):** 
@@ -48,7 +48,7 @@ Una función \\(f: A \to B\\) es **inyectiva** si elementos distintos del domini
 Una función \\(f: A \to B\\) es **sobreyectiva** si todo elemento del codominio \\(B\\) es imagen de al menos un elemento del dominio \\(A\\):
 
 \\[
-(\forall y \in B)(\exists x \in A) \, [f(x) = y] \qquad \text{o equivalentemente} \qquad \text{Im}(f) = B
+(\forall y \in B)(\exists x \in A) \\, [f(x) = y] \qquad \text{o equivalentemente} \qquad \text{Im}(f) = B
 \\]
 
 ### C. Función Biyectiva (Correspondencia Biunívoca)

@@ -11,13 +11,13 @@ El análisis cuantitativo de conjuntos finitos y la descomposición estructural 
 > 1. **No vacuidad:** Ningún bloque es vacío:
 >
 > \\[
-> (\forall i \in I) \, [A\_i \neq \emptyset]
+> (\forall i \in I) \\, [A\_i \neq \emptyset]
 > \\]
 >
 > 2. **Disjunción dos a dos (Mutuamente Excluyentes):** Cualesquiera dos bloques distintos no comparten elementos:
 >
 > \\[
-> (\forall i, j \in I) \, [i \neq j \implies A\_i \cap A\_j = \emptyset]
+> (\forall i, j \in I) \\, [i \neq j \implies A\_i \cap A\_j = \emptyset]
 > \\]
 >
 > 3. **Cobertura Total (Exhaustividad):** La unión de todos los bloques reconstruye exactamente el conjunto original \\(A\\):
@@ -41,7 +41,7 @@ El número total de particiones posibles de un conjunto de \\(n\\) elementos vie
 ## 2. Cardinalidad de Conjuntos Finitos
 
 > **Definición 3.5 (Cardinalidad):** 
-> La **cardinalidad** de un conjunto finito \\(A\\), denotada por \\(|A|\\) o \\(\#(A)\\), es el número exacto de elementos distintos que contiene.
+> La **cardinalidad** de un conjunto finito \\(A\\), denotada por \\(|A|\\) o \\(\\#(A)\\), es el número exacto de elementos distintos que contiene.
 > * \\(|\emptyset| = 0\\).
 > * Si \\(A = \\{x\_1, x\_2, \dots, x\_n\\}\\) con \\(x\_i \neq x\_j\\) para todo \\(i \neq j\\), entonces \\(|A| = n\\).
 

@@ -30,7 +30,7 @@
 6. Sea \\(R\\) la relación sobre \\(\mathbb{Z} \times (\mathbb{Z} \setminus \\{0\\})\\) definida por:
 
 \\[
-(a, b) \, R \, (c, d) \iff a \cdot d = b \cdot c
+(a, b) \\, R \\, (c, d) \iff a \cdot d = b \cdot c
 \\]
 
  - a) Demuestre que \\(R\\) es una relación de equivalencia (Propiedades Reflexiva, Simétrica y Transitiva).

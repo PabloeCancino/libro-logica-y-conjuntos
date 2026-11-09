@@ -15,8 +15,8 @@ Las **relaciones** constituyen la formalización conjuntista de los vínculos, a
 >
 > Si \\(A = B\\), decimos que \\(R\\) es una **relación binaria sobre el conjunto \\(A\\)** (\\(R \subseteq A \times A\\)).
 > 
-> * Notación: Si \\((a, b) \in R\\), se escribe \\(a \, R \, b\\) ("\\(a\\) está relacionado con \\(b\\)").
-> * Si \\((a, b) \notin R\\), se escribe \\(a \, \cancel{R} \, b\\).
+> * Notación: Si \\((a, b) \in R\\), se escribe \\(a \\, R \\, b\\) ("\\(a\\) está relacionado con \\(b\\)").
+> * Si \\((a, b) \notin R\\), se escribe \\(a \\, \cancel{R} \\, b\\).
 
 ### Conceptos Asociados:
 * **Dominio:** \\(\text{Dom}(R) = \\{a \in A \mid (\exists b \in B) [(a, b) \in R]\\}\\).
@@ -32,25 +32,25 @@ Dada una relación \\(R \subseteq A \times A\\):
 1. **Reflexiva:** Todo elemento está relacionado consigo mismo:
 
 \\[
-(\forall x \in A) \, [x \, R \, x]
+(\forall x \in A) \\, [x \\, R \\, x]
 \\]
 
 2. **Simétrica:** Si un elemento se relaciona con otro, el segundo se relaciona con el primero:
 
 \\[
-(\forall x, y \in A) \, [x \, R \, y \implies y \, R \, x]
+(\forall x, y \in A) \\, [x \\, R \\, y \implies y \\, R \\, x]
 \\]
 
 3. **Antisimétrica:** Si dos elementos se relacionan mutuamente en ambos sentidos, son necesariamente idénticos:
 
 \\[
-(\forall x, y \in A) \, [x \, R \, y \land y \, R \, x \implies x = y]
+(\forall x, y \in A) \\, [x \\, R \\, y \land y \\, R \\, x \implies x = y]
 \\]
 
 4. **Transitiva:** Si \\(x\\) se relaciona con \\(y\\) y este con \\(z\\), entonces \\(x\\) se relaciona con \\(z\\):
 
 \\[
-(\forall x, y, z \in A) \, [x \, R \, y \land y \, R \, z \implies x \, R \, z]
+(\forall x, y, z \in A) \\, [x \\, R \\, y \land y \\, R \\, z \implies x \\, R \\, z]
 \\]
 
 ---
@@ -111,7 +111,7 @@ lo que da origen a la **Aritmética Modular** y al anillo de clases residuales \
 * **Orden Total (o Lineal):** Si además todo par de elementos es comparable:
 
 \\[
-(\forall x, y \in A) \, [x \le y \lor y \le x]
+(\forall x, y \in A) \\, [x \le y \lor y \le x]
 \\]
 
 * **Diagrama de Hasse:** Es la representación gráfica minimal de un poset finito, donde se disponen los elementos en niveles verticales y se dibujan aristas orientadas hacia arriba sólo para las relaciones de **cobertura directa**, suprimiendo los lazos reflexivos y las aristas transitivas redundantes.

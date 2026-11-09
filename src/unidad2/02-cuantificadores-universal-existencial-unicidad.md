@@ -13,7 +13,7 @@ El símbolo **\\(\forall\\)** (del inglés *for All*) representa la generalizaci
 > Sea \\(P(x)\\) un predicado con dominio \\(U\\). La proposición:
 >
 > \\[
-> (\forall x \in U) \, P(x) \quad \text{o simplemente} \quad \forall x \, P(x)
+> (\forall x \in U) \\, P(x) \quad \text{o simplemente} \quad \forall x \\, P(x)
 > \\]
 >
 > se lee *"Para todo \\(x\\) en \\(U\\), se cumple \\(P(x)\\)"* o *"Para cada \\(x\\) en \\(U\\), \\(P(x)\\) es verdadero"*.
@@ -30,7 +30,7 @@ El símbolo **\\(\exists\\)** (del inglés *there Exists*) expresa la existencia
 > Sea \\(P(x)\\) un predicado con dominio \\(U\\). La proposición:
 >
 > \\[
-> (\exists x \in U) \, P(x) \quad \text{o simplemente} \quad \exists x \, P(x)
+> (\exists x \in U) \\, P(x) \quad \text{o simplemente} \quad \exists x \\, P(x)
 > \\]
 >
 > se lee *"Existe al menos un \\(x\\) en \\(U\\) tal que se cumple \\(P(x)\\)"*.
@@ -44,7 +44,7 @@ El símbolo **\\(\exists\\)** (del inglés *there Exists*) expresa la existencia
 En matemáticas frecuentemente se requiere afirmar no sólo que existe una solución o un objeto, sino que este es **estrictamente único**:
 
 > **Definición 2.5 (Cuantificación de Existencia Única):** 
-> La proposición \\((\exists! x \in U) \, P(x)\\) se lee *"Existe un único \\(x\\) en \\(U\\) tal que \\(P(x)\\)"*, y se descompone formalmente en dos partes independientes:
+> La proposición \\((\exists! x \in U) \\, P(x)\\) se lee *"Existe un único \\(x\\) en \\(U\\) tal que \\(P(x)\\)"*, y se descompone formalmente en dos partes independientes:
 >
 > \\[
 > (\exists! x) P(x) \equiv \underbrace{(\exists x) P(x)}\_{\text{Existencia}} \land \underbrace{(\forall y)(\forall z) [P(y) \land P(z) \to y = z]}\_{\text{Unicidad}}
@@ -113,13 +113,13 @@ La formulación precisa mediante cuantificadores anidados es la base del rigor e
 * **Definición de Límite de Cauchy-Weierstrass (\\(\lim\_{x \to a} f(x) = L\\)):**
 
 \\[
-(\forall \varepsilon > 0)(\exists \delta > 0)(\forall x \in \text{Dom}(f)) \, [0 < |x - a| < \delta \implies |f(x) - L| < \varepsilon]
+(\forall \varepsilon > 0)(\exists \delta > 0)(\forall x \in \text{Dom}(f)) \\, [0 < |x - a| < \delta \implies |f(x) - L| < \varepsilon]
 \\]
 
 * **Definición de Continuidad Uniforme:**
 
 \\[
-(\forall \varepsilon > 0)(\exists \delta > 0)(\forall x\_1, x\_2 \in I) \, [|x\_1 - x\_2| < \delta \implies |f(x\_1) - f(x\_2)| < \varepsilon]
+(\forall \varepsilon > 0)(\exists \delta > 0)(\forall x\_1, x\_2 \in I) \\, [|x\_1 - x\_2| < \delta \implies |f(x\_1) - f(x\_2)| < \varepsilon]
 \\]
 
 *(Nótese que en la continuidad ordinaria \\(\delta\\) depende de \\(\varepsilon\\) y del punto \\(x\_0\\), mientras que en la continuidad uniforme \\(\exists \delta\\) precede a los puntos \\(x\_1, x\_2\\), dependiendo únicamente de \\(\varepsilon\\)).*

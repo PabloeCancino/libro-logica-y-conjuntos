@@ -118,7 +118,7 @@
 | 4 | \\((\exists y \in \mathbb{Z})(x + y = 0)\\) | Generalización Existencial (G.E.) con el testigo del paso 2 |
 | 5 | \\((\forall x \in \mathbb{Z})(\exists y \in \mathbb{Z})(x + y = 0)\\) | Generalización Universal (G.U.): \\(x\\) era arbitrario |
 
-\\(\blacksquare\\) *Lección:* en \\(\forall x\,\exists y\\) el testigo \\(y\\) **puede depender de** \\(x\\) (aquí \\(y = -x\\)); en \\(\exists y\,\forall x\\) un único \\(y\\) debería servir para *todos* los \\(x\\), y eso falla (Ejercicio 6). Los cuantificadores heterogéneos no conmutan.
+\\(\blacksquare\\) *Lección:* en \\(\forall x\\,\exists y\\) el testigo \\(y\\) **puede depender de** \\(x\\) (aquí \\(y = -x\\)); en \\(\exists y\\,\forall x\\) un único \\(y\\) debería servir para *todos* los \\(x\\), y eso falla (Ejercicio 6). Los cuantificadores heterogéneos no conmutan.
 
 **Ejercicio 8.**
 

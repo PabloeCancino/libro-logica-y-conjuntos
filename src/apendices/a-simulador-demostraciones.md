@@ -55,7 +55,7 @@ Este apéndice reúne las **14 demostraciones matemáticas formales paso a paso*
 ### Demostración 4: Negación del Cuantificador Universal
 
 \\[
-\neg(\forall x \in A)\, p(x) \equiv (\exists x \in A)\, \neg p(x)
+\neg(\forall x \in A)\\, p(x) \equiv (\exists x \in A)\\, \neg p(x)
 \\]
 
 1. Supongamos que \\(\neg(\forall x \in A) p(x)\\) es verdadera.
